@@ -35,7 +35,11 @@ modelo-nexus/
 │   │
 │   ├── procesados/
 │   │
-│   └── preparar.py
+│   └── modelos/
+│
+├── notebooks/
+│   ├── 02_limpieza.ipynb
+│   └── 03_modelado.ipynb
 │
 ├── app/
 │   ├── __init__.py
@@ -54,7 +58,7 @@ modelo-nexus/
 └── README.md
 ```
 
-> `modelo.pkl` será generado posteriormente durante el proceso de entrenamiento.
+> `datos/procesados/` y `datos/modelos/` son generadas por los notebooks. `modelo.pkl` será generado posteriormente durante el proceso de entrenamiento.
 
 ## 🔄 Flujo del proyecto
 
@@ -97,7 +101,7 @@ Actualmente se utilizan los siguientes archivos:
 
 Los archivos de esta carpeta corresponden a los datos originales y **no deben ser modificados directamente**.
 
-Los datos resultantes del proceso de limpieza y preparación serán almacenados en:
+Los datos resultantes del proceso de limpieza y preparación son almacenados en:
 
 ```text
 datos/procesados/
@@ -105,23 +109,30 @@ datos/procesados/
 
 ## 🧹 Preparación de datos
 
-El script:
+La limpieza y preparación de los datos se realiza en los notebooks de la carpeta `notebooks/`, principalmente en:
 
 ```text
-datos/preparar.py
+notebooks/02_limpieza.ipynb
 ```
 
-será utilizado para automatizar las tareas relacionadas con la preparación de los datos, incluyendo:
+Este notebook se encarga de:
 
-1. Carga de los datos.
-2. Perfilado inicial.
-3. Identificación de problemas de calidad.
-4. Limpieza y transformación.
-5. Validación de los datos.
-6. Exportación de los datos procesados.
-7. Preparación de los datos para el entrenamiento.
+1. Cargar los datos originales.
+2. Aplicar las decisiones de negocio acordadas, cada una como una regla con su propia función y una tabla de auditoría (filas antes y después de cada regla).
+3. Construir la variable objetivo de compra con cuatro cortes temporales de 90 días.
+4. Construir los predictores usando únicamente información anterior a cada corte.
+5. Validar los datos (sin fuga de información, consentimiento de los usuarios, ausencia de nulos en los predictores).
+6. Exportar los datos procesados y los conjuntos de entrenamiento y validación a `datos/procesados/`.
 
-Las reglas específicas de limpieza se definirán después de realizar el análisis inicial de los archivos originales.
+## ▶️ Ejecución
+
+Los notebooks se ejecutan en orden y de principio a fin:
+
+1. Colocar los archivos originales en `datos/crudos/`.
+2. Ejecutar `notebooks/02_limpieza.ipynb`: genera los archivos de `datos/procesados/`.
+3. Ejecutar `notebooks/03_modelado.ipynb`: lee `datos/procesados/`, entrena y evalúa los modelos, y guarda el modelo en `datos/modelos/`.
+
+El notebook 03 depende de los archivos que genera el 02, por lo que siempre debe ejecutarse después de este.
 
 ## 🤖 Modelo
 
@@ -227,7 +238,6 @@ Próximas etapas:
 
 - [ ] Analizar los datos originales.
 - [ ] Definir reglas de limpieza.
-- [ ] Implementar `preparar.py`.
 - [ ] Generar datos procesados.
 - [ ] Preparar dataset para Machine Learning.
 - [ ] Entrenar y evaluar el modelo.
