@@ -51,16 +51,21 @@ modelo-nexus/
 │       └── fallback_mas_vendidos.joblib
 │
 ├── notebooks/
+│   ├── 01_exploracion_datos.ipynb
 │   ├── 02_limpieza.ipynb
 │   └── 03_modelado.ipynb
 │
 ├── app/
 │   ├── __init__.py
-│   └── main.py
+│   ├── main.py            # API (FastAPI): /health y /predict
+│   ├── recomendador.py    # carga del modelo y generación de recomendaciones
+│   └── features.py        # cálculo de variables (misma lógica que el notebook 02)
 │
 ├── tests/
 │   ├── __init__.py
-│   ├── test_datos.py
+│   ├── conftest.py
+│   ├── test_paridad.py    # las variables de la API = las del notebook 02
+│   ├── test_datos.py      # calidad de los datos limpios y procesados
 │   └── test_api.py
 │
 ├── Dockerfile
@@ -162,27 +167,62 @@ Las recomendaciones se generan así: se calculan las variables del usuario, se o
 
 ## 🚀 API
 
-El servicio de predicción estará implementado en:
+El servicio de predicción está en `app/main.py` (FastAPI). Al iniciar carga los tres archivos de `datos/modelos/` y los CSV limpios de `datos/procesados/`, y deja calculado el estado de usuarios y productos a la fecha de corte (el fin de los datos, `fin_datos` en `metadatos.pkl`).
 
-```text
-app/main.py
+Ejecutar (desde la raíz del repositorio, después de correr los notebooks 02 y 03):
+
+```bash
+uvicorn app.main:app --reload
 ```
 
-Se utilizará una API para permitir que otros componentes del proyecto Nexus puedan enviar datos y obtener predicciones del modelo.
+La documentación interactiva queda en `http://localhost:8000/docs`.
 
-Al iniciar, la API carga los tres archivos de `datos/modelos/`:
+### `POST /predict`
 
-- `POST /predict` usa `modelo_recomendador.joblib` junto con `modelo_metadatos.joblib`, y recurre a `fallback_mas_vendidos.joblib` si no puede generar la recomendación.
-- `GET /health` puede comprobar que los tres archivos se cargaron correctamente.
+Entrada:
 
-La API contemplará, como mínimo:
-
-```text
-GET  /health
-POST /predict
+```json
+{ "usuario_id": "U100001", "k": 8 }
 ```
 
-La implementación definitiva de los endpoints se realizará durante el desarrollo del proyecto.
+`k` es la cantidad de recomendaciones (de 4 a 8, por defecto 8). La API calcula las variables del usuario, puntúa los productos recomendables que no ha comprado y devuelve los mejores:
+
+```json
+{
+  "usuario_id": "U100001",
+  "origen": "modelo",
+  "motivo": null,
+  "recomendaciones": [
+    {
+      "puesto": 1,
+      "sku": "NX-10033",
+      "categoria": "...",
+      "marca": "...",
+      "precio_lista": 75389.0,
+      "puntaje": 2.84
+    }
+  ]
+}
+```
+
+`origen` indica de dónde salió la respuesta:
+
+| `origen`   | Cuándo ocurre                                                                        | Qué se devuelve                                                                              |
+| ---------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| `modelo`   | Usuario con consentimiento e historial de compras                                    | Recomendaciones personalizadas (`modelo_recomendador` + `modelo_metadatos`)                  |
+| `fallback` | Usuario sin consentimiento o desconocido, usuario sin historial, o error al predecir | Los más vendidos de los últimos 90 días (`fallback_mas_vendidos`); `motivo` explica la causa |
+
+A los usuarios sin consentimiento nunca se les calcula un perfil.
+
+### `GET /health`
+
+Responde `200` con el modelo en uso, la fecha de corte y las cantidades cargadas. Si el modelo no pudo cargarse responde `503` con el error. Además avisa si la versión de scikit-learn es distinta a la del entrenamiento.
+
+### Mantener la API al día
+
+- Los datos se leen al iniciar: si se vuelven a ejecutar los notebooks, hay que reiniciar la API.
+- `app/features.py` repite la lógica de variables del notebook 02. Si se cambia una variable en el notebook, hay que cambiarla también ahí; `tests/test_paridad.py` falla si ambas dejan de coincidir.
+- Las rutas se pueden cambiar con las variables de entorno `DIR_PROCESADOS` y `DIR_MODELOS`.
 
 ## 🧪 Pruebas
 
@@ -194,11 +234,12 @@ tests/
 
 Se contemplan pruebas para:
 
-- Validación de la calidad de los datos.
-- Validación de los datos procesados.
-- Funcionamiento del modelo.
-- Funcionamiento del endpoint de predicción.
+- Calidad de los datos limpios y procesados (`test_datos.py`): consentimiento, SKU y fechas válidos, sin nulos en los predictores, cortes temporales ordenados y sin fuga entre entrenamiento y validación.
+- Paridad entre las variables de la API y las del notebook 02.
+- Funcionamiento del endpoint de predicción (sin repetir compras, solo productos recomendables, plan B, validación de entrada).
 - Endpoint de salud de la API.
+
+Se ejecutan con `pytest`. Si faltan los archivos que generan los notebooks 02 y 03, las pruebas de la API se omiten en lugar de fallar.
 
 ## 🐳 Docker
 
@@ -261,7 +302,7 @@ Próximas etapas:
 - [ ] Preparar dataset para Machine Learning.
 - [ ] Entrenar y evaluar el modelo.
 - [ ] Serializar el modelo.
-- [ ] Implementar API de predicción.
+- [x] Implementar API de predicción.
 - [ ] Crear pruebas.
 - [ ] Configurar CI/CD.
 - [ ] Contenerizar el servicio con Docker.
