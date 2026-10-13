@@ -1,0 +1,21 @@
+# Datos personales y archivos que la imagen no necesita
+datos/crudos
+datos/procesados/entrenamiento.pkl
+datos/procesados/validacion.pkl
+datos/procesados/ranking_*.pkl
+datos/procesados/sku_recomendables.pkl
+notebooks
+tests
+.github
+.git
+.gitignore
+.env
+.env.*
+venv
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+*.ipynb
+README.md
+Dockerfile
