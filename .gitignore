@@ -13,6 +13,9 @@ __pycache__/
 # Modelos generados
 *.pkl
 
+# Copias de seguridad generadas por datos/preparar.py
+datos/procesados_backup_limpieza/
+
 # Jupyter
 .ipynb_checkpoints/
 

@@ -1,14 +1,14 @@
 sku,nombre,categoria,marca,precio_lista,stock,activo,fecha_alta,precio_sospechoso,recomendable
 NX-10637,Gigabyte Notebook X,notebooks,Gigabyte,19666.0,5.0,False,2024-11-22,False,False
-NX-10785,Kingston Monitore Lite,monitores,Kingston,21993.0,-9.0,False,2024-01-29,False,False
+NX-10785,Kingston Monitore Lite,monitores,Kingston,21993.0,0.0,False,2024-01-29,False,False
 NX-10647,Dell Rede V2,redes,Dell,37619.0,2.0,True,2020-07-06,False,False
 NX-10699,Asus Notebook Pro,notebooks,Asus,35216.0,2.0,True,2022-11-11,False,False
 NX-11243,Acer Periferico Air,perifericos,Acer,19929.0,48.0,True,2020-04-03,False,True
 NX-10291,Gigabyte Audio Max,audio,Gigabyte,37298.0,0.0,False,2021-09-15,False,False
-NX-11230,Acer Monitore Max,monitores,Acer,0.0,-6.0,True,2023-04-09,False,False
+NX-11230,Acer Monitore Max,monitores,Acer,30390.5,0.0,True,2023-04-09,False,False
 NX-10289,Asus Audio V2,audio,Asus,17589.0,0.0,True,2026-01-30,False,False
 NX-10985,Apple Periferico G5,perifericos,Apple,9028.0,1.0,False,2019-02-10,False,False
-NX-11455,LG Monitore Pro,monitores,LG,,0.0,True,2022-03-03,False,False
+NX-11455,LG Monitore Pro,monitores,LG,30390.5,0.0,True,2022-03-03,False,False
 NX-10697,Gigabyte Rede Pro,redes,Gigabyte,76750.0,8.0,True,2025-11-14,False,True
 NX-11304,Gigabyte Notebook Max,notebooks,Gigabyte,306752.0,5.0,True,2024-10-14,False,True
 NX-11049,Samsung Notebook Max,notebooks,Samsung,10944.0,2.0,True,2019-08-04,False,False
@@ -26,7 +26,7 @@ NX-10725,Asus Rede Pro,redes,Asus,30290.0,297.0,True,2022-09-04,False,True
 NX-10155,Apple Audio X,audio,Apple,10731.0,0.0,True,2024-02-04,False,False
 NX-10334,Kingston Monitore Lite,monitores,Kingston,35679.0,25.0,False,2023-07-04,False,False
 NX-11029,Apple Componente X,componentes,Apple,32986.0,1.0,True,2023-03-25,False,False
-NX-10038,Gigabyte Notebook Air,notebooks,Gigabyte,0.0,4.0,False,2021-05-13,False,False
+NX-10038,Gigabyte Notebook Air,notebooks,Gigabyte,32927.5,4.0,False,2021-05-13,False,False
 NX-10305,LG Audio Plus,audio,LG,153733.0,17.0,True,2024-01-09,False,True
 NX-10868,Gigabyte Smartphone G5,smartphones,Gigabyte,17292.0,0.0,True,2025-02-16,False,False
 NX-11074,Gigabyte Audio V2,audio,Gigabyte,9380.0,3.0,True,2021-09-18,False,True
@@ -58,7 +58,7 @@ NX-10539,Gigabyte Monitore X,monitores,Gigabyte,30063.0,44.0,False,2020-04-08,Fa
 NX-11295,Samsung Gaming Lite,gaming,Samsung,17642.0,0.0,True,2022-08-01,False,False
 NX-11267,Dell Cables y adaptadore V2,cables y adaptadores,Dell,862421.0,27.0,False,2021-12-14,False,False
 NX-10174,Apple Smartphone Pro,smartphones,Apple,19561.0,4.0,False,2020-12-01,False,False
-NX-11283,Samsung Audio X,audio,Samsung,0.0,0.0,True,2019-08-30,False,False
+NX-11283,Samsung Audio X,audio,Samsung,22963.0,0.0,True,2019-08-30,False,False
 NX-10322,Kingston Audio Air,audio,Kingston,21508.0,79.0,False,2024-03-14,False,False
 NX-10251,Kingston Audio Air,audio,Kingston,385808.0,6.0,True,2019-02-25,False,True
 NX-10945,Lenovo Smartphone X,smartphones,Lenovo,64653.0,25.0,False,2020-08-25,False,False
@@ -103,7 +103,7 @@ NX-11352,Samsung Componente Air,componentes,Samsung,8703.0,7.0,False,2023-10-14,
 NX-10039,Acer Cables y adaptadore G5,cables y adaptadores,Acer,35321.0,27.0,True,2026-05-12,False,True
 NX-11172,Lenovo Audio Max,audio,Lenovo,63951.0,40.0,False,2022-07-27,False,False
 NX-10480,Dell Cables y adaptadore Pro,cables y adaptadores,Dell,9882.0,1.0,True,2022-08-06,False,False
-NX-10227,Samsung Monitore V2,monitores,Samsung,0.0,0.0,False,2019-04-02,False,False
+NX-10227,Samsung Monitore V2,monitores,Samsung,30390.5,0.0,False,2019-04-02,False,False
 NX-11443,Gigabyte Rede X,redes,Gigabyte,8791.0,23.0,True,2020-01-09,False,True
 NX-10221,Asus Monitore Pro,monitores,Asus,9215.0,47.0,True,2021-04-08,False,True
 NX-11195,HP Notebook Lite,notebooks,HP,34632.0,34.0,True,2020-05-12,False,True
@@ -116,7 +116,7 @@ NX-10093,Gigabyte Notebook G5,notebooks,Gigabyte,331397.0,20.0,True,2024-08-30,F
 NX-10290,Apple Gaming V2,gaming,Apple,20798.0,0.0,False,2020-01-28,False,False
 NX-11138,Dell Audio Air,audio,Dell,10974.0,25.0,True,2019-09-27,False,True
 NX-10909,Gigabyte Componente G5,componentes,Gigabyte,19364.0,3.0,True,2020-10-05,False,True
-NX-10112,Samsung Periferico Plus,perifericos,Samsung,10253.0,-6.0,True,2024-11-07,False,False
+NX-10112,Samsung Periferico Plus,perifericos,Samsung,10253.0,0.0,True,2024-11-07,False,False
 NX-10266,MSI Gaming Air,gaming,MSI,485640.0,208.0,True,2021-01-05,False,True
 NX-10177,Gigabyte Almacenamiento Pro,almacenamiento,Gigabyte,101114.0,38.0,True,2020-11-13,False,True
 NX-11386,Xiaomi Notebook Pro,notebooks,Xiaomi,1344467.0,84.0,True,2024-07-11,False,True
@@ -133,7 +133,7 @@ NX-10806,Xiaomi Audio Lite,audio,Xiaomi,102210.0,2.0,False,2020-07-31,False,Fals
 NX-11124,Asus Periferico X,perifericos,Asus,288618.0,4.0,False,2020-12-29,False,False
 NX-10654,Asus Smartphone G5,smartphones,Asus,8611.0,8.0,True,2024-04-16,False,True
 NX-11470,Xiaomi Smartphone X,smartphones,sin_dato,308427.0,8.0,True,2024-08-12,False,True
-NX-11361,Apple Rede Max,redes,Apple,0.0,12.0,False,2021-09-17,False,False
+NX-11361,Apple Rede Max,redes,Apple,32275.0,12.0,False,2021-09-17,False,False
 NX-10903,MSI Monitore Plus,monitores,MSI,285044.0,14.0,False,2019-04-02,False,False
 NX-10753,TP-Link Almacenamiento Lite,almacenamiento,TP-Link,38359.0,25.0,False,2019-09-19,False,False
 NX-10723,Samsung Rede Plus,redes,Samsung,10521.0,136.0,True,2021-10-19,False,True
@@ -154,7 +154,7 @@ NX-11393,Logitech Smartphone Pro,smartphones,Logitech,34753.0,0.0,False,2022-12-
 NX-10831,Asus Componente Max,componentes,Asus,9613.0,0.0,False,2019-08-31,False,False
 NX-11024,Apple Smartphone G5,smartphones,Apple,9809.0,1.0,True,2022-09-13,False,False
 NX-11416,Asus Periferico Plus,perifericos,Asus,11354.0,111.0,True,2021-11-20,False,True
-NX-10696,Lenovo Audio Max,audio,Lenovo,0.0,8.0,True,2025-07-19,False,False
+NX-10696,Lenovo Audio Max,audio,Lenovo,22963.0,8.0,True,2025-07-19,False,False
 NX-11112,Dell Rede V2,redes,Dell,339479.0,107.0,False,2023-10-23,False,False
 NX-11152,Asus Almacenamiento G5,almacenamiento,Asus,10975.0,117.0,True,2024-11-23,False,True
 NX-11463,TP-Link Cables y adaptadore Plus,cables y adaptadores,TP-Link,255310.0,22.0,True,2025-11-08,False,True
@@ -170,8 +170,8 @@ NX-10255,,cables y adaptadores,Samsung,10040.0,28.0,False,2024-04-21,False,False
 NX-11033,Lenovo Notebook G5,notebooks,Lenovo,10974.0,50.0,True,2024-03-31,False,True
 NX-10926,MSI Rede G5,redes,MSI,20235.0,40.0,True,2020-04-14,False,True
 NX-11040,Kingston Notebook X,notebooks,Kingston,55373.0,53.0,True,2026-01-25,False,True
-NX-11211,Acer Componente Plus,componentes,Acer,0.0,1.0,False,2019-05-26,False,False
-NX-11155,HP Componente Max,componentes,HP,151320.0,,True,2020-12-07,False,False
+NX-11211,Acer Componente Plus,componentes,Acer,33046.5,1.0,False,2019-05-26,False,False
+NX-11155,HP Componente Max,componentes,HP,151320.0,0.0,True,2020-12-07,False,False
 NX-10044,HP Notebook Max,notebooks,HP,9730.0,107.0,True,2022-01-11,False,True
 NX-10768,Logitech Cables y adaptadore Plus,cables y adaptadores,Logitech,20143.0,0.0,False,2025-12-08,False,False
 NX-10540,Gigabyte Gaming X,gaming,Gigabyte,80151.0,5.0,False,2019-09-29,False,False
@@ -193,7 +193,7 @@ NX-11475,Samsung Gaming Lite,gaming,Samsung,880674.0,6.0,True,2020-08-12,False,T
 NX-11254,Corsair Periferico Max,perifericos,Corsair,22026.0,27.0,True,2021-07-17,False,True
 NX-10363,Lenovo Componente Pro,componentes,Lenovo,59299.0,43.0,True,2023-02-15,False,True
 NX-11394,Lenovo Notebook V2,notebooks,Lenovo,21370.0,33.0,True,2022-12-17,False,True
-NX-11367,MSI Gaming Air,gaming,MSI,10225.0,-4.0,False,2022-04-01,True,False
+NX-11367,MSI Gaming Air,gaming,MSI,10225.0,0.0,False,2022-04-01,True,False
 NX-10043,Dell Periferico Max,perifericos,Dell,22892.0,59.0,False,2026-03-11,False,False
 NX-10186,Dell Rede Max,redes,Dell,494449.0,9.0,False,2020-04-01,False,False
 NX-11067,HP Smartphone G5,smartphones,HP,58836.0,19.0,False,2023-03-16,False,False
@@ -204,15 +204,15 @@ NX-10370,Corsair Cables y adaptadore X,cables y adaptadores,Corsair,1137498.0,60
 NX-11368,HP Smartphone G5,smartphones,HP,495667.0,2.0,False,2020-11-24,False,False
 NX-10956,Dell Smartphone Plus,smartphones,Dell,17887.0,14.0,True,2021-10-14,False,True
 NX-10379,Logitech Monitore Pro,monitores,Logitech,10733.0,300.0,True,2025-05-13,False,True
-NX-10492,Acer Gaming G5,gaming,Acer,,0.0,True,2025-10-21,False,False
+NX-10492,Acer Gaming G5,gaming,Acer,22656.0,0.0,True,2025-10-21,False,False
 NX-10254,Asus Periferico Pro,perifericos,Asus,65450.0,3.0,False,2020-03-06,False,False
 NX-10777,Kingston Cables y adaptadore Pro,cables y adaptadores,Kingston,10742.0,186.0,True,2024-05-07,False,True
 NX-11380,Apple Audio X,audio,Apple,9015.0,114.0,False,2022-04-14,False,False
 NX-10862,LG Componente V2,componentes,LG,20838.0,0.0,True,2026-05-12,False,False
 NX-10865,Samsung Cables y adaptadore V2,cables y adaptadores,Samsung,98095.0,6.0,False,2019-06-22,False,False
 NX-10234,Acer Componente Air,componentes,Acer,78421.0,257.0,False,2025-01-17,False,False
-NX-10886,Dell Cables y adaptadore Air,cables y adaptadores,Dell,,0.0,False,2020-03-05,False,False
-NX-11286,HP Notebook Pro,notebooks,HP,0.0,35.0,True,2025-03-15,False,False
+NX-10886,Dell Cables y adaptadore Air,cables y adaptadores,Dell,32081.0,0.0,False,2020-03-05,False,False
+NX-11286,HP Notebook Pro,notebooks,HP,32927.5,35.0,True,2025-03-15,False,False
 NX-10599,Xiaomi Periferico Air,perifericos,Xiaomi,9232.0,227.0,True,2019-03-21,False,True
 NX-10141,Apple Almacenamiento Pro,almacenamiento,Apple,37902.0,0.0,False,2024-09-21,False,False
 NX-11422,Corsair Componente Max,componentes,Corsair,344181.0,159.0,False,2019-12-31,False,False
@@ -220,7 +220,7 @@ NX-10389,MSI Monitore V2,monitores,MSI,31251.0,3.0,True,2020-08-06,False,True
 NX-10867,Samsung Periferico X,perifericos,Samsung,21323.0,0.0,True,2021-11-24,False,False
 NX-10702,Corsair Almacenamiento Max,almacenamiento,Corsair,166060.0,4.0,True,2025-10-18,False,True
 NX-11450,Dell Smartphone V2,smartphones,Dell,851461.0,17.0,True,2024-03-16,False,True
-NX-11369,Dell Rede X,redes,Dell,22287.0,-10.0,True,2023-09-27,False,False
+NX-11369,Dell Rede X,redes,Dell,22287.0,0.0,True,2023-09-27,False,False
 NX-11106,TP-Link Periferico Air,perifericos,TP-Link,11051.0,5.0,True,2022-08-19,False,True
 NX-11484,Apple Monitore Max,monitores,Apple,94550.0,1.0,False,2019-03-12,False,False
 NX-10354,Samsung Monitore Pro,monitores,Samsung,19585.0,4.0,True,2025-04-30,False,True
@@ -239,9 +239,9 @@ NX-10399,Asus Componente Plus,componentes,Asus,88133.0,2.0,True,2023-10-23,True,
 NX-11272,Acer Audio Air,audio,Acer,501261.0,3.0,False,2024-12-04,False,False
 NX-10534,Corsair Notebook G5,notebooks,Corsair,17781.0,0.0,True,2019-08-29,False,False
 NX-10978,Asus Componente X,componentes,Asus,10343.0,6.0,False,2022-06-17,False,False
-NX-10559,Lenovo Gaming Air,gaming,Lenovo,0.0,2.0,False,2022-01-14,False,False
+NX-10559,Lenovo Gaming Air,gaming,Lenovo,22656.0,2.0,False,2022-01-14,False,False
 NX-11354,Gigabyte Audio Pro,audio,Gigabyte,53616.0,25.0,True,2019-09-24,False,True
-NX-10181,Asus Almacenamiento Pro,almacenamiento,Asus,,52.0,False,2019-08-25,False,False
+NX-10181,Asus Almacenamiento Pro,almacenamiento,Asus,36335.5,52.0,False,2019-08-25,False,False
 NX-10546,Asus Monitore Plus,monitores,Asus,33367.0,10.0,True,2025-01-04,False,True
 NX-10759,HP Smartphone Air,smartphones,HP,80312.0,48.0,True,2020-02-02,False,True
 NX-10763,Xiaomi Audio Plus,audio,Xiaomi,79727.0,1.0,True,2024-01-26,False,False
@@ -250,7 +250,7 @@ NX-10694,Asus Almacenamiento Plus,almacenamiento,Asus,37164.0,0.0,True,2022-09-0
 NX-10497,MSI Componente X,componentes,MSI,18452.0,2.0,False,2024-03-28,False,False
 NX-10263,TP-Link Notebook Air,notebooks,TP-Link,341134.0,50.0,True,2025-04-01,False,True
 NX-11092,Apple Cables y adaptadore Max,cables y adaptadores,Apple,32415.0,6.0,False,2022-09-12,False,False
-NX-11404,Dell Almacenamiento Air,almacenamiento,Dell,0.0,5.0,True,2019-08-19,False,False
+NX-11404,Dell Almacenamiento Air,almacenamiento,Dell,36335.5,5.0,True,2019-08-19,False,False
 NX-10019,TP-Link Cables y adaptadore Max,cables y adaptadores,TP-Link,22645.0,52.0,False,2021-06-03,False,False
 NX-11289,LG Componente Lite,componentes,LG,34778.0,4.0,False,2024-09-20,False,False
 NX-10312,Dell Notebook Max,notebooks,Dell,33648.0,0.0,True,2019-09-05,False,False
@@ -273,7 +273,7 @@ NX-10919,Samsung Monitore Air,monitores,Samsung,89191.0,5.0,False,2024-06-04,Fal
 NX-10131,TP-Link Gaming Max,gaming,TP-Link,18497.0,44.0,False,2022-10-29,False,False
 NX-10500,Lenovo Smartphone Plus,smartphones,Lenovo,34791.0,0.0,True,2022-01-07,False,False
 NX-11300,Samsung Cables y adaptadore X,cables y adaptadores,Samsung,127877.0,0.0,False,2025-03-01,False,False
-NX-10116,Lenovo Cables y adaptadore Plus,cables y adaptadores,Lenovo,9329.0,-12.0,True,2024-08-29,False,False
+NX-10116,Lenovo Cables y adaptadore Plus,cables y adaptadores,Lenovo,9329.0,0.0,True,2024-08-29,False,False
 NX-11472,Acer Gaming Lite,gaming,Acer,89336.0,0.0,True,2020-07-29,False,False
 NX-10749,Samsung Almacenamiento V2,almacenamiento,Samsung,10792.0,54.0,False,2024-09-27,False,False
 NX-10515,LG Monitore V2,monitores,LG,21923.0,4.0,False,2020-11-14,False,False
@@ -283,7 +283,7 @@ NX-11456,HP Rede Max,redes,HP,33121.0,2.0,False,2021-10-16,False,False
 NX-10932,Dell Almacenamiento Air,almacenamiento,Dell,64421.0,7.0,True,2021-11-23,False,True
 NX-10620,Gigabyte Almacenamiento Max,almacenamiento,Gigabyte,158746.0,0.0,False,2021-03-01,False,False
 NX-11116,Asus Periferico Plus,perifericos,Asus,18044.0,117.0,True,2021-03-14,False,True
-NX-10781,Kingston Smartphone X,smartphones,Kingston,22196.0,-11.0,True,2026-05-11,False,False
+NX-10781,Kingston Smartphone X,smartphones,Kingston,22196.0,0.0,True,2026-05-11,False,False
 NX-10105,Kingston Audio V2,audio,Kingston,19015.0,55.0,True,2022-05-11,False,True
 NX-11252,Asus Almacenamiento V2,almacenamiento,Asus,22053.0,0.0,True,2023-09-21,False,False
 NX-10603,Asus Gaming G5,gaming,Asus,10960.0,1.0,False,2023-09-13,False,False
@@ -302,7 +302,7 @@ NX-10423,Asus Periferico Air,perifericos,Asus,34555.0,2.0,True,2022-10-25,False,
 NX-10095,Corsair Rede Max,redes,Corsair,10778.0,37.0,True,2020-03-23,False,True
 NX-11119,MSI Almacenamiento Air,almacenamiento,MSI,90264.0,5.0,True,2022-03-20,False,True
 NX-10883,Corsair Smartphone V2,smartphones,Corsair,9463.0,18.0,False,2025-03-04,False,False
-NX-10548,Kingston Componente Air,componentes,Kingston,58751.0,-7.0,False,2022-04-26,False,False
+NX-10548,Kingston Componente Air,componentes,Kingston,58751.0,0.0,False,2022-04-26,False,False
 NX-11298,Lenovo Periferico Pro,perifericos,Lenovo,22625.0,53.0,False,2025-07-13,False,False
 NX-11388,Xiaomi Monitore Pro,monitores,Xiaomi,8503.0,19.0,False,2021-06-04,False,False
 NX-10643,Asus Audio V2,audio,Asus,145963.0,276.0,True,2025-02-18,False,True
@@ -316,7 +316,7 @@ NX-10073,Logitech Audio Max,audio,Logitech,33651.0,0.0,True,2025-09-28,False,Fal
 NX-10520,Apple Rede Lite,redes,Apple,36207.0,7.0,True,2022-09-11,True,True
 NX-10436,Apple Periferico Pro,perifericos,Apple,32800.0,4.0,False,2025-12-20,False,False
 NX-10056,Gigabyte Almacenamiento Plus,almacenamiento,Gigabyte,34583.0,73.0,True,2023-09-23,False,True
-NX-10911,Apple Periferico V2,perifericos,Apple,,317.0,True,2021-08-19,False,False
+NX-10911,Apple Periferico V2,perifericos,Apple,32947.5,317.0,True,2021-08-19,False,False
 NX-10462,Logitech Periferico G5,perifericos,Logitech,11031.0,126.0,True,2021-03-02,False,True
 NX-10188,LG Gaming G5,gaming,LG,8547.0,8.0,False,2025-08-25,False,False
 NX-11440,Kingston Rede X,redes,Kingston,21741.0,20.0,True,2026-01-04,False,True
@@ -333,7 +333,7 @@ NX-11446,Corsair Cables y adaptadore Pro,cables y adaptadores,Corsair,424301.0,1
 NX-10013,LG Notebook Pro,notebooks,LG,8706.0,34.0,False,2023-05-03,False,False
 NX-10947,Acer Audio G5,audio,Acer,57233.0,0.0,False,2020-04-03,False,False
 NX-10367,Acer Componente G5,componentes,Acer,51726.0,3.0,True,2022-07-07,False,True
-NX-10636,HP Rede Max,redes,HP,,45.0,True,2020-03-15,False,False
+NX-10636,HP Rede Max,redes,HP,32275.0,45.0,True,2020-03-15,False,False
 NX-11373,Corsair Componente V2,componentes,Corsair,17454.0,0.0,True,2025-10-16,False,False
 NX-10888,MSI Componente Plus,componentes,MSI,30598.0,2.0,True,2025-02-25,False,False
 NX-10410,HP Gaming G5,gaming,HP,84958.0,0.0,False,2020-04-12,False,False
@@ -343,7 +343,7 @@ NX-11401,Lenovo Rede V2,redes,Lenovo,9162.0,6.0,True,2020-12-26,False,True
 NX-11187,Samsung Notebook Pro,notebooks,Samsung,9893.0,16.0,False,2024-12-09,False,False
 NX-10901,LG Audio Air,audio,LG,148365.0,31.0,True,2023-02-10,False,True
 NX-10351,Xiaomi Almacenamiento Max,almacenamiento,sin_dato,32259.0,10.0,True,2023-12-09,False,True
-NX-10557,Samsung Almacenamiento Air,almacenamiento,Samsung,141833.0,,False,2020-10-14,False,False
+NX-10557,Samsung Almacenamiento Air,almacenamiento,Samsung,141833.0,0.0,False,2020-10-14,False,False
 NX-10280,TP-Link Notebook G5,notebooks,TP-Link,10088.0,40.0,True,2025-03-01,False,True
 NX-10618,Lenovo Gaming V2,gaming,Lenovo,33473.0,5.0,False,2021-01-07,False,False
 NX-10814,Xiaomi Rede Plus,redes,Xiaomi,10883.0,0.0,False,2021-10-22,False,False
@@ -369,30 +369,30 @@ NX-10652,MSI Rede V2,redes,MSI,10185.0,8.0,True,2020-06-06,False,True
 NX-11142,,gaming,LG,20191.0,8.0,True,2024-09-15,False,True
 NX-10176,Logitech Monitore Lite,monitores,Logitech,18489.0,8.0,True,2022-09-07,True,True
 NX-10737,Logitech Gaming V2,gaming,Logitech,22457.0,5.0,False,2026-01-30,False,False
-NX-11190,Acer Smartphone X,smartphones,Acer,33530.0,,False,2021-10-01,False,False
+NX-11190,Acer Smartphone X,smartphones,Acer,33530.0,0.0,False,2021-10-01,False,False
 NX-11081,TP-Link Componente G5,componentes,TP-Link,21046.0,26.0,False,2021-08-10,False,False
 NX-10300,HP Almacenamiento Max,almacenamiento,HP,51452.0,0.0,True,2019-03-08,False,False
 NX-10821,Asus Almacenamiento Plus,almacenamiento,Asus,21087.0,29.0,False,2024-11-04,False,False
 NX-10253,Gigabyte Monitore Pro,monitores,Gigabyte,90713.0,0.0,True,2020-09-04,False,False
 NX-11489,Corsair Almacenamiento Air,almacenamiento,Corsair,99635.0,0.0,True,2021-12-24,False,False
 NX-11334,HP Monitore V2,monitores,HP,19286.0,4.0,True,2022-01-24,False,True
-NX-11202,TP-Link Audio X,audio,TP-Link,0.0,7.0,True,2024-07-01,False,False
+NX-11202,TP-Link Audio X,audio,TP-Link,22963.0,7.0,True,2024-07-01,False,False
 NX-10558,HP Almacenamiento V2,almacenamiento,HP,9501.0,33.0,False,2025-01-29,False,False
-NX-10413,Lenovo Monitore Air,monitores,Lenovo,422237.0,,True,2020-06-22,False,False
+NX-10413,Lenovo Monitore Air,monitores,Lenovo,422237.0,0.0,True,2020-06-22,False,False
 NX-10208,Acer Notebook Max,notebooks,Acer,11178.0,360.0,True,2019-02-28,False,True
 NX-10997,Lenovo Rede X,redes,Lenovo,128251.0,0.0,False,2025-08-19,False,False
 NX-10395,HP Periferico Max,perifericos,HP,157958.0,163.0,False,2023-06-24,False,False
 NX-10611,Asus Monitore V2,monitores,Asus,64486.0,5.0,False,2019-06-21,False,False
-NX-11370,Logitech Monitore Pro,monitores,Logitech,9634.0,-9.0,False,2023-06-20,False,False
+NX-11370,Logitech Monitore Pro,monitores,Logitech,9634.0,0.0,False,2023-06-20,False,False
 NX-10855,LG Monitore Max,monitores,LG,20927.0,28.0,True,2021-01-01,False,True
 NX-11129,,cables y adaptadores,Samsung,62753.0,254.0,True,2022-08-08,False,True
-NX-11322,Kingston Monitore Max,monitores,Kingston,0.0,314.0,True,2025-02-08,False,False
+NX-11322,Kingston Monitore Max,monitores,Kingston,30390.5,314.0,True,2025-02-08,False,False
 NX-10402,Asus Rede V2,redes,Asus,9622.0,55.0,False,2021-06-01,False,False
 NX-10161,Corsair Cables y adaptadore V2,cables y adaptadores,Corsair,20060.0,14.0,True,2020-06-05,False,True
-NX-10287,,componentes,Dell,0.0,0.0,True,2023-08-07,False,False
+NX-10287,,componentes,Dell,33046.5,0.0,True,2023-08-07,False,False
 NX-10136,Corsair Smartphone Air,smartphones,Corsair,21820.0,0.0,False,2023-11-20,False,False
 NX-10316,Xiaomi Rede V2,redes,Xiaomi,82515.0,0.0,True,2024-09-26,False,False
-NX-10299,Xiaomi Cables y adaptadore Plus,cables y adaptadores,Xiaomi,,6.0,True,2024-10-24,False,False
+NX-10299,Xiaomi Cables y adaptadore Plus,cables y adaptadores,Xiaomi,32081.0,6.0,True,2024-10-24,False,False
 NX-10541,HP Notebook G5,notebooks,HP,405025.0,8.0,False,2024-10-05,False,False
 NX-10250,Gigabyte Smartphone Max,smartphones,Gigabyte,129132.0,328.0,True,2020-12-19,False,True
 NX-10589,TP-Link Periferico V2,perifericos,TP-Link,8982.0,149.0,False,2026-02-24,False,False
@@ -422,7 +422,7 @@ NX-10429,Logitech Notebook X,notebooks,Logitech,167495.0,0.0,True,2020-08-29,Fal
 NX-10487,LG Audio G5,audio,LG,67203.0,17.0,True,2025-05-28,False,True
 NX-10891,Gigabyte Monitore Pro,monitores,Gigabyte,9764.0,0.0,True,2024-07-17,False,False
 NX-10311,MSI Periferico V2,perifericos,MSI,58349.0,7.0,False,2019-08-19,False,False
-NX-10913,LG Rede Pro,redes,LG,0.0,1.0,False,2025-11-09,False,False
+NX-10913,LG Rede Pro,redes,LG,32275.0,1.0,False,2025-11-09,False,False
 NX-10144,Samsung Smartphone Air,smartphones,Samsung,68785.0,33.0,True,2023-01-15,False,True
 NX-11045,HP Rede G5,redes,HP,155834.0,0.0,True,2023-11-27,False,False
 NX-10348,Acer Monitore V2,monitores,Acer,38913.0,0.0,False,2022-01-15,False,False
@@ -430,7 +430,7 @@ NX-11321,MSI Smartphone V2,smartphones,MSI,10404.0,3.0,False,2024-01-03,False,Fa
 NX-10507,Kingston Componente Max,componentes,Kingston,92662.0,47.0,False,2020-06-08,False,False
 NX-11249,LG Almacenamiento Max,almacenamiento,LG,36346.0,7.0,False,2020-04-05,False,False
 NX-10797,Corsair Gaming Lite,gaming,Corsair,10431.0,23.0,False,2022-01-03,False,False
-NX-10847,LG Componente Plus,componentes,LG,22701.0,,False,2022-01-28,False,False
+NX-10847,LG Componente Plus,componentes,LG,22701.0,0.0,False,2022-01-28,False,False
 NX-11228,Gigabyte Rede Air,redes,Gigabyte,54033.0,22.0,True,2021-07-26,False,True
 NX-11229,Acer Monitore Pro,monitores,Acer,85706.0,2.0,False,2026-01-26,False,False
 NX-11013,Xiaomi Monitore Max,monitores,Xiaomi,18013.0,4.0,True,2021-06-26,False,True
@@ -442,7 +442,7 @@ NX-10984,LG Notebook Plus,notebooks,LG,11130.0,227.0,True,2022-11-17,False,True
 NX-11435,Asus Gaming Lite,gaming,Asus,21001.0,299.0,False,2022-04-12,False,False
 NX-10214,Samsung Rede X,redes,Samsung,38168.0,0.0,False,2022-05-11,False,False
 NX-10992,Acer Cables y adaptadore Pro,cables y adaptadores,Acer,35479.0,110.0,True,2019-08-29,False,True
-NX-10601,Lenovo Periferico Lite,perifericos,Lenovo,59181.0,-1.0,False,2022-08-04,False,False
+NX-10601,Lenovo Periferico Lite,perifericos,Lenovo,59181.0,0.0,False,2022-08-04,False,False
 NX-10345,Gigabyte Monitore G5,monitores,Gigabyte,59679.0,25.0,True,2025-01-20,False,True
 NX-10101,Kingston Audio Air,audio,Kingston,53633.0,33.0,True,2024-04-28,False,True
 NX-11020,Lenovo Monitore X,monitores,Lenovo,19945.0,0.0,True,2020-06-12,False,False
@@ -451,7 +451,7 @@ NX-10456,Apple Gaming Air,gaming,Apple,58623.0,43.0,True,2021-08-16,False,True
 NX-10597,MSI Periferico Lite,perifericos,MSI,55680.0,56.0,False,2025-08-30,False,False
 NX-11118,Kingston Periferico Air,perifericos,Kingston,151863.0,3.0,False,2019-11-17,False,False
 NX-11073,Corsair Cables y adaptadore V2,cables y adaptadores,Corsair,11011.0,3.0,False,2020-03-31,False,False
-NX-10805,Gigabyte Cables y adaptadore G5,cables y adaptadores,Gigabyte,140696.0,-8.0,True,2024-05-26,False,False
+NX-10805,Gigabyte Cables y adaptadore G5,cables y adaptadores,Gigabyte,140696.0,0.0,True,2024-05-26,False,False
 NX-10974,Samsung Monitore G5,monitores,Samsung,17257.0,0.0,True,2024-02-04,False,False
 NX-11120,Kingston Periferico Plus,perifericos,Kingston,35614.0,34.0,False,2026-01-05,False,False
 NX-11451,Apple Rede Max,redes,Apple,64910.0,0.0,False,2021-06-03,False,False
@@ -465,7 +465,7 @@ NX-10560,LG Smartphone V2,smartphones,LG,94586.0,0.0,False,2024-10-28,True,False
 NX-10014,HP Almacenamiento Max,almacenamiento,HP,8532.0,5.0,True,2019-10-10,False,True
 NX-11287,TP-Link Rede Plus,redes,TP-Link,36764.0,0.0,False,2024-05-21,False,False
 NX-11389,Samsung Almacenamiento Air,almacenamiento,Samsung,9607.0,14.0,True,2021-10-18,False,True
-NX-10556,HP Cables y adaptadore Air,cables y adaptadores,HP,,0.0,False,2025-05-11,False,False
+NX-10556,HP Cables y adaptadore Air,cables y adaptadores,HP,32081.0,0.0,False,2025-05-11,False,False
 NX-11330,TP-Link Periferico X,perifericos,TP-Link,35281.0,49.0,False,2025-01-08,False,False
 NX-10272,LG Periferico Air,perifericos,LG,145916.0,4.0,False,2020-05-22,False,False
 NX-11425,Gigabyte Monitore Plus,monitores,Gigabyte,51683.0,2.0,True,2019-02-27,False,False
@@ -477,15 +477,15 @@ NX-11241,Apple Rede Plus,redes,Apple,17023.0,209.0,True,2019-10-12,False,True
 NX-11418,Kingston Notebook Lite,notebooks,Kingston,19919.0,0.0,True,2019-11-09,False,False
 NX-10324,Dell Componente V2,componentes,Dell,9730.0,0.0,True,2022-07-23,False,False
 NX-10525,Asus Almacenamiento V2,almacenamiento,Asus,9754.0,0.0,False,2020-09-12,False,False
-NX-11420,Acer Periferico Plus,perifericos,Acer,1412083.0,-10.0,True,2019-11-11,False,False
+NX-11420,Acer Periferico Plus,perifericos,Acer,1412083.0,0.0,True,2019-11-11,False,False
 NX-10622,Gigabyte Periferico G5,perifericos,Gigabyte,64307.0,0.0,True,2023-10-03,False,False
-NX-10484,Apple Componente Air,componentes,Apple,0.0,32.0,True,2020-04-28,False,False
+NX-10484,Apple Componente Air,componentes,Apple,33046.5,32.0,True,2020-04-28,False,False
 NX-10966,Apple Periferico Lite,perifericos,Apple,311359.0,2.0,False,2020-05-23,False,False
 NX-10960,,notebooks,Asus,9813.0,5.0,False,2026-04-10,False,False
 NX-10453,Samsung Audio X,audio,Samsung,1356222.0,43.0,True,2024-04-10,False,True
 NX-10111,LG Gaming Plus,gaming,LG,36275.0,3.0,False,2023-03-29,False,False
 NX-11191,MSI Notebook V2,notebooks,MSI,29932.0,0.0,False,2021-01-28,False,False
-NX-10875,MSI Componente Pro,componentes,MSI,1032920.0,-4.0,False,2025-06-04,False,False
+NX-10875,MSI Componente Pro,componentes,MSI,1032920.0,0.0,False,2025-06-04,False,False
 NX-10706,MSI Rede Plus,redes,MSI,32122.0,7.0,True,2024-03-31,False,True
 NX-11032,Gigabyte Smartphone G5,smartphones,Gigabyte,35081.0,4.0,False,2024-04-10,False,False
 NX-11268,Lenovo Rede Max,redes,Lenovo,96863.0,0.0,False,2020-09-19,False,False
@@ -495,14 +495,14 @@ NX-11258,HP Notebook Max,notebooks,HP,52413.0,28.0,True,2022-06-23,False,True
 NX-11185,Apple Smartphone Pro,smartphones,Apple,19572.0,0.0,False,2019-08-09,False,False
 NX-10770,LG Rede Plus,redes,LG,9271.0,202.0,True,2024-04-25,False,True
 NX-10922,Dell Monitore Air,monitores,Dell,22218.0,166.0,False,2022-04-29,False,False
-NX-11181,HP Rede X,redes,HP,0.0,77.0,True,2022-05-18,False,False
+NX-11181,HP Rede X,redes,HP,32275.0,77.0,True,2022-05-18,False,False
 NX-11019,LG Audio Max,audio,LG,31747.0,1.0,False,2023-01-30,False,False
 NX-10271,Corsair Componente Pro,componentes,Corsair,9697.0,37.0,True,2024-12-31,False,True
 NX-10843,,monitores,Apple,422381.0,1.0,True,2023-12-19,False,False
 NX-11034,Logitech Notebook Max,notebooks,Logitech,434724.0,0.0,True,2021-04-08,False,False
 NX-10159,Asus Rede V2,redes,Asus,319601.0,44.0,False,2025-01-30,False,False
 NX-11395,Dell Rede G5,redes,Dell,32709.0,6.0,False,2025-12-18,False,False
-NX-11486,Asus Almacenamiento Lite,almacenamiento,Asus,0.0,23.0,True,2019-04-24,False,False
+NX-11486,Asus Almacenamiento Lite,almacenamiento,Asus,36335.5,23.0,True,2019-04-24,False,False
 NX-11466,HP Periferico V2,perifericos,HP,20380.0,4.0,False,2020-12-05,False,False
 NX-10193,HP Periferico Pro,perifericos,HP,55943.0,2.0,True,2023-03-23,False,False
 NX-10459,Xiaomi Audio Pro,audio,Xiaomi,9779.0,197.0,False,2022-04-23,False,False
@@ -527,7 +527,7 @@ NX-10503,TP-Link Audio Max,audio,TP-Link,38672.0,154.0,False,2026-06-08,False,Fa
 NX-10125,Asus Audio V2,audio,Asus,9485.0,9.0,False,2022-04-17,False,False
 NX-10663,Apple Monitore Plus,monitores,Apple,39950.0,19.0,False,2023-11-10,False,False
 NX-10496,Dell Smartphone Max,smartphones,Dell,68760.0,7.0,False,2020-08-19,False,False
-NX-10137,Lenovo Notebook Max,notebooks,Lenovo,,172.0,True,2021-01-01,False,False
+NX-10137,Lenovo Notebook Max,notebooks,Lenovo,32927.5,172.0,True,2021-01-01,False,False
 NX-11226,Dell Almacenamiento Pro,almacenamiento,Dell,79643.0,49.0,True,2022-10-27,False,True
 NX-11227,Xiaomi Componente Max,componentes,Xiaomi,30679.0,0.0,True,2022-09-22,False,False
 NX-10068,Lenovo Rede V2,redes,Lenovo,87033.0,1.0,True,2021-03-20,False,False
@@ -547,13 +547,13 @@ NX-10149,Xiaomi Gaming Lite,gaming,Xiaomi,31288.0,0.0,True,2019-05-19,False,Fals
 NX-10609,Samsung Notebook Pro,notebooks,Samsung,37055.0,4.0,True,2024-02-15,False,True
 NX-11180,Apple Audio Pro,audio,Apple,9852.0,11.0,False,2025-08-23,False,False
 NX-10476,HP Almacenamiento Max,almacenamiento,HP,39486.0,42.0,False,2020-02-06,False,False
-NX-10219,Logitech Componente X,componentes,Logitech,19094.0,-6.0,True,2023-01-05,False,False
+NX-10219,Logitech Componente X,componentes,Logitech,19094.0,0.0,True,2023-01-05,False,False
 NX-11363,Gigabyte Almacenamiento Pro,almacenamiento,Gigabyte,76966.0,3.0,False,2024-04-01,False,False
 NX-11133,TP-Link Notebook Air,notebooks,TP-Link,10924.0,6.0,True,2025-08-27,False,True
-NX-11260,Samsung Rede Air,redes,Samsung,0.0,4.0,True,2021-01-01,False,False
+NX-11260,Samsung Rede Air,redes,Samsung,32275.0,4.0,True,2021-01-01,False,False
 NX-11213,Lenovo Smartphone V2,smartphones,Lenovo,30327.0,7.0,False,2023-02-05,False,False
 NX-11150,LG Audio Max,audio,LG,8951.0,63.0,False,2023-10-05,False,False
-NX-11084,Dell Gaming G5,gaming,Dell,,3.0,False,2022-12-18,False,False
+NX-11084,Dell Gaming G5,gaming,Dell,22656.0,3.0,False,2022-12-18,False,False
 NX-11454,,smartphones,LG,87101.0,313.0,False,2022-07-09,False,False
 NX-11018,,audio,Acer,9200.0,18.0,False,2019-08-26,False,False
 NX-10825,Gigabyte Notebook V2,notebooks,Gigabyte,83439.0,22.0,False,2019-11-12,False,False
@@ -561,14 +561,14 @@ NX-10838,Corsair Monitore V2,monitores,Corsair,96405.0,48.0,True,2023-07-24,Fals
 NX-10103,Samsung Componente Max,componentes,Samsung,77685.0,21.0,True,2025-09-28,False,True
 NX-11452,HP Gaming Max,gaming,HP,8965.0,169.0,False,2024-11-09,False,False
 NX-10306,Corsair Gaming X,gaming,Corsair,37060.0,39.0,False,2023-01-21,False,False
-NX-10042,Xiaomi Notebook V2,notebooks,Xiaomi,0.0,46.0,False,2026-05-14,False,False
+NX-10042,Xiaomi Notebook V2,notebooks,Xiaomi,32927.5,46.0,False,2026-05-14,False,False
 NX-10656,Gigabyte Cables y adaptadore Air,cables y adaptadores,Gigabyte,32416.0,4.0,False,2021-08-13,False,False
 NX-11113,Samsung Periferico Air,perifericos,Samsung,10993.0,88.0,False,2025-07-18,False,False
 NX-11203,Dell Notebook Lite,notebooks,Dell,18358.0,6.0,True,2022-01-10,False,True
 NX-11188,LG Periferico Pro,perifericos,LG,10219.0,6.0,False,2023-06-01,False,False
 NX-10368,MSI Componente Pro,componentes,MSI,1251352.0,5.0,False,2025-04-04,False,False
 NX-11089,LG Periferico V2,perifericos,LG,9167.0,7.0,True,2019-03-06,False,True
-NX-10690,TP-Link Smartphone Air,smartphones,TP-Link,,0.0,False,2021-05-09,False,False
+NX-10690,TP-Link Smartphone Air,smartphones,TP-Link,30419.0,0.0,False,2021-05-09,False,False
 NX-11145,Dell Almacenamiento Air,almacenamiento,Dell,51700.0,18.0,False,2024-02-03,False,False
 NX-11449,MSI Periferico G5,perifericos,MSI,91332.0,357.0,True,2024-06-18,False,True
 NX-10088,Gigabyte Audio Plus,audio,Gigabyte,20741.0,4.0,False,2023-03-02,False,False
@@ -581,7 +581,7 @@ NX-10786,Acer Gaming Pro,gaming,Acer,10021.0,28.0,True,2021-01-25,False,True
 NX-10858,Samsung Almacenamiento Lite,almacenamiento,sin_dato,39253.0,27.0,True,2022-03-30,False,True
 NX-11006,Apple Smartphone Plus,smartphones,Apple,10509.0,44.0,False,2022-07-10,False,False
 NX-10598,Gigabyte Audio Air,audio,Gigabyte,312359.0,10.0,True,2026-03-05,False,True
-NX-11350,Samsung Almacenamiento Max,almacenamiento,Samsung,,73.0,True,2025-07-21,False,False
+NX-11350,Samsung Almacenamiento Max,almacenamiento,Samsung,36335.5,73.0,True,2025-07-21,False,False
 NX-11058,LG Smartphone Lite,smartphones,LG,8550.0,5.0,True,2021-07-11,False,True
 NX-10976,Asus Almacenamiento X,almacenamiento,Asus,34393.0,0.0,True,2020-07-22,False,False
 NX-10216,TP-Link Componente X,componentes,TP-Link,22042.0,12.0,False,2023-12-24,False,False
@@ -593,11 +593,11 @@ NX-10151,HP Periferico Lite,perifericos,HP,255296.0,6.0,False,2025-11-26,False,F
 NX-10732,Logitech Smartphone Air,smartphones,Logitech,19900.0,16.0,False,2021-11-12,False,False
 NX-10898,,audio,Samsung,32988.0,4.0,True,2024-03-14,False,True
 NX-10850,HP Cables y adaptadore Plus,cables y adaptadores,HP,8785.0,2.0,True,2019-10-12,False,False
-NX-10120,Logitech Notebook Air,notebooks,Logitech,0.0,22.0,True,2019-12-17,False,False
+NX-10120,Logitech Notebook Air,notebooks,Logitech,32927.5,22.0,True,2019-12-17,False,False
 NX-11086,Asus Gaming Pro,gaming,Asus,30541.0,272.0,False,2022-06-14,False,False
-NX-10846,HP Monitore X,monitores,HP,9875.0,-9.0,False,2020-10-25,False,False
+NX-10846,HP Monitore X,monitores,HP,9875.0,0.0,False,2020-10-25,False,False
 NX-10799,Asus Monitore Lite,monitores,Asus,18096.0,10.0,True,2023-11-08,False,True
-NX-10707,Gigabyte Monitore X,monitores,Gigabyte,9764.0,-10.0,True,2020-06-06,False,False
+NX-10707,Gigabyte Monitore X,monitores,Gigabyte,9764.0,0.0,True,2020-06-06,False,False
 NX-10372,Corsair Notebook Max,notebooks,Corsair,291217.0,4.0,True,2022-07-06,False,True
 NX-10736,Logitech Monitore Air,monitores,Logitech,311160.0,135.0,False,2023-07-05,False,False
 NX-10438,Samsung Gaming Plus,gaming,sin_dato,20508.0,35.0,True,2021-04-17,False,True
@@ -612,7 +612,7 @@ NX-11332,Apple Audio Max,audio,Apple,35904.0,33.0,True,2023-08-26,False,True
 NX-10615,Dell Almacenamiento G5,almacenamiento,Dell,19964.0,8.0,True,2021-06-18,False,True
 NX-10115,Kingston Notebook Pro,notebooks,Kingston,10575.0,3.0,False,2019-09-29,False,False
 NX-11468,Xiaomi Smartphone Max,smartphones,Xiaomi,19775.0,308.0,False,2020-12-07,False,False
-NX-10415,Acer Rede Max,redes,Acer,,0.0,True,2020-08-04,False,False
+NX-10415,Acer Rede Max,redes,Acer,32275.0,0.0,True,2020-08-04,False,False
 NX-10784,TP-Link Rede X,redes,TP-Link,166910.0,7.0,False,2025-04-08,False,False
 NX-11198,HP Monitore Plus,monitores,HP,67686.0,26.0,False,2024-02-11,False,False
 NX-10142,Acer Periferico G5,perifericos,Acer,31085.0,283.0,False,2024-11-18,False,False
@@ -626,7 +626,7 @@ NX-10241,Asus Monitore V2,monitores,Asus,67805.0,5.0,True,2022-02-27,False,True
 NX-10578,Dell Notebook Max,notebooks,Dell,88107.0,252.0,True,2023-06-28,False,True
 NX-10740,Logitech Monitore G5,monitores,Logitech,9387.0,0.0,True,2021-09-16,False,False
 NX-11162,HP Notebook Plus,notebooks,HP,144076.0,10.0,False,2025-03-11,False,False
-NX-11426,HP Rede X,redes,HP,0.0,6.0,False,2021-03-24,False,False
+NX-11426,HP Rede X,redes,HP,32275.0,6.0,False,2021-03-24,False,False
 NX-10927,TP-Link Gaming Max,gaming,TP-Link,80323.0,42.0,True,2019-11-28,False,True
 NX-11240,Asus Rede Max,redes,Asus,34849.0,49.0,False,2022-05-16,False,False
 NX-10357,Logitech Componente G5,componentes,Logitech,9802.0,0.0,False,2021-07-24,False,False
@@ -639,11 +639,11 @@ NX-11291,Gigabyte Gaming Pro,gaming,Gigabyte,841399.0,319.0,True,2025-01-30,Fals
 NX-10244,LG Smartphone G5,smartphones,LG,76674.0,6.0,False,2022-03-26,False,False
 NX-11110,Xiaomi Rede Pro,redes,Xiaomi,10623.0,4.0,False,2025-10-11,False,False
 NX-11196,Gigabyte Audio Lite,audio,Gigabyte,33686.0,75.0,False,2024-06-20,False,False
-NX-11259,LG Almacenamiento Pro,almacenamiento,LG,341861.0,,True,2024-07-20,True,False
+NX-11259,LG Almacenamiento Pro,almacenamiento,LG,341861.0,0.0,True,2024-07-20,True,False
 NX-10441,Kingston Audio Pro,audio,Kingston,158672.0,1.0,True,2020-09-12,False,False
 NX-11457,Logitech Monitore X,monitores,Logitech,30316.0,6.0,True,2023-05-28,False,True
 NX-10876,LG Notebook G5,notebooks,LG,843185.0,7.0,True,2023-02-08,False,True
-NX-10485,MSI Smartphone Pro,smartphones,MSI,,117.0,False,2020-11-07,False,False
+NX-10485,MSI Smartphone Pro,smartphones,MSI,30419.0,117.0,False,2020-11-07,False,False
 NX-10089,Logitech Periferico Pro,perifericos,Logitech,133570.0,0.0,True,2025-04-20,False,False
 NX-10226,Kingston Rede Air,redes,Kingston,52132.0,3.0,False,2020-11-08,False,False
 NX-10376,Xiaomi Rede Max,redes,Xiaomi,431379.0,57.0,False,2024-02-11,False,False
@@ -668,7 +668,7 @@ NX-11047,TP-Link Audio Pro,audio,TP-Link,138169.0,0.0,False,2021-09-28,False,Fal
 NX-11134,Lenovo Componente Max,componentes,Lenovo,10324.0,8.0,False,2023-03-12,False,False
 NX-11225,Kingston Audio Plus,audio,Kingston,256758.0,6.0,True,2020-10-01,False,True
 NX-11109,Logitech Smartphone Pro,smartphones,Logitech,11083.0,347.0,True,2019-03-21,False,True
-NX-10062,Apple Rede X,redes,sin_dato,,0.0,True,2026-02-24,False,False
+NX-10062,Apple Rede X,redes,sin_dato,32275.0,0.0,True,2026-02-24,False,False
 NX-11223,Corsair Periferico Air,perifericos,Corsair,60552.0,1.0,True,2025-04-08,False,False
 NX-10679,Kingston Cables y adaptadore G5,cables y adaptadores,Kingston,20253.0,8.0,True,2022-09-25,False,True
 NX-11441,Gigabyte Gaming G5,gaming,Gigabyte,36568.0,210.0,True,2025-11-11,False,True
@@ -688,8 +688,8 @@ NX-11004,Xiaomi Audio Pro,audio,Xiaomi,86459.0,7.0,False,2025-03-07,False,False
 NX-10691,Corsair Rede Air,redes,Corsair,487261.0,353.0,False,2019-07-13,False,False
 NX-11114,Lenovo Gaming Lite,gaming,Lenovo,59405.0,13.0,True,2023-04-09,False,True
 NX-11122,MSI Notebook G5,notebooks,MSI,103257.0,12.0,True,2021-12-09,True,True
-NX-10708,Xiaomi Notebook Pro,notebooks,Xiaomi,0.0,1.0,True,2022-07-15,False,False
-NX-11483,Gigabyte Monitore G5,monitores,Gigabyte,21045.0,-5.0,True,2019-10-26,False,False
+NX-10708,Xiaomi Notebook Pro,notebooks,Xiaomi,32927.5,1.0,True,2022-07-15,False,False
+NX-11483,Gigabyte Monitore G5,monitores,Gigabyte,21045.0,0.0,True,2019-10-26,False,False
 NX-10473,Lenovo Notebook Lite,notebooks,Lenovo,22915.0,59.0,True,2019-06-02,True,True
 NX-10924,Xiaomi Periferico Max,perifericos,Xiaomi,131321.0,5.0,True,2021-01-22,False,True
 NX-10671,Kingston Periferico Air,perifericos,Kingston,18907.0,40.0,True,2021-01-23,False,True
@@ -700,10 +700,10 @@ NX-10662,Samsung Monitore V2,monitores,Samsung,20729.0,0.0,True,2025-09-26,False
 NX-10147,TP-Link Rede G5,redes,TP-Link,8873.0,53.0,True,2024-12-18,False,True
 NX-10511,LG Monitore Air,monitores,LG,34050.0,4.0,True,2020-04-22,False,True
 NX-11366,Asus Cables y adaptadore G5,cables y adaptadores,Asus,20129.0,31.0,True,2026-05-13,False,True
-NX-10421,Samsung Smartphone V2,smartphones,Samsung,10213.0,,True,2025-08-20,False,False
+NX-10421,Samsung Smartphone V2,smartphones,Samsung,10213.0,0.0,True,2025-08-20,False,False
 NX-10776,Asus Almacenamiento X,almacenamiento,Asus,83376.0,58.0,False,2026-01-03,False,False
 NX-10939,HP Notebook G5,notebooks,HP,21021.0,44.0,True,2021-01-03,False,True
-NX-11344,Kingston Gaming Air,gaming,Kingston,30609.0,-8.0,True,2023-12-23,False,False
+NX-11344,Kingston Gaming Air,gaming,Kingston,30609.0,0.0,True,2023-12-23,False,False
 NX-10910,Dell Cables y adaptadore G5,cables y adaptadores,Dell,17009.0,21.0,False,2021-02-28,False,False
 NX-10587,Xiaomi Notebook Air,notebooks,Xiaomi,33927.0,51.0,True,2023-07-30,False,True
 NX-11214,Gigabyte Cables y adaptadore Plus,cables y adaptadores,Gigabyte,10111.0,5.0,False,2019-02-06,False,False
@@ -715,13 +715,13 @@ NX-11103,Kingston Almacenamiento Lite,almacenamiento,Kingston,137232.0,279.0,Fal
 NX-10897,Apple Componente Max,componentes,Apple,91009.0,13.0,True,2019-03-01,False,True
 NX-10766,Asus Rede Plus,redes,Asus,10704.0,43.0,True,2025-01-08,True,True
 NX-10746,Lenovo Componente X,componentes,Lenovo,33107.0,232.0,True,2025-11-20,False,True
-NX-10189,HP Smartphone X,smartphones,HP,9513.0,-11.0,True,2020-02-09,False,False
+NX-10189,HP Smartphone X,smartphones,HP,9513.0,0.0,True,2020-02-09,False,False
 NX-11371,Lenovo Notebook Pro,notebooks,Lenovo,20839.0,54.0,False,2024-12-09,False,False
 NX-10330,Samsung Cables y adaptadore Plus,cables y adaptadores,Samsung,18139.0,300.0,True,2019-10-26,False,True
-NX-10002,Acer Smartphone Lite,smartphones,Acer,22426.0,-4.0,True,2024-09-28,False,False
+NX-10002,Acer Smartphone Lite,smartphones,Acer,22426.0,0.0,True,2024-09-28,False,False
 NX-11157,Dell Rede Pro,redes,Dell,11370.0,5.0,True,2024-04-23,False,True
 NX-10256,Dell Smartphone X,smartphones,Dell,9718.0,7.0,True,2022-03-01,False,True
-NX-11342,Lenovo Monitore Pro,monitores,Lenovo,0.0,377.0,True,2019-10-10,False,False
+NX-11342,Lenovo Monitore Pro,monitores,Lenovo,30390.5,377.0,True,2019-10-10,False,False
 NX-10493,Asus Monitore V2,monitores,Asus,77481.0,7.0,False,2021-08-16,False,False
 NX-11059,Samsung Monitore V2,monitores,Samsung,20094.0,22.0,True,2021-01-12,False,True
 NX-10267,LG Monitore Plus,monitores,LG,30465.0,11.0,False,2022-08-10,False,False
@@ -732,7 +732,7 @@ NX-10390,Asus Cables y adaptadore Plus,cables y adaptadores,Asus,18244.0,376.0,T
 NX-10239,Lenovo Notebook Pro,notebooks,Lenovo,10098.0,147.0,True,2022-09-27,False,True
 NX-11216,Kingston Smartphone Lite,smartphones,Kingston,59358.0,226.0,True,2022-03-13,False,True
 NX-10764,Gigabyte Periferico Lite,perifericos,Gigabyte,19969.0,8.0,True,2023-06-28,False,True
-NX-10887,Logitech Gaming Air,gaming,Logitech,1021890.0,-8.0,True,2025-04-14,False,False
+NX-10887,Logitech Gaming Air,gaming,Logitech,1021890.0,0.0,True,2025-04-14,False,False
 NX-11326,Samsung Periferico Pro,perifericos,Samsung,32524.0,15.0,True,2020-07-11,False,True
 NX-11010,Xiaomi Monitore Pro,monitores,Xiaomi,9081.0,36.0,True,2019-08-10,False,True
 NX-10547,MSI Gaming X,gaming,MSI,64084.0,57.0,True,2021-01-26,False,True
@@ -796,10 +796,10 @@ NX-10687,MSI Notebook V2,notebooks,MSI,296360.0,37.0,True,2022-10-11,False,True
 NX-10313,Apple Cables y adaptadore Pro,cables y adaptadores,Apple,11482.0,8.0,False,2019-04-28,False,False
 NX-11035,Apple Monitore X,monitores,Apple,59739.0,59.0,True,2025-02-08,False,True
 NX-11048,TP-Link Gaming Air,gaming,TP-Link,18593.0,5.0,True,2020-12-21,False,True
-NX-11498,Acer Monitore Air,monitores,Acer,9061.0,-10.0,True,2020-10-09,False,False
+NX-11498,Acer Monitore Air,monitores,Acer,9061.0,0.0,True,2020-10-09,False,False
 NX-10435,Lenovo Cables y adaptadore X,cables y adaptadores,Lenovo,10854.0,51.0,True,2019-08-03,False,True
-NX-10787,Dell Gaming G5,gaming,Dell,0.0,0.0,True,2022-09-29,False,False
-NX-10573,Asus Gaming V2,gaming,Asus,0.0,0.0,True,2021-11-25,False,False
+NX-10787,Dell Gaming G5,gaming,Dell,22656.0,0.0,True,2022-09-29,False,False
+NX-10573,Asus Gaming V2,gaming,Asus,22656.0,0.0,True,2021-11-25,False,False
 NX-10295,Xiaomi Rede Air,redes,Xiaomi,21015.0,4.0,False,2023-10-05,False,False
 NX-11100,Logitech Smartphone Pro,smartphones,Logitech,10615.0,0.0,True,2020-07-07,True,False
 NX-10277,Samsung Monitore Plus,monitores,Samsung,51596.0,0.0,False,2020-07-02,False,False
@@ -822,13 +822,13 @@ NX-11377,LG Almacenamiento Air,almacenamiento,LG,66919.0,365.0,True,2022-02-12,F
 NX-10790,Xiaomi Notebook V2,notebooks,Xiaomi,64194.0,0.0,False,2019-05-12,False,False
 NX-11437,Corsair Monitore Air,monitores,Corsair,10211.0,33.0,True,2022-06-28,False,True
 NX-11357,Samsung Notebook Max,notebooks,Samsung,59481.0,253.0,True,2021-06-24,False,True
-NX-10233,Xiaomi Rede Pro,redes,Xiaomi,259145.0,,False,2025-03-05,False,False
+NX-10233,Xiaomi Rede Pro,redes,Xiaomi,259145.0,0.0,False,2025-03-05,False,False
 NX-10118,Apple Smartphone X,smartphones,Apple,22596.0,0.0,False,2021-04-02,False,False
 NX-10904,Samsung Audio Plus,audio,Samsung,88344.0,115.0,True,2022-09-13,False,True
 NX-11115,Gigabyte Componente Pro,componentes,Gigabyte,68064.0,36.0,True,2023-11-18,False,True
 NX-10851,Xiaomi Almacenamiento V2,almacenamiento,Xiaomi,8656.0,6.0,True,2025-06-16,False,True
 NX-10331,Xiaomi Cables y adaptadore G5,cables y adaptadores,Xiaomi,10388.0,20.0,True,2024-09-09,False,True
-NX-10718,TP-Link Notebook Plus,notebooks,TP-Link,22734.0,-1.0,False,2025-02-16,False,False
+NX-10718,TP-Link Notebook Plus,notebooks,TP-Link,22734.0,0.0,False,2025-02-16,False,False
 NX-10422,HP Monitore Max,monitores,HP,9088.0,1.0,True,2024-07-13,False,False
 NX-10551,Xiaomi Smartphone Lite,smartphones,Xiaomi,19652.0,1.0,True,2024-06-09,False,False
 NX-10899,Corsair Gaming Plus,gaming,Corsair,32868.0,50.0,True,2024-10-28,False,True
@@ -837,7 +837,7 @@ NX-10171,HP Almacenamiento Lite,almacenamiento,HP,157850.0,14.0,True,2025-04-20,
 NX-10648,Logitech Periferico X,perifericos,Logitech,9050.0,169.0,True,2022-08-08,False,True
 NX-10591,Samsung Notebook Air,notebooks,Samsung,17812.0,41.0,False,2025-05-10,False,False
 NX-10584,Samsung Periferico Lite,perifericos,Samsung,10592.0,6.0,False,2023-10-10,False,False
-NX-10771,Dell Monitore V2,monitores,Dell,0.0,57.0,True,2023-01-19,False,False
+NX-10771,Dell Monitore V2,monitores,Dell,30390.5,57.0,True,2023-01-19,False,False
 NX-10646,LG Cables y adaptadore Plus,cables y adaptadores,LG,63834.0,0.0,False,2022-09-14,False,False
 NX-11364,Logitech Periferico Pro,perifericos,Logitech,326442.0,7.0,False,2024-02-08,False,False
 NX-11146,Dell Gaming G5,gaming,Dell,10746.0,6.0,False,2026-03-19,False,False
@@ -852,7 +852,7 @@ NX-10934,Xiaomi Monitore V2,monitores,Xiaomi,8676.0,34.0,True,2021-12-21,False,T
 NX-10794,Gigabyte Notebook Air,notebooks,Gigabyte,10295.0,0.0,True,2021-05-01,False,False
 NX-10815,Acer Cables y adaptadore V2,cables y adaptadores,Acer,18480.0,3.0,True,2019-09-19,False,True
 NX-11407,Samsung Componente Plus,componentes,Samsung,418038.0,0.0,True,2025-10-10,False,False
-NX-11339,LG Audio Plus,audio,LG,447430.0,,True,2024-11-10,False,False
+NX-11339,LG Audio Plus,audio,LG,447430.0,0.0,True,2024-11-10,False,False
 NX-10478,MSI Almacenamiento Air,almacenamiento,MSI,39011.0,44.0,True,2026-06-18,False,True
 NX-11108,Lenovo Monitore Lite,monitores,Lenovo,11099.0,87.0,False,2023-05-12,False,False
 NX-10225,Asus Almacenamiento Plus,almacenamiento,Asus,92057.0,0.0,False,2023-02-12,False,False
@@ -876,18 +876,18 @@ NX-11153,Gigabyte Rede Max,redes,Gigabyte,10944.0,0.0,True,2019-09-02,False,Fals
 NX-10711,TP-Link Audio V2,audio,TP-Link,39235.0,7.0,True,2021-03-31,False,True
 NX-10651,Gigabyte Componente G5,componentes,Gigabyte,81786.0,0.0,True,2026-04-12,False,False
 NX-11169,Dell Audio G5,audio,Dell,18423.0,6.0,True,2022-04-24,False,True
-NX-10641,Gigabyte Periferico Lite,perifericos,Gigabyte,59112.0,,True,2025-08-08,False,False
+NX-10641,Gigabyte Periferico Lite,perifericos,Gigabyte,59112.0,0.0,True,2025-08-08,False,False
 NX-10196,Corsair Cables y adaptadore Plus,cables y adaptadores,Corsair,22568.0,76.0,False,2021-12-03,False,False
 NX-10114,LG Periferico G5,perifericos,LG,34026.0,58.0,True,2020-11-09,False,True
 NX-10072,Corsair Periferico Lite,perifericos,Corsair,167829.0,4.0,True,2025-08-25,False,True
 NX-10461,Acer Cables y adaptadore G5,cables y adaptadores,Acer,77189.0,0.0,False,2024-10-06,False,False
 NX-10055,Asus Monitore Lite,monitores,Asus,61773.0,9.0,True,2024-07-07,False,True
-NX-11275,Gigabyte Cables y adaptadore Air,cables y adaptadores,Gigabyte,0.0,11.0,False,2024-06-08,False,False
+NX-11275,Gigabyte Cables y adaptadore Air,cables y adaptadores,Gigabyte,32081.0,11.0,False,2024-06-08,False,False
 NX-10942,HP Audio Max,audio,HP,19073.0,3.0,False,2025-05-29,False,False
 NX-11310,LG Gaming Plus,gaming,LG,934640.0,6.0,False,2021-12-21,False,False
 NX-11278,,audio,Dell,65676.0,4.0,True,2021-10-10,False,True
 NX-11149,MSI Gaming Lite,gaming,MSI,10194.0,6.0,False,2019-02-20,False,False
-NX-10033,Logitech Rede G5,redes,Logitech,,2.0,True,2024-01-27,False,False
+NX-10033,Logitech Rede G5,redes,Logitech,32275.0,2.0,True,2024-01-27,False,False
 NX-11098,Lenovo Monitore G5,monitores,Lenovo,265151.0,24.0,True,2019-09-18,False,True
 NX-11205,LG Audio Pro,audio,LG,20902.0,24.0,True,2020-11-03,False,True
 NX-10138,MSI Audio Plus,audio,MSI,19316.0,0.0,False,2019-09-26,False,False
@@ -912,13 +912,13 @@ NX-10572,Gigabyte Componente G5,componentes,Gigabyte,18766.0,0.0,True,2021-06-17
 NX-10757,Kingston Audio Air,audio,Kingston,281839.0,0.0,True,2021-11-21,False,False
 NX-10347,MSI Periferico G5,perifericos,MSI,56995.0,46.0,True,2024-08-17,False,True
 NX-10273,Xiaomi Monitore Max,monitores,Xiaomi,160641.0,248.0,True,2019-01-28,False,True
-NX-10695,Corsair Notebook Max,notebooks,Corsair,,150.0,False,2023-09-15,False,False
+NX-10695,Corsair Notebook Max,notebooks,Corsair,32927.5,150.0,False,2023-09-15,False,False
 NX-11421,TP-Link Monitore G5,monitores,TP-Link,81047.0,11.0,True,2022-01-30,False,True
 NX-10414,Apple Cables y adaptadore V2,cables y adaptadores,Apple,11177.0,46.0,False,2025-11-20,False,False
 NX-10107,Apple Gaming X,gaming,Apple,62202.0,0.0,True,2022-11-15,False,False
 NX-11476,TP-Link Almacenamiento V2,almacenamiento,TP-Link,89536.0,3.0,True,2023-10-02,False,True
 NX-11413,LG Notebook Lite,notebooks,LG,21735.0,88.0,False,2023-04-07,False,False
-NX-11221,Acer Audio Air,audio,Acer,,46.0,False,2019-03-23,False,False
+NX-11221,Acer Audio Air,audio,Acer,22963.0,46.0,False,2019-03-23,False,False
 NX-10360,Acer Periferico Air,perifericos,Acer,32944.0,0.0,False,2019-03-19,False,False
 NX-10046,Apple Notebook G5,notebooks,Apple,17271.0,0.0,True,2022-12-30,False,False
 NX-10871,MSI Rede G5,redes,MSI,21748.0,154.0,True,2021-01-21,False,True
@@ -930,7 +930,7 @@ NX-11399,TP-Link Cables y adaptadore G5,cables y adaptadores,TP-Link,22044.0,15.
 NX-10179,Dell Cables y adaptadore Pro,cables y adaptadores,Dell,30913.0,6.0,True,2023-12-14,False,True
 NX-10097,Apple Rede Air,redes,Apple,21890.0,52.0,True,2025-06-08,False,True
 NX-11077,Acer Smartphone Pro,smartphones,Acer,19080.0,390.0,False,2019-12-14,False,False
-NX-10128,LG Notebook Air,notebooks,LG,0.0,29.0,True,2020-10-04,False,False
+NX-10128,LG Notebook Air,notebooks,LG,32927.5,29.0,True,2020-10-04,False,False
 NX-10677,Lenovo Gaming Lite,gaming,Lenovo,39873.0,7.0,False,2025-08-04,False,False
 NX-10592,Gigabyte Gaming Pro,gaming,Gigabyte,10124.0,38.0,True,2021-10-20,False,True
 NX-10231,Samsung Gaming Air,gaming,Samsung,8492.0,0.0,False,2026-01-08,False,False
@@ -952,11 +952,11 @@ NX-11337,Apple Audio X,audio,Apple,19301.0,22.0,False,2025-07-04,False,False
 NX-10209,Kingston Monitore G5,monitores,Kingston,10071.0,226.0,True,2023-08-15,False,True
 NX-10022,Acer Periferico G5,perifericos,Acer,83390.0,0.0,True,2021-05-31,False,False
 NX-10502,MSI Notebook Lite,notebooks,MSI,22753.0,39.0,True,2019-07-26,False,True
-NX-11315,Logitech Audio Air,audio,Logitech,9268.0,,False,2019-11-20,False,False
+NX-11315,Logitech Audio Air,audio,Logitech,9268.0,0.0,False,2019-11-20,False,False
 NX-10425,Apple Gaming V2,gaming,Apple,807786.0,247.0,False,2019-07-31,False,False
 NX-11219,Kingston Monitore G5,monitores,Kingston,32121.0,8.0,False,2020-09-10,False,False
 NX-11406,Gigabyte Smartphone Pro,smartphones,Gigabyte,39537.0,42.0,True,2022-09-26,False,True
-NX-11005,HP Smartphone Plus,smartphones,HP,9764.0,,False,2022-08-24,False,False
+NX-11005,HP Smartphone Plus,smartphones,HP,9764.0,0.0,False,2022-08-24,False,False
 NX-10613,Corsair Periferico Pro,perifericos,Corsair,65485.0,62.0,True,2024-01-12,False,True
 NX-11263,TP-Link Rede V2,redes,TP-Link,18989.0,258.0,True,2021-05-03,False,True
 NX-10432,MSI Periferico X,perifericos,MSI,135136.0,4.0,False,2025-11-30,False,False
@@ -986,9 +986,9 @@ NX-10051,Lenovo Smartphone X,smartphones,Lenovo,61118.0,56.0,False,2020-05-07,Fa
 NX-10173,LG Cables y adaptadore Max,cables y adaptadores,LG,9834.0,366.0,False,2023-06-19,False,False
 NX-10152,Gigabyte Rede Air,redes,Gigabyte,96794.0,19.0,True,2019-05-25,False,True
 NX-10970,Dell Periferico Pro,perifericos,Dell,137076.0,0.0,False,2025-03-12,False,False
-NX-11130,Gigabyte Audio Air,audio,Gigabyte,0.0,0.0,False,2024-07-17,False,False
+NX-11130,Gigabyte Audio Air,audio,Gigabyte,22963.0,0.0,False,2024-07-17,False,False
 NX-11294,Logitech Gaming Air,gaming,Logitech,10009.0,23.0,True,2024-04-22,False,True
-NX-10788,Logitech Almacenamiento Lite,almacenamiento,Logitech,95690.0,-6.0,False,2022-03-01,False,False
+NX-10788,Logitech Almacenamiento Lite,almacenamiento,Logitech,95690.0,0.0,False,2022-03-01,False,False
 NX-10820,Logitech Cables y adaptadore G5,cables y adaptadores,Logitech,10906.0,6.0,True,2024-03-02,False,True
 NX-10483,Lenovo Smartphone Air,smartphones,Lenovo,10066.0,0.0,True,2022-11-13,False,False
 NX-11331,Logitech Cables y adaptadore G5,cables y adaptadores,sin_dato,18246.0,2.0,True,2024-10-13,False,False
@@ -999,10 +999,10 @@ NX-11392,Xiaomi Audio G5,audio,Xiaomi,169526.0,7.0,False,2020-04-09,False,False
 NX-11282,Asus Componente Max,componentes,Asus,18405.0,55.0,True,2021-05-31,False,True
 NX-11017,Xiaomi Monitore Plus,monitores,Xiaomi,18192.0,20.0,False,2024-12-07,False,False
 NX-10741,Gigabyte Monitore V2,monitores,Gigabyte,32820.0,3.0,True,2023-11-24,False,True
-NX-10143,Kingston Audio Plus,audio,Kingston,31832.0,-5.0,True,2020-09-11,False,False
-NX-11488,Asus Monitore V2,monitores,Asus,,10.0,True,2019-07-20,False,False
+NX-10143,Kingston Audio Plus,audio,Kingston,31832.0,0.0,True,2020-09-11,False,False
+NX-11488,Asus Monitore V2,monitores,Asus,30390.5,10.0,True,2019-07-20,False,False
 NX-11482,Lenovo Monitore V2,monitores,Lenovo,337865.0,3.0,True,2024-02-16,False,True
-NX-10296,Dell Cables y adaptadore Plus,cables y adaptadores,Dell,0.0,21.0,True,2025-01-15,False,False
+NX-10296,Dell Cables y adaptadore Plus,cables y adaptadores,Dell,32081.0,21.0,True,2025-01-15,False,False
 NX-10853,Asus Smartphone Pro,smartphones,Asus,88654.0,45.0,True,2022-09-16,False,True
 NX-10975,Kingston Almacenamiento Max,almacenamiento,Kingston,85999.0,1.0,True,2024-02-27,False,False
 NX-11429,Acer Rede Lite,redes,Acer,128230.0,47.0,True,2024-02-15,False,True
@@ -1014,7 +1014,7 @@ NX-10915,Kingston Cables y adaptadore Air,cables y adaptadores,Kingston,160483.0
 NX-10889,Logitech Monitore Air,monitores,Logitech,1311205.0,8.0,False,2024-05-31,False,False
 NX-10220,Corsair Gaming Max,gaming,Corsair,20075.0,0.0,False,2021-07-04,False,False
 NX-10779,Acer Audio Plus,audio,Acer,11244.0,29.0,True,2024-08-26,False,True
-NX-10405,Lenovo Almacenamiento Pro,almacenamiento,Lenovo,66653.0,-7.0,False,2021-02-03,False,False
+NX-10405,Lenovo Almacenamiento Pro,almacenamiento,Lenovo,66653.0,0.0,False,2021-02-03,False,False
 NX-10085,TP-Link Notebook Max,notebooks,TP-Link,32768.0,8.0,True,2022-07-04,False,True
 NX-10257,Asus Gaming Plus,gaming,Asus,99724.0,203.0,False,2020-01-25,False,False
 NX-10490,,redes,Kingston,9272.0,3.0,True,2022-04-30,False,True
@@ -1027,31 +1027,31 @@ NX-10827,MSI Smartphone Air,smartphones,MSI,9561.0,29.0,True,2026-07-26,False,Tr
 NX-10010,LG Notebook Plus,notebooks,LG,8499.0,6.0,False,2025-11-11,False,False
 NX-10944,Xiaomi Rede Pro,redes,Xiaomi,10617.0,376.0,True,2020-04-18,False,True
 NX-10191,Acer Smartphone Plus,smartphones,Acer,11271.0,7.0,True,2024-01-15,True,True
-NX-10060,HP Rede X,redes,HP,,158.0,True,2023-12-20,False,False
-NX-10755,Gigabyte Gaming Pro,gaming,Gigabyte,21570.0,-8.0,True,2024-06-24,False,False
+NX-10060,HP Rede X,redes,HP,32275.0,158.0,True,2023-12-20,False,False
+NX-10755,Gigabyte Gaming Pro,gaming,Gigabyte,21570.0,0.0,True,2024-06-24,False,False
 NX-10469,HP Smartphone Air,smartphones,HP,1156627.0,39.0,False,2026-04-05,False,False
-NX-10237,Samsung Rede V2,redes,Samsung,,258.0,False,2023-03-10,False,False
+NX-10237,Samsung Rede V2,redes,Samsung,32275.0,258.0,False,2023-03-10,False,False
 NX-11135,Logitech Notebook Plus,notebooks,Logitech,20281.0,226.0,True,2019-10-10,False,True
-NX-10988,Samsung Gaming X,gaming,Samsung,62566.0,-11.0,True,2025-07-05,False,False
+NX-10988,Samsung Gaming X,gaming,Samsung,62566.0,0.0,True,2025-07-05,False,False
 NX-10475,Gigabyte Almacenamiento G5,almacenamiento,Gigabyte,21306.0,1.0,False,2021-11-18,False,False
 NX-11068,Logitech Cables y adaptadore Plus,cables y adaptadores,Logitech,33823.0,8.0,True,2026-07-29,True,True
 NX-10012,Logitech Rede X,redes,Logitech,32770.0,4.0,True,2023-02-13,False,True
 NX-10392,Lenovo Cables y adaptadore Max,cables y adaptadores,Lenovo,76632.0,46.0,False,2023-08-22,False,False
 NX-10726,Logitech Periferico Max,perifericos,Logitech,18593.0,3.0,False,2020-11-29,False,False
 NX-10659,Lenovo Periferico Air,perifericos,Lenovo,22075.0,30.0,True,2019-09-20,False,True
-NX-10034,Xiaomi Smartphone Pro,smartphones,Xiaomi,,116.0,True,2019-02-14,False,False
+NX-10034,Xiaomi Smartphone Pro,smartphones,Xiaomi,30419.0,116.0,True,2019-02-14,False,False
 NX-10243,LG Cables y adaptadore Air,cables y adaptadores,LG,149672.0,2.0,True,2019-08-14,False,False
 NX-10100,Corsair Almacenamiento V2,almacenamiento,Corsair,8713.0,62.0,True,2024-02-06,False,True
 NX-10751,Apple Smartphone Plus,smartphones,Apple,11098.0,5.0,True,2026-07-28,False,True
 NX-10106,Apple Gaming Plus,gaming,Apple,1021443.0,45.0,True,2024-08-19,False,True
 NX-11247,LG Almacenamiento Air,almacenamiento,LG,51100.0,6.0,False,2024-09-02,False,False
 NX-11235,Asus Rede Plus,redes,Asus,103403.0,281.0,True,2023-05-18,False,True
-NX-10583,Xiaomi Rede V2,redes,Xiaomi,0.0,311.0,False,2020-03-13,False,False
+NX-10583,Xiaomi Rede V2,redes,Xiaomi,32275.0,311.0,False,2020-03-13,False,False
 NX-11391,Corsair Audio X,audio,Corsair,20173.0,167.0,True,2025-01-14,False,True
 NX-10561,Asus Audio Air,audio,Asus,9303.0,41.0,False,2020-06-08,False,False
 NX-11099,Lenovo Smartphone Max,smartphones,Lenovo,10418.0,8.0,True,2024-06-28,False,True
 NX-11403,Dell Notebook X,notebooks,Dell,33293.0,0.0,False,2024-05-23,False,False
-NX-10692,Xiaomi Rede Plus,redes,Xiaomi,0.0,392.0,True,2025-07-20,False,False
+NX-10692,Xiaomi Rede Plus,redes,Xiaomi,32275.0,392.0,True,2025-07-20,False,False
 NX-10474,TP-Link Notebook Lite,notebooks,TP-Link,8686.0,51.0,False,2021-06-16,False,False
 NX-10861,MSI Notebook Lite,notebooks,MSI,22456.0,60.0,False,2019-11-10,False,False
 NX-10957,,cables y adaptadores,Apple,38154.0,0.0,False,2022-10-24,False,False
@@ -1086,7 +1086,7 @@ NX-10499,Asus Periferico Pro,perifericos,Asus,67206.0,95.0,True,2019-09-05,False
 NX-10760,Gigabyte Audio Air,audio,Gigabyte,9651.0,5.0,False,2025-10-16,False,False
 NX-10530,HP Componente G5,componentes,HP,40170.0,8.0,True,2024-12-15,False,True
 NX-10298,TP-Link Audio G5,audio,TP-Link,65936.0,17.0,False,2021-12-07,False,False
-NX-11427,LG Gaming Plus,gaming,LG,0.0,78.0,False,2022-01-25,False,False
+NX-11427,LG Gaming Plus,gaming,LG,22656.0,78.0,False,2022-01-25,False,False
 NX-10628,Corsair Smartphone X,smartphones,Corsair,102928.0,50.0,True,2026-03-26,False,True
 NX-10079,Kingston Notebook Air,notebooks,Kingston,161406.0,15.0,True,2022-10-10,False,True
 NX-10824,Logitech Notebook G5,notebooks,Logitech,476354.0,134.0,True,2019-03-20,False,True
@@ -1103,7 +1103,7 @@ NX-10180,,smartphones,Samsung,19803.0,0.0,False,2022-04-28,False,False
 NX-10817,LG Audio Pro,audio,LG,9527.0,21.0,False,2025-03-28,False,False
 NX-10621,Samsung Notebook Pro,notebooks,Samsung,141806.0,37.0,False,2021-05-13,False,False
 NX-10744,Logitech Gaming G5,gaming,Logitech,10774.0,56.0,False,2022-06-05,False,False
-NX-10894,LG Gaming X,gaming,LG,0.0,209.0,True,2025-01-26,False,False
+NX-10894,LG Gaming X,gaming,LG,22656.0,209.0,True,2025-01-26,False,False
 NX-11171,Apple Almacenamiento Pro,almacenamiento,Apple,287842.0,47.0,False,2025-09-03,False,False
 NX-10536,Kingston Notebook X,notebooks,Kingston,20506.0,0.0,False,2025-04-13,False,False
 NX-10035,Kingston Cables y adaptadore Air,cables y adaptadores,Kingston,32893.0,0.0,True,2022-04-21,False,False
@@ -1138,7 +1138,7 @@ NX-11409,HP Audio X,audio,HP,145402.0,32.0,True,2019-02-24,False,True
 NX-10058,Samsung Rede Air,redes,Samsung,17470.0,37.0,False,2022-10-15,False,False
 NX-10705,MSI Smartphone Pro,smartphones,MSI,316990.0,1.0,False,2025-08-13,False,False
 NX-11365,Acer Audio Pro,audio,Acer,9250.0,5.0,True,2025-09-05,False,True
-NX-10098,Apple Rede Pro,redes,sin_dato,38043.0,,True,2023-05-08,True,False
+NX-10098,Apple Rede Pro,redes,sin_dato,38043.0,0.0,True,2023-05-08,True,False
 NX-11269,Corsair Periferico Plus,perifericos,Corsair,842816.0,4.0,False,2019-12-02,False,False
 NX-10442,HP Almacenamiento Max,almacenamiento,HP,19476.0,162.0,True,2019-02-16,False,True
 NX-10800,Xiaomi Notebook Max,notebooks,sin_dato,22743.0,7.0,True,2022-02-18,False,True
@@ -1172,7 +1172,7 @@ NX-11285,Dell Periferico Air,perifericos,Dell,20753.0,0.0,True,2021-08-13,False,
 NX-11097,,redes,HP,62734.0,0.0,True,2022-06-24,False,False
 NX-10160,MSI Periferico Max,perifericos,MSI,169701.0,3.0,False,2020-11-22,False,False
 NX-10358,Apple Smartphone Pro,smartphones,Apple,8629.0,59.0,False,2021-08-26,False,False
-NX-10566,LG Smartphone X,smartphones,LG,10432.0,,False,2021-11-13,False,False
+NX-10566,LG Smartphone X,smartphones,LG,10432.0,0.0,False,2021-11-13,False,False
 NX-11161,Dell Audio Pro,audio,Dell,9886.0,5.0,False,2023-08-21,False,False
 NX-11320,Corsair Almacenamiento V2,almacenamiento,Corsair,447645.0,2.0,True,2023-03-15,False,False
 NX-11207,TP-Link Smartphone G5,smartphones,TP-Link,39455.0,8.0,False,2022-05-21,False,False
@@ -1199,7 +1199,7 @@ NX-11490,MSI Cables y adaptadore Pro,cables y adaptadores,MSI,86285.0,35.0,True,
 NX-10514,Dell Periferico Lite,perifericos,Dell,81838.0,321.0,True,2022-12-02,False,True
 NX-10953,Xiaomi Periferico Max,perifericos,Xiaomi,34092.0,22.0,True,2020-04-08,False,True
 NX-10064,Logitech Cables y adaptadore Max,cables y adaptadores,Logitech,10351.0,27.0,False,2020-12-03,False,False
-NX-11402,Xiaomi Cables y adaptadore V2,cables y adaptadores,Xiaomi,301030.0,-1.0,True,2022-11-18,False,False
+NX-11402,Xiaomi Cables y adaptadore V2,cables y adaptadores,Xiaomi,301030.0,0.0,True,2022-11-18,False,False
 NX-10908,Apple Notebook G5,notebooks,Apple,64605.0,35.0,False,2026-03-10,False,False
 NX-10446,Acer Notebook Air,notebooks,Acer,101031.0,0.0,False,2023-12-08,False,False
 NX-11046,Corsair Gaming X,gaming,Corsair,9650.0,122.0,True,2022-07-11,False,True
@@ -1264,12 +1264,12 @@ NX-10470,HP Gaming Plus,gaming,HP,63835.0,0.0,False,2026-01-31,False,False
 NX-11028,Kingston Monitore G5,monitores,Kingston,39469.0,2.0,False,2021-09-07,False,False
 NX-10968,Lenovo Monitore G5,monitores,Lenovo,38722.0,0.0,False,2025-09-08,False,False
 NX-10437,Gigabyte Notebook Pro,notebooks,Gigabyte,11151.0,0.0,False,2020-02-07,False,False
-NX-10673,HP Audio G5,audio,HP,0.0,33.0,True,2021-02-08,False,False
+NX-10673,HP Audio G5,audio,HP,22963.0,33.0,True,2021-02-08,False,False
 NX-11274,Corsair Cables y adaptadore Max,cables y adaptadores,Corsair,32014.0,19.0,False,2026-04-09,False,False
 NX-10772,Kingston Monitore X,monitores,Kingston,18105.0,0.0,True,2021-09-28,False,False
 NX-11467,,almacenamiento,Lenovo,52056.0,3.0,False,2019-07-03,False,False
 NX-11351,Apple Gaming G5,gaming,Apple,85097.0,8.0,True,2023-11-27,False,True
-NX-11264,MSI Almacenamiento Air,almacenamiento,MSI,,-11.0,True,2026-01-31,False,False
+NX-11264,MSI Almacenamiento Air,almacenamiento,MSI,36335.5,0.0,True,2026-01-31,False,False
 NX-11281,Asus Almacenamiento Max,almacenamiento,Asus,8612.0,25.0,True,2020-03-03,False,True
 NX-10339,Logitech Periferico Air,perifericos,Logitech,36797.0,11.0,True,2022-11-04,False,True
 NX-10616,Asus Periferico Plus,perifericos,Asus,9878.0,28.0,True,2025-02-23,False,True
@@ -1292,7 +1292,7 @@ NX-11292,Asus Gaming Pro,gaming,Asus,96130.0,44.0,False,2019-06-24,False,False
 NX-10195,Lenovo Periferico X,perifericos,Lenovo,88354.0,11.0,True,2024-09-09,False,True
 NX-10890,Xiaomi Audio G5,audio,Xiaomi,62461.0,37.0,True,2026-02-10,False,True
 NX-10917,Logitech Periferico V2,perifericos,sin_dato,38586.0,0.0,True,2025-06-12,False,False
-NX-11497,Logitech Gaming Lite,gaming,Logitech,58017.0,,True,2025-09-19,False,False
+NX-11497,Logitech Gaming Lite,gaming,Logitech,58017.0,0.0,True,2025-09-19,False,False
 NX-11173,Lenovo Gaming Pro,gaming,Lenovo,8974.0,1.0,True,2024-04-16,False,False
 NX-11246,Lenovo Componente G5,componentes,Lenovo,59650.0,154.0,True,2025-04-06,True,True
 NX-10839,HP Gaming Plus,gaming,HP,10278.0,199.0,True,2023-01-15,False,True
@@ -1312,7 +1312,7 @@ NX-10412,LG Cables y adaptadore V2,cables y adaptadores,LG,55216.0,0.0,True,2025
 NX-10941,HP Monitore Plus,monitores,HP,84623.0,3.0,True,2022-07-22,False,True
 NX-10758,HP Monitore Max,monitores,HP,18544.0,26.0,True,2019-07-15,False,True
 NX-10403,Samsung Almacenamiento X,almacenamiento,Samsung,30213.0,36.0,False,2025-08-09,False,False
-NX-10657,Apple Notebook Lite,notebooks,sin_dato,10547.0,-7.0,True,2023-12-06,False,False
+NX-10657,Apple Notebook Lite,notebooks,sin_dato,10547.0,0.0,True,2023-12-06,False,False
 NX-10550,Corsair Periferico Plus,perifericos,Corsair,9846.0,0.0,True,2022-07-25,False,False
 NX-10258,Gigabyte Audio V2,audio,Gigabyte,8904.0,213.0,True,2024-09-21,False,True
 NX-11474,Samsung Smartphone X,smartphones,Samsung,22012.0,2.0,False,2020-10-24,False,False
@@ -1327,7 +1327,7 @@ NX-10015,TP-Link Rede Lite,redes,TP-Link,11402.0,0.0,False,2022-07-04,False,Fals
 NX-10568,LG Rede Lite,redes,LG,11322.0,7.0,False,2021-01-18,False,False
 NX-10895,TP-Link Monitore X,monitores,TP-Link,21865.0,0.0,False,2024-10-08,False,False
 NX-10724,Kingston Rede G5,redes,Kingston,22108.0,3.0,True,2025-06-07,False,True
-NX-11117,Xiaomi Periferico V2,perifericos,Xiaomi,11263.0,-10.0,True,2022-12-27,False,False
+NX-11117,Xiaomi Periferico V2,perifericos,Xiaomi,11263.0,0.0,True,2022-12-27,False,False
 NX-11186,Samsung Smartphone G5,smartphones,Samsung,60479.0,6.0,False,2021-08-31,False,False
 NX-10408,Gigabyte Monitore Pro,monitores,Gigabyte,31291.0,0.0,True,2021-05-16,False,False
 NX-11238,MSI Rede G5,redes,MSI,37891.0,8.0,False,2019-04-09,False,False
@@ -1353,10 +1353,10 @@ NX-11390,Logitech Monitore Air,monitores,Logitech,35039.0,4.0,False,2025-03-12,F
 NX-10979,HP Cables y adaptadore Pro,cables y adaptadores,HP,64567.0,0.0,False,2025-08-23,False,False
 NX-10074,Acer Notebook V2,notebooks,Acer,66554.0,0.0,False,2023-08-29,True,False
 NX-10668,Samsung Audio Pro,audio,Samsung,18043.0,0.0,False,2020-02-28,False,False
-NX-10833,Apple Gaming V2,gaming,Apple,21549.0,,False,2019-08-12,False,False
+NX-10833,Apple Gaming V2,gaming,Apple,21549.0,0.0,False,2019-08-12,False,False
 NX-10071,LG Notebook X,notebooks,LG,17886.0,1.0,True,2021-07-21,False,False
 NX-10327,Xiaomi Audio G5,audio,Xiaomi,10824.0,1.0,True,2019-01-01,False,False
-NX-11102,Lenovo Smartphone Lite,smartphones,Lenovo,,298.0,True,2022-01-30,False,False
+NX-11102,Lenovo Smartphone Lite,smartphones,Lenovo,30419.0,298.0,True,2022-01-30,False,False
 NX-10982,Samsung Monitore V2,monitores,Samsung,58940.0,4.0,False,2020-01-12,False,False
 NX-11494,,componentes,Kingston,9823.0,22.0,True,2019-05-30,False,True
 NX-11212,Logitech Audio Max,audio,Logitech,17889.0,0.0,False,2021-04-30,False,False
@@ -1376,7 +1376,7 @@ NX-10802,Logitech Notebook Plus,notebooks,Logitech,17802.0,8.0,False,2021-12-23,
 NX-10132,Apple Cables y adaptadore X,cables y adaptadores,sin_dato,476732.0,23.0,True,2022-03-29,False,True
 NX-10211,Dell Componente G5,componentes,Dell,9905.0,77.0,True,2024-10-27,False,True
 NX-11256,Kingston Monitore Max,monitores,Kingston,56663.0,7.0,True,2024-03-07,False,True
-NX-11023,MSI Audio G5,audio,MSI,21867.0,-4.0,False,2020-11-30,False,False
+NX-11023,MSI Audio G5,audio,MSI,21867.0,0.0,False,2020-11-30,False,False
 NX-11174,TP-Link Gaming Air,gaming,sin_dato,302981.0,219.0,False,2022-09-08,False,False
 NX-10905,MSI Almacenamiento V2,almacenamiento,MSI,21508.0,185.0,True,2019-05-15,False,True
 NX-10230,Asus Gaming Pro,gaming,Asus,9663.0,0.0,True,2021-11-08,False,False
@@ -1385,7 +1385,7 @@ NX-10565,Lenovo Cables y adaptadore Lite,cables y adaptadores,Lenovo,66743.0,0.0
 NX-10739,Kingston Cables y adaptadore Plus,cables y adaptadores,Kingston,79460.0,365.0,True,2019-08-24,False,True
 NX-10406,Corsair Componente Air,componentes,Corsair,63161.0,398.0,True,2024-01-11,False,True
 NX-11042,TP-Link Smartphone Air,smartphones,TP-Link,82561.0,0.0,True,2019-11-03,False,False
-NX-10606,HP Componente V2,componentes,HP,0.0,6.0,False,2023-10-23,False,False
+NX-10606,HP Componente V2,componentes,HP,33046.5,6.0,False,2023-10-23,False,False
 NX-10878,MSI Cables y adaptadore V2,cables y adaptadores,MSI,11188.0,0.0,True,2022-06-18,False,False
 NX-10443,Lenovo Rede Pro,redes,Lenovo,995909.0,6.0,True,2020-04-20,False,True
 NX-11082,Gigabyte Audio G5,audio,Gigabyte,10734.0,3.0,False,2020-04-18,False,False
@@ -1394,7 +1394,7 @@ NX-10752,Dell Gaming G5,gaming,Dell,10911.0,42.0,True,2025-02-15,False,True
 NX-10586,Lenovo Almacenamiento Pro,almacenamiento,Lenovo,17696.0,220.0,True,2020-12-14,False,True
 NX-11345,Lenovo Periferico Plus,perifericos,Lenovo,36350.0,1.0,False,2026-01-23,False,False
 NX-10028,HP Rede Air,redes,HP,32045.0,31.0,True,2025-03-27,False,True
-NX-10929,Lenovo Periferico Air,perifericos,Lenovo,131285.0,-2.0,False,2020-02-02,False,False
+NX-10929,Lenovo Periferico Air,perifericos,Lenovo,131285.0,0.0,False,2020-02-02,False,False
 NX-10981,Corsair Rede Max,redes,Corsair,19827.0,31.0,False,2023-03-11,False,False
 NX-10398,Dell Rede V2,redes,Dell,56047.0,5.0,True,2024-03-19,False,True
 NX-10842,Gigabyte Cables y adaptadore Air,cables y adaptadores,Gigabyte,64578.0,33.0,False,2025-12-31,False,False
@@ -1405,7 +1405,7 @@ NX-11164,Samsung Rede Pro,redes,Samsung,10768.0,54.0,False,2021-01-02,False,Fals
 NX-10670,MSI Periferico X,perifericos,MSI,34974.0,42.0,False,2020-10-01,False,False
 NX-10727,Dell Smartphone Lite,smartphones,Dell,8858.0,0.0,False,2019-04-21,False,False
 NX-10092,Lenovo Rede Pro,redes,Lenovo,297937.0,7.0,False,2024-12-05,False,False
-NX-11356,Asus Audio Plus,audio,Asus,,24.0,True,2023-06-29,False,False
+NX-11356,Asus Audio Plus,audio,Asus,22963.0,24.0,True,2023-06-29,False,False
 NX-11251,Samsung Cables y adaptadore Lite,cables y adaptadores,Samsung,32148.0,40.0,True,2021-05-08,False,True
 NX-10342,Lenovo Notebook Air,notebooks,Lenovo,31357.0,0.0,True,2019-07-22,False,False
 NX-11477,Gigabyte Almacenamiento X,almacenamiento,Gigabyte,34442.0,3.0,False,2019-12-25,False,False
@@ -1468,7 +1468,7 @@ NX-10710,Acer Notebook Lite,notebooks,Acer,65824.0,4.0,True,2026-02-14,False,Tru
 NX-11478,Corsair Notebook Air,notebooks,Corsair,9441.0,33.0,True,2026-04-07,False,True
 NX-10183,Samsung Monitore Pro,monitores,Samsung,20929.0,0.0,True,2021-07-23,False,False
 NX-10742,Xiaomi Monitore V2,monitores,Xiaomi,21649.0,55.0,False,2025-05-05,False,False
-NX-11396,Dell Notebook Max,notebooks,Dell,21091.0,-4.0,True,2019-12-24,False,False
+NX-11396,Dell Notebook Max,notebooks,Dell,21091.0,0.0,True,2019-12-24,False,False
 NX-10721,Samsung Cables y adaptadore Air,cables y adaptadores,Samsung,11034.0,41.0,True,2020-09-13,False,True
 NX-10879,Corsair Gaming Max,gaming,Corsair,11089.0,26.0,True,2020-09-20,False,True
 NX-10166,Asus Notebook Pro,notebooks,Asus,9953.0,0.0,True,2019-12-24,False,False
@@ -1484,7 +1484,7 @@ NX-10320,Acer Rede Pro,redes,Acer,150900.0,31.0,True,2021-10-21,False,True
 NX-10921,HP Smartphone Air,smartphones,HP,63646.0,1.0,True,2022-12-27,False,False
 NX-10498,Corsair Monitore V2,monitores,Corsair,11396.0,6.0,True,2023-04-11,False,True
 NX-11064,Logitech Periferico Air,perifericos,Logitech,33514.0,15.0,True,2026-03-22,False,True
-NX-10276,Apple Audio Lite,audio,Apple,166885.0,-11.0,True,2024-08-13,False,False
+NX-10276,Apple Audio Lite,audio,Apple,166885.0,0.0,True,2024-08-13,False,False
 NX-10569,Corsair Cables y adaptadore Pro,cables y adaptadores,Corsair,35154.0,20.0,True,2023-02-16,False,True
 NX-10914,Corsair Cables y adaptadore Pro,cables y adaptadores,Corsair,95475.0,19.0,False,2021-08-22,False,False
 NX-10645,Logitech Componente Pro,componentes,Logitech,93582.0,4.0,True,2020-08-19,False,True
@@ -1492,7 +1492,7 @@ NX-10563,Asus Periferico G5,perifericos,Asus,407513.0,42.0,True,2021-09-19,False
 NX-10380,Asus Smartphone Plus,smartphones,Asus,62629.0,0.0,False,2020-12-18,False,False
 NX-11200,TP-Link Notebook G5,notebooks,TP-Link,10972.0,4.0,True,2022-10-07,False,True
 NX-10782,Asus Smartphone Air,smartphones,Asus,19384.0,354.0,False,2025-12-21,False,False
-NX-10704,MSI Gaming X,gaming,MSI,0.0,0.0,False,2021-10-12,False,False
+NX-10704,MSI Gaming X,gaming,MSI,22656.0,0.0,False,2021-10-12,False,False
 NX-10000,TP-Link Audio G5,audio,TP-Link,66994.0,100.0,True,2024-10-31,False,True
 NX-10681,Kingston Notebook Lite,notebooks,Kingston,302369.0,0.0,True,2020-10-27,False,False
 NX-10452,Asus Gaming G5,gaming,Asus,473775.0,35.0,True,2023-06-29,True,True

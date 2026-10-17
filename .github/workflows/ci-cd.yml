@@ -1,0 +1,145 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Si llega un commit nuevo a la misma rama, se cancela la ejecución anterior.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ----------------------------------------------------------------------------------
+  # CI: regenera datos y modelo con los notebooks y ejecuta las pruebas
+  # ----------------------------------------------------------------------------------
+  pruebas:
+    name: Pruebas
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    outputs:
+      datos_generados: ${{ steps.pipeline.outputs.generado }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements*.txt
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      # Los notebooks 02 y 03 generan datos/procesados y datos/modelos. Sin ellos las pruebas se omiten.
+      - name: Generar datos procesados y modelo (notebooks 02 y 03)
+        id: pipeline
+        run: |
+          faltan=""
+          for f in clickstream productos transacciones usuarios; do
+            compgen -G "datos/crudos/*$f.csv" > /dev/null || faltan="$faltan $f.csv"
+          done
+          if [ -n "$faltan" ]; then
+            echo "::warning title=Sin datos crudos::No están en el repositorio:$faltan. No se ejecutan los notebooks y las pruebas de datos y API se omiten."
+            echo "- ⚠️ Sin datos crudos (faltan:$faltan): los notebooks no se ejecutaron y las pruebas de datos y API se **omitieron**." >> "$GITHUB_STEP_SUMMARY"
+            echo "generado=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          for nb in 02_limpieza 03_modelado; do
+            echo "::group::Ejecutando $nb"
+            jupyter nbconvert --to notebook --execute "notebooks/$nb.ipynb" \
+              --output-dir "$RUNNER_TEMP/notebooks_ejecutados" \
+              --ExecutePreprocessor.timeout=3600
+            echo "::endgroup::"
+          done
+          echo "generado=true" >> "$GITHUB_OUTPUT"
+
+      - name: Ejecutar pruebas
+        run: python -m pytest -rs -q
+
+      # Comprueba que el Dockerfile construye y que la API arranca dentro del contenedor.
+      - name: Construir imagen y probar que arranca
+        if: steps.pipeline.outputs.generado == 'true' && hashFiles('Dockerfile') != ''
+        run: |
+          docker build -t nexus-api:prueba .
+          docker run -d --name api -p 8000:8000 nexus-api:prueba
+          for i in $(seq 1 30); do
+            curl -fsS http://localhost:8000/health && ok=1 && break
+            sleep 2
+          done
+          if [ -z "$ok" ]; then docker logs api; exit 1; fi
+
+      # Solo para el job de la imagen Docker. Se borra al día siguiente porque contiene datos de usuarios.
+      - name: Guardar datos y modelo generados
+        if: steps.pipeline.outputs.generado == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: datos-generados
+          path: |
+            datos/procesados
+            datos/modelos
+          retention-days: 1
+
+  # ----------------------------------------------------------------------------------
+  # CD: publica la imagen Docker en GitHub Container Registry (solo al subir a main)
+  # ----------------------------------------------------------------------------------
+  imagen:
+    name: Publicar imagen Docker
+    needs: pruebas
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Comprobar que existe el Dockerfile
+        id: docker
+        run: |
+          if [ -f Dockerfile ]; then
+            echo "existe=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "existe=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Sin Dockerfile::Todavía no hay Dockerfile en la raíz: no se publica la imagen."
+          fi
+
+      # Si el CI generó los datos y el modelo, se usan esos; si no, la imagen usa lo que haya en el repositorio.
+      - name: Descargar datos y modelo generados
+        if: steps.docker.outputs.existe == 'true' && needs.pruebas.outputs.datos_generados == 'true'
+        uses: actions/download-artifact@v4
+        with:
+          name: datos-generados
+          path: datos
+
+      - name: Nombre de la imagen (en minúsculas)
+        id: img
+        if: steps.docker.outputs.existe == 'true'
+        run: echo "nombre=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
+
+      - uses: docker/setup-buildx-action@v4
+        if: steps.docker.outputs.existe == 'true'
+
+      - uses: docker/login-action@v4
+        if: steps.docker.outputs.existe == 'true'
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/build-push-action@v7
+        if: steps.docker.outputs.existe == 'true'
+        with:
+          context: .
+          push: true
+          tags: |
+            ${{ steps.img.outputs.nombre }}:latest
+            ${{ steps.img.outputs.nombre }}:${{ github.sha }}
