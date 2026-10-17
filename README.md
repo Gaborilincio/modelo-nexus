@@ -45,6 +45,8 @@ modelo-nexus/
 │   │   ├── sku_recomendables.pkl
 │   │   └── metadatos.pkl
 │   │
+│   ├── preparar.py        # limpieza reproducible de datos/procesados/
+│   │
 │   └── modelos/
 │       ├── modelo_recomendador.joblib
 │       ├── modelo_metadatos.joblib
@@ -70,12 +72,13 @@ modelo-nexus/
 │
 ├── Dockerfile
 ├── requirements.txt
+├── requirements-dev.txt
 ├── .gitignore
 ├── .env.example
 └── README.md
 ```
 
-> `datos/procesados/` es generada por el notebook 02 y `datos/modelos/` por el notebook 03.
+> `datos/procesados/` es generada por el notebook 02 (y depurada por `datos/preparar.py`) y `datos/modelos/` por el notebook 03.
 
 ## 🔄 Flujo del proyecto
 
@@ -141,13 +144,30 @@ Este notebook se encarga de:
 5. Validar los datos (sin fuga de información, consentimiento de los usuarios, ausencia de nulos en los predictores).
 6. Exportar los datos procesados y los conjuntos de entrenamiento y validación a `datos/procesados/`.
 
+### Limpieza de calidad reproducible (`datos/preparar.py`)
+
+Después del notebook 02 existe `datos/preparar.py`, un script que corrige de forma **reproducible** los valores pendientes de `datos/procesados/` **sin alterar la estructura de los archivos**: conserva los mismos nombres, orden y cantidad de columnas, y no toca los notebooks ni el código de la API.
+
+- `productos_limpio.csv`: imputa `precio_lista` nulo o ≤ 0 con la mediana de su categoría (y la mediana global si la categoría no tuviera precios válidos); `stock` nulo → 0; `stock` negativo → 0 en productos **no** recomendables, o `stock_minimo` = 3 (valor de `metadatos.pkl`) en productos **recomendables**.
+- `usuarios_limpio.csv`: rellena `email_valido` nulo con el valor `"desconocido"`.
+- `transacciones_limpio.csv` y `clickstream_limpio.csv`: se verifican las reglas de calidad de `tests/test_datos.py`; no requieren cambios.
+
+Se ejecuta **después** del notebook 02 y **antes** del 03:
+
+```bash
+python datos/preparar.py
+```
+
+Antes de modificar nada, guarda una copia de los CSV originales en `datos/procesados_backup_limpieza/` (ignorada por git).
+
 ## ▶️ Ejecución
 
 Los notebooks se ejecutan en orden y de principio a fin:
 
 1. Colocar los archivos originales en `datos/crudos/`.
 2. Ejecutar `notebooks/02_limpieza.ipynb`: genera los archivos de `datos/procesados/`.
-3. Ejecutar `notebooks/03_modelado.ipynb`: lee `datos/procesados/`, entrena y evalúa los modelos, y guarda el modelo en `datos/modelos/`.
+3. Ejecutar `python datos/preparar.py`: corrige los valores pendientes de `datos/procesados/` (precios, stock y `email_valido`).
+4. Ejecutar `notebooks/03_modelado.ipynb`: lee `datos/procesados/`, entrena y evalúa los modelos, y guarda el modelo en `datos/modelos/`.
 
 El notebook 03 depende de los archivos que genera el 02, por lo que siempre debe ejecutarse después de este.
 
@@ -284,25 +304,30 @@ En Windows:
 .\venv\Scripts\Activate.ps1
 ```
 
-Instalar las dependencias:
+Instalar las dependencias de la API:
 
 ```bash
 pip install -r requirements.txt
 ```
 
+Para desarrollo (pruebas y notebooks) instalar además `requirements-dev.txt`, que incluye las de la API:
+
+```bash
+pip install -r requirements-dev.txt
+```
+
 ## 👨‍💻 Estado del proyecto
 
-Actualmente el repositorio se encuentra en la etapa de **preparación y análisis de los datos**.
+El repositorio cuenta con el flujo completo: limpieza y preparación de datos, entrenamiento y serialización del modelo, API de predicción, pruebas automatizadas, CI/CD y contenedor.
 
-Próximas etapas:
-
-- [ ] Analizar los datos originales.
-- [ ] Definir reglas de limpieza.
-- [ ] Generar datos procesados.
-- [ ] Preparar dataset para Machine Learning.
-- [ ] Entrenar y evaluar el modelo.
-- [ ] Serializar el modelo.
+- [x] Analizar los datos originales.
+- [x] Definir reglas de limpieza.
+- [x] Generar datos procesados.
+- [x] Preparar dataset para Machine Learning.
+- [x] Entrenar y evaluar el modelo.
+- [x] Serializar el modelo.
 - [x] Implementar API de predicción.
-- [ ] Crear pruebas.
-- [ ] Configurar CI/CD.
-- [ ] Contenerizar el servicio con Docker.
+- [x] Crear pruebas.
+- [x] Configurar CI/CD.
+- [x] Contenerizar el servicio con Docker.
+- [x] Limpieza de calidad de `datos/procesados/` (`datos/preparar.py`).

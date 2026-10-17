@@ -91,7 +91,13 @@ def test_transacciones_limpias(trx, usuarios, productos, meta):
         "hay estados de compra no contemplados"
     )
     assert (trx["cantidad"] > 0).all(), "hay cantidades no positivas"
-    assert (trx["monto"] >= 0).all(), "hay montos negativos"
+    # `monto` = cantidad × precio_unitario − descuento. Es nulo solo cuando el dato original no trae
+    # precio_unitario (el notebook 02 no tiene una regla para esas compras y las conserva, porque la compra
+    # ocurrió; el modelo no usa `monto`). Cualquier otro nulo, o un monto negativo, sí es un error.
+    assert not (trx["monto"] < 0).any(), "hay montos negativos"
+    assert (trx["monto"].isna() == trx["precio_unitario"].isna()).all(), (
+        "hay montos nulos con precio_unitario presente, o montos calculados sin precio_unitario"
+    )
     assert (
         trx["fecha_dt"].notna().all() and trx["fecha_dt"].max() < meta["fin_datos"]
     ), "hay compras con fecha nula o posterior al fin de los datos"

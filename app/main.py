@@ -54,6 +54,16 @@ class RespuestaPrediccion(BaseModel):
     recomendaciones: list[Recomendacion]
 
 
+@app.get("/")
+def inicio():
+    return {
+        "servicio": "Nexus API de recomendación",
+        "estado": "activo",
+        "documentacion": "/docs",
+        "health": "/health",
+    }
+
+
 @app.get("/health")
 def health():
     r = estado["recomendador"]

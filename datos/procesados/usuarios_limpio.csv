@@ -5,7 +5,7 @@ U100473,2020-01-15,valparaiso,organico,True,1.0,55.0,True
 U102218,2022-04-12,los lagos,directo,True,1.0,,True
 U103403,2025-03-29,antofagasta,referido,True,1.0,37.0,True
 U102452,2021-07-19,ohiggins,pagado,True,1.0,54.0,True
-U101533,2024-12-05,metropolitana,referido,,1.0,65.0,True
+U101533,2024-12-05,metropolitana,referido,desconocido,1.0,65.0,True
 U103067,2020-03-01,los lagos,organico,True,1.0,74.0,True
 U102595,2024-02-05,biobio,organico,True,1.0,50.0,True
 U103115,2025-01-14,metropolitana,referido,True,1.0,61.0,True
@@ -37,7 +37,7 @@ U103187,2019-04-30,metropolitana,pagado,True,1.0,42.0,True
 U103628,2025-12-09,los lagos,pagado,False,1.0,63.0,True
 U102855,2023-08-15,biobio,email,True,1.0,18.0,True
 U103848,2023-07-05,valparaiso,organico,True,1.0,46.0,True
-U103033,2023-06-18,ohiggins,pagado,,1.0,59.0,True
+U103033,2023-06-18,ohiggins,pagado,desconocido,1.0,59.0,True
 U101698,2024-02-18,biobio,organico,True,1.0,69.0,True
 U102234,2019-08-22,ohiggins,organico,True,1.0,43.0,True
 U102646,2021-04-25,tarapaca,organico,True,1.0,39.0,True
@@ -50,18 +50,18 @@ U100222,2022-12-20,antofagasta,pagado,True,1.0,73.0,True
 U101837,2025-03-12,los lagos,directo,True,1.0,41.0,True
 U101464,2019-03-20,maule,pagado,False,1.0,74.0,True
 U102779,2026-01-21,ohiggins,email,True,1.0,,True
-U102095,2025-12-08,valparaiso,sin_dato,,1.0,42.0,True
+U102095,2025-12-08,valparaiso,sin_dato,desconocido,1.0,42.0,True
 U101563,2026-06-13,ohiggins,email,True,1.0,66.0,True
 U101661,2020-02-17,araucania,organico,True,1.0,61.0,True
 U100258,2019-07-31,biobio,organico,True,1.0,72.0,True
 U101771,2023-08-31,biobio,sin_dato,True,1.0,33.0,True
 U102775,2024-04-29,ohiggins,pagado,True,1.0,64.0,True
 U102894,2022-05-15,metropolitana,directo,True,1.0,63.0,True
-U103117,2019-12-28,maule,referido,,1.0,27.0,True
-U103369,2024-04-27,araucania,directo,,1.0,37.0,True
+U103117,2019-12-28,maule,referido,desconocido,1.0,27.0,True
+U103369,2024-04-27,araucania,directo,desconocido,1.0,37.0,True
 U100575,2023-01-04,araucania,pagado,True,1.0,53.0,True
 U101411,2019-01-11,metropolitana,directo,True,1.0,45.0,True
-U103226,2024-12-28,tarapaca,organico,,1.0,32.0,True
+U103226,2024-12-28,tarapaca,organico,desconocido,1.0,32.0,True
 U101210,2023-11-05,araucania,pagado,True,1.0,65.0,True
 U101843,2025-06-06,coquimbo,email,True,1.0,72.0,True
 U103492,2023-01-29,araucania,directo,True,1.0,59.0,True
@@ -94,7 +94,7 @@ U102614,2022-01-03,los lagos,directo,True,1.0,58.0,True
 U101870,2026-03-04,araucania,pagado,True,1.0,55.0,True
 U103034,2024-04-26,valparaiso,referido,False,1.0,52.0,True
 U100330,2025-03-17,antofagasta,directo,True,1.0,57.0,True
-U100011,2019-01-02,biobio,referido,,1.0,66.0,True
+U100011,2019-01-02,biobio,referido,desconocido,1.0,66.0,True
 U101651,,maule,pagado,False,1.0,28.0,True
 U100847,2024-08-31,antofagasta,email,True,1.0,33.0,True
 U102089,2020-03-04,valparaiso,pagado,True,1.0,73.0,True
@@ -110,10 +110,10 @@ U100596,2019-09-16,tarapaca,pagado,True,1.0,66.0,True
 U103025,2026-04-22,araucania,email,False,1.0,62.0,True
 U102098,2026-04-20,antofagasta,organico,True,1.0,60.0,True
 U101240,2021-04-28,los lagos,pagado,True,1.0,22.0,True
-U103073,2025-07-22,biobio,pagado,,1.0,29.0,True
-U102222,2019-12-09,coquimbo,pagado,,1.0,45.0,True
+U103073,2025-07-22,biobio,pagado,desconocido,1.0,29.0,True
+U102222,2019-12-09,coquimbo,pagado,desconocido,1.0,45.0,True
 U101289,2020-08-28,biobio,organico,True,1.0,46.0,True
-U100116,2020-09-26,antofagasta,pagado,,1.0,,True
+U100116,2020-09-26,antofagasta,pagado,desconocido,1.0,,True
 U102591,2020-01-18,antofagasta,organico,True,1.0,72.0,True
 U100124,2021-02-17,maule,organico,True,1.0,69.0,True
 U103576,2024-05-26,tarapaca,pagado,False,1.0,29.0,True
@@ -157,7 +157,7 @@ U103057,2024-08-25,metropolitana,pagado,True,1.0,,True
 U101194,2021-09-03,araucania,organico,True,1.0,48.0,True
 U103132,2021-12-30,ohiggins,pagado,True,1.0,21.0,True
 U102997,2020-04-10,antofagasta,pagado,True,1.0,23.0,True
-U101622,2020-04-23,ohiggins,directo,,1.0,58.0,True
+U101622,2020-04-23,ohiggins,directo,desconocido,1.0,58.0,True
 U100356,2019-07-30,ohiggins,pagado,True,1.0,33.0,True
 U101110,2021-06-24,maule,organico,True,1.0,30.0,True
 U100587,2024-11-18,araucania,organico,True,1.0,19.0,True
@@ -192,7 +192,7 @@ U102887,2025-06-07,ohiggins,sin_dato,True,1.0,,True
 U101889,2020-08-15,metropolitana,organico,False,1.0,48.0,True
 U103804,2022-02-05,biobio,email,True,1.0,74.0,True
 U102550,2022-06-20,ohiggins,email,True,1.0,34.0,True
-U102129,2020-09-03,tarapaca,directo,,1.0,18.0,True
+U102129,2020-09-03,tarapaca,directo,desconocido,1.0,18.0,True
 U101193,2022-02-09,biobio,directo,True,1.0,62.0,True
 U103451,2022-11-21,tarapaca,organico,True,1.0,38.0,True
 U101148,2022-01-29,tarapaca,organico,True,1.0,57.0,True
@@ -224,7 +224,7 @@ U101028,2021-03-23,coquimbo,directo,True,1.0,34.0,True
 U101175,2025-06-16,antofagasta,email,True,1.0,47.0,True
 U103990,2024-03-26,coquimbo,organico,True,1.0,73.0,True
 U100965,2023-08-21,metropolitana,directo,True,1.0,20.0,True
-U102290,2025-08-19,valparaiso,organico,,1.0,,True
+U102290,2025-08-19,valparaiso,organico,desconocido,1.0,,True
 U101313,2026-01-19,antofagasta,organico,True,1.0,61.0,True
 U101827,2023-12-22,metropolitana,organico,True,1.0,20.0,True
 U103083,2019-04-05,coquimbo,pagado,True,1.0,66.0,True
@@ -238,14 +238,14 @@ U100438,2023-09-12,valparaiso,pagado,True,1.0,40.0,True
 U100403,2021-07-13,coquimbo,email,True,1.0,64.0,True
 U101961,2023-04-30,antofagasta,sin_dato,True,1.0,40.0,True
 U103579,2026-07-14,coquimbo,directo,True,1.0,60.0,True
-U103771,2022-06-01,ohiggins,organico,,1.0,44.0,True
+U103771,2022-06-01,ohiggins,organico,desconocido,1.0,44.0,True
 U103499,2023-12-30,metropolitana,organico,False,1.0,51.0,True
 U101683,2023-01-25,ohiggins,organico,False,1.0,73.0,True
 U102471,2021-03-09,araucania,pagado,True,1.0,21.0,True
 U101808,2024-01-25,antofagasta,directo,False,1.0,,True
 U103954,2022-01-09,ohiggins,organico,False,1.0,40.0,True
 U103150,2019-07-02,metropolitana,pagado,True,1.0,34.0,True
-U102128,2021-01-30,los lagos,organico,,1.0,20.0,True
+U102128,2021-01-30,los lagos,organico,desconocido,1.0,20.0,True
 U101858,2024-09-05,araucania,sin_dato,True,1.0,69.0,True
 U103081,2020-11-22,araucania,pagado,True,1.0,40.0,True
 U100632,2020-09-26,metropolitana,email,True,1.0,32.0,True
@@ -291,7 +291,7 @@ U102215,2023-01-18,biobio,directo,True,1.0,62.0,True
 U100491,2025-03-21,metropolitana,directo,True,1.0,,True
 U100098,2022-03-19,los lagos,pagado,True,1.0,,True
 U102461,2020-06-27,ohiggins,pagado,True,1.0,19.0,True
-U103000,2023-02-05,tarapaca,sin_dato,,1.0,42.0,True
+U103000,2023-02-05,tarapaca,sin_dato,desconocido,1.0,42.0,True
 U103688,2025-05-26,maule,organico,True,1.0,69.0,True
 U101920,2026-03-18,ohiggins,pagado,True,1.0,41.0,True
 U100739,2023-05-01,biobio,sin_dato,True,1.0,44.0,True
@@ -307,7 +307,7 @@ U102872,2020-06-18,antofagasta,organico,False,1.0,45.0,True
 U102306,2026-06-30,araucania,organico,True,1.0,50.0,True
 U102378,2019-02-17,coquimbo,directo,True,1.0,60.0,True
 U101117,2025-09-14,valparaiso,organico,True,1.0,71.0,True
-U101674,2022-03-25,biobio,organico,,1.0,36.0,True
+U101674,2022-03-25,biobio,organico,desconocido,1.0,36.0,True
 U101750,2019-08-21,tarapaca,sin_dato,True,1.0,63.0,True
 U100554,2024-01-21,tarapaca,organico,True,1.0,70.0,True
 U103779,2022-12-22,valparaiso,directo,True,1.0,20.0,True
@@ -323,7 +323,7 @@ U101758,2021-10-16,tarapaca,organico,True,1.0,63.0,True
 U100149,2021-08-28,coquimbo,directo,False,1.0,59.0,True
 U101429,2020-08-13,tarapaca,organico,True,1.0,49.0,True
 U100188,2022-12-28,metropolitana,email,True,1.0,41.0,True
-U103796,2024-04-14,metropolitana,organico,,1.0,62.0,True
+U103796,2024-04-14,metropolitana,organico,desconocido,1.0,62.0,True
 U102976,2023-03-14,antofagasta,organico,True,1.0,35.0,True
 U101895,2022-11-24,araucania,sin_dato,True,1.0,20.0,True
 U101423,2024-09-17,biobio,directo,True,1.0,42.0,True
@@ -362,7 +362,7 @@ U103046,2023-06-29,antofagasta,pagado,True,1.0,51.0,True
 U102687,2025-06-16,araucania,email,True,1.0,18.0,True
 U102446,2019-02-23,coquimbo,organico,True,1.0,,True
 U100042,2019-07-08,antofagasta,pagado,True,1.0,48.0,True
-U101735,2023-08-29,antofagasta,directo,,1.0,42.0,True
+U101735,2023-08-29,antofagasta,directo,desconocido,1.0,42.0,True
 U103194,2020-11-11,los lagos,organico,True,1.0,33.0,True
 U100955,2019-06-29,metropolitana,organico,False,1.0,40.0,True
 U100647,2021-07-21,tarapaca,email,False,1.0,50.0,True
@@ -375,16 +375,16 @@ U101179,2024-12-08,araucania,directo,True,1.0,61.0,True
 U103916,2022-05-14,araucania,organico,True,1.0,66.0,True
 U100734,2020-10-01,valparaiso,pagado,True,1.0,,True
 U101195,2024-12-25,ohiggins,directo,True,1.0,69.0,True
-U102497,2026-01-01,ohiggins,referido,,1.0,70.0,True
+U102497,2026-01-01,ohiggins,referido,desconocido,1.0,70.0,True
 U100832,2020-09-01,valparaiso,directo,True,1.0,74.0,True
 U103895,2023-10-22,metropolitana,pagado,True,1.0,64.0,True
 U103376,2021-08-30,los lagos,email,True,1.0,,True
 U100191,2025-12-13,metropolitana,organico,True,1.0,69.0,True
-U103856,2026-05-04,valparaiso,pagado,,1.0,38.0,True
+U103856,2026-05-04,valparaiso,pagado,desconocido,1.0,38.0,True
 U101330,2020-09-01,valparaiso,email,True,1.0,21.0,True
 U101572,2024-05-31,araucania,directo,True,1.0,53.0,True
 U102902,2022-10-13,metropolitana,organico,True,1.0,23.0,True
-U102824,2023-08-23,tarapaca,email,,1.0,34.0,True
+U102824,2023-08-23,tarapaca,email,desconocido,1.0,34.0,True
 U102870,2023-12-25,biobio,pagado,True,1.0,57.0,True
 U103038,2023-03-29,los lagos,pagado,False,1.0,69.0,True
 U101630,2026-05-28,araucania,pagado,True,1.0,60.0,True
@@ -393,7 +393,7 @@ U103530,2023-08-07,araucania,directo,True,1.0,38.0,True
 U101822,,maule,directo,True,1.0,73.0,True
 U103863,2021-11-07,araucania,pagado,True,1.0,39.0,True
 U102008,2023-02-11,ohiggins,pagado,True,1.0,,True
-U102605,2022-03-24,los lagos,directo,,1.0,40.0,True
+U102605,2022-03-24,los lagos,directo,desconocido,1.0,40.0,True
 U103727,2024-04-19,araucania,directo,True,1.0,54.0,True
 U103729,2020-07-05,ohiggins,email,True,1.0,74.0,True
 U100877,2019-03-05,metropolitana,email,True,1.0,49.0,True
@@ -424,10 +424,10 @@ U100866,2026-01-21,antofagasta,directo,False,1.0,52.0,True
 U102501,2023-09-21,metropolitana,organico,True,1.0,52.0,True
 U103244,2022-07-25,los lagos,sin_dato,True,1.0,20.0,True
 U101543,2020-07-30,biobio,sin_dato,True,1.0,64.0,True
-U100350,2021-12-11,maule,email,,1.0,,True
+U100350,2021-12-11,maule,email,desconocido,1.0,,True
 U100879,2022-03-10,ohiggins,organico,True,1.0,65.0,True
 U100308,2021-03-09,maule,organico,True,1.0,52.0,True
-U103842,2024-08-08,tarapaca,pagado,,1.0,69.0,True
+U103842,2024-08-08,tarapaca,pagado,desconocido,1.0,69.0,True
 U103496,2019-06-14,valparaiso,pagado,True,1.0,28.0,True
 U101960,2019-11-14,maule,sin_dato,True,1.0,39.0,True
 U103540,2023-06-04,antofagasta,organico,True,1.0,34.0,True
@@ -448,7 +448,7 @@ U101022,2019-01-17,coquimbo,organico,True,1.0,60.0,True
 U101768,2025-07-26,antofagasta,pagado,True,1.0,23.0,True
 U101025,2026-05-24,coquimbo,directo,True,1.0,61.0,True
 U103030,2020-06-21,araucania,directo,True,1.0,,True
-U103281,2020-11-12,araucania,pagado,,1.0,19.0,True
+U103281,2020-11-12,araucania,pagado,desconocido,1.0,19.0,True
 U100983,2025-10-15,araucania,pagado,True,1.0,61.0,True
 U102052,2024-08-20,antofagasta,organico,True,1.0,33.0,True
 U103785,2024-02-17,araucania,pagado,True,1.0,65.0,True
@@ -457,7 +457,7 @@ U103101,2022-01-16,coquimbo,pagado,False,1.0,60.0,True
 U101166,2021-07-12,metropolitana,referido,True,1.0,70.0,True
 U101445,2023-11-01,araucania,directo,True,1.0,47.0,True
 U103059,2022-08-25,coquimbo,directo,True,1.0,74.0,True
-U101965,,biobio,email,,1.0,57.0,True
+U101965,,biobio,email,desconocido,1.0,57.0,True
 U101052,2022-02-08,los lagos,email,True,1.0,29.0,True
 U101935,2023-07-03,valparaiso,referido,False,1.0,59.0,True
 U103692,2019-10-03,los lagos,directo,True,1.0,24.0,True
@@ -475,7 +475,7 @@ U100047,2020-07-27,tarapaca,organico,True,1.0,71.0,True
 U103126,2019-12-22,coquimbo,pagado,True,1.0,60.0,True
 U103801,2025-10-19,araucania,pagado,True,1.0,67.0,True
 U103329,2021-09-07,araucania,organico,True,1.0,54.0,True
-U103366,2020-11-27,araucania,email,,1.0,62.0,True
+U103366,2020-11-27,araucania,email,desconocido,1.0,62.0,True
 U102269,2020-12-02,ohiggins,organico,True,1.0,61.0,True
 U102235,2023-10-28,araucania,directo,True,1.0,69.0,True
 U103293,2021-11-06,ohiggins,pagado,True,1.0,35.0,True
@@ -524,7 +524,7 @@ U103312,2025-10-22,los lagos,organico,True,1.0,24.0,True
 U103107,2024-01-12,antofagasta,pagado,True,1.0,63.0,True
 U101203,2024-03-08,metropolitana,organico,True,1.0,45.0,True
 U102892,2022-03-18,tarapaca,pagado,True,1.0,61.0,True
-U100126,2025-04-11,biobio,organico,,1.0,57.0,True
+U100126,2025-04-11,biobio,organico,desconocido,1.0,57.0,True
 U103533,2021-12-23,araucania,sin_dato,True,1.0,26.0,True
 U100987,2020-12-29,antofagasta,pagado,True,1.0,67.0,True
 U103952,2022-03-04,biobio,organico,True,1.0,23.0,True
@@ -544,7 +544,7 @@ U102049,2020-11-03,biobio,email,True,1.0,34.0,True
 U100992,2023-10-20,valparaiso,organico,False,1.0,45.0,True
 U102697,2022-11-10,ohiggins,organico,False,1.0,70.0,True
 U103772,2026-02-20,tarapaca,organico,True,1.0,64.0,True
-U102544,2020-04-02,valparaiso,pagado,,1.0,56.0,True
+U102544,2020-04-02,valparaiso,pagado,desconocido,1.0,56.0,True
 U103229,2026-05-05,ohiggins,directo,True,1.0,55.0,True
 U100004,2024-12-03,valparaiso,sin_dato,True,1.0,63.0,True
 U103948,2025-08-19,valparaiso,pagado,False,1.0,18.0,True
@@ -562,13 +562,13 @@ U102783,2024-01-12,antofagasta,organico,True,1.0,52.0,True
 U100232,2019-09-28,maule,sin_dato,True,1.0,61.0,True
 U101814,2024-04-18,metropolitana,directo,True,1.0,45.0,True
 U103028,2025-07-10,coquimbo,sin_dato,True,1.0,29.0,True
-U102463,2022-05-15,biobio,directo,,1.0,33.0,True
+U102463,2022-05-15,biobio,directo,desconocido,1.0,33.0,True
 U102380,2024-08-09,antofagasta,organico,True,1.0,35.0,True
 U100837,2020-06-28,ohiggins,pagado,True,1.0,25.0,True
 U100544,2021-01-17,ohiggins,directo,False,1.0,21.0,True
 U100359,2026-01-21,los lagos,directo,True,1.0,,True
 U102585,2023-10-31,metropolitana,directo,True,1.0,61.0,True
-U100615,2025-09-11,coquimbo,pagado,,1.0,42.0,True
+U100615,2025-09-11,coquimbo,pagado,desconocido,1.0,42.0,True
 U102905,2025-03-22,araucania,organico,True,1.0,27.0,True
 U103720,2020-05-26,ohiggins,directo,True,1.0,45.0,True
 U103847,2023-06-26,antofagasta,organico,True,1.0,73.0,True
@@ -580,10 +580,10 @@ U102413,2020-11-22,araucania,directo,True,1.0,21.0,True
 U100597,2021-06-13,metropolitana,directo,False,1.0,74.0,True
 U103974,2021-04-10,biobio,organico,True,1.0,27.0,True
 U100414,2026-03-30,metropolitana,referido,True,1.0,70.0,True
-U100396,2025-06-06,ohiggins,sin_dato,,1.0,32.0,True
+U100396,2025-06-06,ohiggins,sin_dato,desconocido,1.0,32.0,True
 U101733,2022-08-26,coquimbo,pagado,True,1.0,23.0,True
 U103085,2025-03-07,ohiggins,directo,True,1.0,55.0,True
-U101595,2025-01-13,maule,organico,,1.0,67.0,True
+U101595,2025-01-13,maule,organico,desconocido,1.0,67.0,True
 U103661,2019-08-06,coquimbo,pagado,True,1.0,22.0,True
 U100839,2026-05-22,coquimbo,pagado,True,1.0,50.0,True
 U103562,2023-11-23,valparaiso,organico,True,1.0,40.0,True
@@ -598,7 +598,7 @@ U103441,2023-08-16,tarapaca,organico,True,1.0,27.0,True
 U102123,,antofagasta,organico,True,1.0,65.0,True
 U103450,2026-04-10,tarapaca,directo,False,1.0,,True
 U102831,2019-12-01,biobio,directo,True,1.0,62.0,True
-U102598,2025-10-18,araucania,organico,,1.0,42.0,True
+U102598,2025-10-18,araucania,organico,desconocido,1.0,42.0,True
 U102846,2019-04-11,ohiggins,pagado,True,1.0,18.0,True
 U100442,2021-04-24,tarapaca,pagado,True,1.0,62.0,True
 U100878,2025-11-29,valparaiso,email,True,1.0,58.0,True
@@ -621,7 +621,7 @@ U103591,2023-08-27,tarapaca,directo,True,1.0,64.0,True
 U103360,2026-04-24,coquimbo,pagado,True,1.0,65.0,True
 U100167,2024-04-21,tarapaca,directo,True,1.0,30.0,True
 U101752,2019-09-24,metropolitana,organico,True,1.0,46.0,True
-U103867,2021-11-09,coquimbo,referido,,1.0,24.0,True
+U103867,2021-11-09,coquimbo,referido,desconocido,1.0,24.0,True
 U101984,2020-03-17,metropolitana,pagado,True,1.0,56.0,True
 U101660,2019-12-01,antofagasta,pagado,True,1.0,31.0,True
 U101218,2026-07-16,araucania,organico,True,1.0,26.0,True
@@ -655,7 +655,7 @@ U101392,2021-08-06,metropolitana,directo,True,1.0,51.0,True
 U100795,2019-08-27,antofagasta,sin_dato,False,1.0,71.0,True
 U100351,2023-01-17,antofagasta,directo,True,1.0,53.0,True
 U101347,2023-10-07,los lagos,pagado,True,1.0,,True
-U103103,2026-03-13,araucania,organico,,1.0,21.0,True
+U103103,2026-03-13,araucania,organico,desconocido,1.0,21.0,True
 U101031,2019-09-05,los lagos,sin_dato,True,1.0,42.0,True
 U103416,2025-07-04,metropolitana,directo,True,1.0,69.0,True
 U103545,2022-09-07,ohiggins,organico,True,1.0,56.0,True
@@ -717,7 +717,7 @@ U100790,2021-08-23,coquimbo,organico,True,1.0,30.0,True
 U101001,2026-06-29,araucania,pagado,True,1.0,32.0,True
 U100242,2022-09-01,araucania,directo,False,1.0,41.0,True
 U101862,2020-12-14,los lagos,sin_dato,True,1.0,46.0,True
-U103408,2021-07-17,valparaiso,organico,,1.0,34.0,True
+U103408,2021-07-17,valparaiso,organico,desconocido,1.0,34.0,True
 U101332,2019-08-28,coquimbo,sin_dato,False,1.0,28.0,True
 U101480,2022-07-15,los lagos,directo,True,1.0,18.0,True
 U103051,2020-06-07,coquimbo,directo,True,1.0,37.0,True
@@ -725,12 +725,12 @@ U100898,2022-04-10,los lagos,pagado,True,1.0,53.0,True
 U102588,2024-03-11,ohiggins,organico,False,1.0,62.0,True
 U103276,2025-04-09,antofagasta,sin_dato,True,1.0,70.0,True
 U102174,2025-10-17,coquimbo,pagado,False,1.0,,True
-U103638,2021-03-16,ohiggins,referido,,1.0,,True
+U103638,2021-03-16,ohiggins,referido,desconocido,1.0,,True
 U102675,2024-03-30,ohiggins,email,True,1.0,44.0,True
 U102650,2019-07-07,biobio,organico,False,1.0,,True
-U102889,2025-05-23,coquimbo,organico,,1.0,69.0,True
+U102889,2025-05-23,coquimbo,organico,desconocido,1.0,69.0,True
 U100978,2020-04-01,metropolitana,directo,True,1.0,31.0,True
-U103151,2023-02-13,metropolitana,pagado,,1.0,29.0,True
+U103151,2023-02-13,metropolitana,pagado,desconocido,1.0,29.0,True
 U101176,2019-03-05,tarapaca,pagado,True,1.0,60.0,True
 U100355,2024-09-04,maule,organico,True,1.0,62.0,True
 U102812,2024-03-09,metropolitana,referido,True,1.0,35.0,True
@@ -774,13 +774,13 @@ U103690,2019-02-05,coquimbo,organico,True,1.0,73.0,True
 U102891,2024-02-19,tarapaca,organico,True,1.0,50.0,True
 U101962,2024-09-09,maule,organico,True,1.0,18.0,True
 U100861,2026-02-27,coquimbo,referido,True,1.0,56.0,True
-U102177,2025-01-04,maule,organico,,1.0,74.0,True
+U102177,2025-01-04,maule,organico,desconocido,1.0,74.0,True
 U101833,2020-08-29,metropolitana,sin_dato,True,1.0,53.0,True
 U100274,2019-01-19,antofagasta,sin_dato,True,1.0,27.0,True
 U101534,2024-11-02,metropolitana,organico,True,1.0,,True
 U103861,2022-12-28,los lagos,organico,False,1.0,51.0,True
 U100353,2024-11-20,tarapaca,sin_dato,True,1.0,62.0,True
-U103095,2023-05-16,maule,organico,,1.0,46.0,True
+U103095,2023-05-16,maule,organico,desconocido,1.0,46.0,True
 U103672,2022-09-26,ohiggins,organico,True,1.0,47.0,True
 U102735,2024-10-05,antofagasta,organico,False,1.0,57.0,True
 U101485,2023-09-07,tarapaca,sin_dato,True,1.0,55.0,True
@@ -794,7 +794,7 @@ U100850,2019-08-22,coquimbo,directo,True,1.0,50.0,True
 U103292,2020-05-22,tarapaca,pagado,True,1.0,55.0,True
 U102511,2019-05-27,tarapaca,directo,True,1.0,40.0,True
 U102047,2019-04-02,maule,directo,False,1.0,45.0,True
-U101766,2024-05-20,biobio,email,,1.0,66.0,True
+U101766,2024-05-20,biobio,email,desconocido,1.0,66.0,True
 U101460,2026-01-04,biobio,pagado,True,1.0,61.0,True
 U102995,2022-12-14,araucania,organico,True,1.0,25.0,True
 U103792,2025-08-14,tarapaca,email,True,1.0,,True
@@ -809,7 +809,7 @@ U103880,2023-07-05,maule,pagado,False,1.0,66.0,True
 U103289,2022-07-23,tarapaca,email,False,1.0,19.0,True
 U100604,2023-05-09,tarapaca,pagado,True,1.0,18.0,True
 U101501,2021-06-12,tarapaca,directo,True,1.0,52.0,True
-U101816,2025-10-05,tarapaca,organico,,1.0,27.0,True
+U101816,2025-10-05,tarapaca,organico,desconocido,1.0,27.0,True
 U101398,2025-04-28,ohiggins,organico,True,1.0,51.0,True
 U103788,2025-12-16,coquimbo,sin_dato,True,1.0,35.0,True
 U101446,2024-11-01,metropolitana,referido,True,1.0,39.0,True
@@ -821,12 +821,12 @@ U100416,2020-09-20,maule,referido,True,1.0,39.0,True
 U101506,2021-10-18,antofagasta,pagado,True,1.0,67.0,True
 U101937,2025-03-06,valparaiso,organico,True,1.0,47.0,True
 U102619,2020-02-05,valparaiso,organico,True,1.0,49.0,True
-U103973,2023-07-25,antofagasta,organico,,1.0,24.0,True
+U103973,2023-07-25,antofagasta,organico,desconocido,1.0,24.0,True
 U100171,2019-02-16,ohiggins,organico,True,1.0,35.0,True
 U100620,2024-11-04,coquimbo,organico,True,1.0,35.0,True
 U101516,2025-06-19,los lagos,referido,True,1.0,61.0,True
 U102728,2021-10-13,tarapaca,referido,True,1.0,25.0,True
-U100627,2026-06-05,biobio,pagado,,1.0,27.0,True
+U100627,2026-06-05,biobio,pagado,desconocido,1.0,27.0,True
 U100552,2025-01-19,metropolitana,directo,True,1.0,73.0,True
 U101465,2023-11-05,metropolitana,directo,True,1.0,66.0,True
 U100753,2024-04-20,coquimbo,email,True,1.0,59.0,True
@@ -878,7 +878,7 @@ U103265,2020-11-20,araucania,organico,True,1.0,69.0,True
 U103296,2020-10-05,valparaiso,directo,True,1.0,22.0,True
 U101849,2022-02-03,biobio,pagado,True,1.0,19.0,True
 U100740,2023-02-05,coquimbo,pagado,True,1.0,69.0,True
-U100517,2022-04-01,los lagos,organico,,1.0,45.0,True
+U100517,2022-04-01,los lagos,organico,desconocido,1.0,45.0,True
 U103890,2023-01-20,antofagasta,directo,True,1.0,53.0,True
 U102447,2024-01-16,tarapaca,organico,True,1.0,54.0,True
 U102982,2025-02-26,tarapaca,pagado,True,1.0,45.0,True
@@ -888,7 +888,7 @@ U101609,2026-05-18,araucania,pagado,False,1.0,,True
 U101422,2021-07-23,tarapaca,organico,True,1.0,38.0,True
 U100304,2020-04-24,metropolitana,directo,True,1.0,63.0,True
 U103658,2022-12-14,tarapaca,email,False,1.0,36.0,True
-U101275,2026-07-29,ohiggins,organico,,1.0,19.0,True
+U101275,2026-07-29,ohiggins,organico,desconocido,1.0,19.0,True
 U103642,2022-06-29,tarapaca,pagado,True,1.0,51.0,True
 U100954,2023-12-26,tarapaca,organico,True,1.0,23.0,True
 U101241,2024-08-25,antofagasta,directo,True,1.0,,True
@@ -923,14 +923,14 @@ U100079,2023-07-02,los lagos,directo,True,1.0,72.0,True
 U103769,2022-10-14,los lagos,directo,True,1.0,60.0,True
 U100471,2020-12-31,antofagasta,organico,True,1.0,64.0,True
 U102669,2022-01-22,biobio,email,True,1.0,58.0,True
-U102659,2022-05-12,araucania,email,,1.0,41.0,True
+U102659,2022-05-12,araucania,email,desconocido,1.0,41.0,True
 U102016,2024-05-17,antofagasta,directo,True,1.0,45.0,True
 U100526,2019-06-17,coquimbo,pagado,True,1.0,47.0,True
 U101503,2025-07-09,los lagos,email,True,1.0,43.0,True
 U102313,2025-10-26,araucania,organico,True,1.0,27.0,True
 U101013,2021-06-18,coquimbo,pagado,True,1.0,54.0,True
 U103574,2020-10-03,ohiggins,organico,True,1.0,24.0,True
-U102873,2021-01-11,ohiggins,pagado,,1.0,40.0,True
+U102873,2021-01-11,ohiggins,pagado,desconocido,1.0,40.0,True
 U100249,2022-03-16,metropolitana,organico,True,1.0,,True
 U103759,2022-07-16,los lagos,directo,True,1.0,57.0,True
 U103413,2024-06-07,ohiggins,sin_dato,True,1.0,61.0,True
@@ -945,7 +945,7 @@ U103852,2022-12-06,biobio,organico,True,1.0,61.0,True
 U103933,2023-05-26,biobio,pagado,True,1.0,51.0,True
 U103946,2023-04-26,araucania,directo,True,1.0,70.0,True
 U100404,2023-04-10,maule,organico,True,1.0,26.0,True
-U100693,2025-09-24,valparaiso,pagado,,1.0,21.0,True
+U100693,2025-09-24,valparaiso,pagado,desconocido,1.0,21.0,True
 U103718,2022-05-07,maule,directo,True,1.0,33.0,True
 U100968,2020-10-17,ohiggins,organico,True,1.0,46.0,True
 U101853,2022-03-16,los lagos,directo,True,1.0,33.0,True
@@ -966,7 +966,7 @@ U102901,2025-07-15,antofagasta,pagado,True,1.0,,True
 U100323,2023-10-19,tarapaca,email,True,1.0,,True
 U102190,2022-04-29,los lagos,directo,True,1.0,50.0,True
 U102521,2024-05-29,valparaiso,organico,True,1.0,31.0,True
-U102246,2025-05-05,los lagos,organico,,1.0,56.0,True
+U102246,2025-05-05,los lagos,organico,desconocido,1.0,56.0,True
 U103937,2019-04-22,araucania,pagado,True,1.0,21.0,True
 U100895,2019-04-11,araucania,directo,True,1.0,46.0,True
 U103157,,coquimbo,organico,True,1.0,60.0,True
@@ -991,8 +991,8 @@ U101845,2021-08-24,biobio,organico,True,1.0,23.0,True
 U103631,2021-08-27,los lagos,pagado,True,1.0,58.0,True
 U102474,2020-11-13,valparaiso,organico,True,1.0,20.0,True
 U100093,2024-02-26,ohiggins,directo,True,1.0,52.0,True
-U103815,2022-04-06,valparaiso,directo,,1.0,26.0,True
-U101384,2022-08-07,biobio,organico,,1.0,32.0,True
+U103815,2022-04-06,valparaiso,directo,desconocido,1.0,26.0,True
+U101384,2022-08-07,biobio,organico,desconocido,1.0,32.0,True
 U101662,2023-05-08,los lagos,directo,True,1.0,51.0,True
 U101021,2025-05-19,biobio,organico,True,1.0,,True
 U100521,2019-05-31,metropolitana,directo,True,1.0,40.0,True
@@ -1006,7 +1006,7 @@ U101260,2022-11-03,metropolitana,referido,True,1.0,39.0,True
 U103833,2019-03-12,metropolitana,organico,True,1.0,30.0,True
 U100023,2023-03-20,antofagasta,organico,True,1.0,48.0,True
 U101681,2019-03-05,araucania,referido,True,1.0,33.0,True
-U102838,2023-01-22,coquimbo,directo,,1.0,,True
+U102838,2023-01-22,coquimbo,directo,desconocido,1.0,,True
 U100277,2021-01-22,antofagasta,email,False,1.0,29.0,True
 U103268,2022-04-14,biobio,directo,True,1.0,52.0,True
 U101640,2021-06-12,biobio,organico,True,1.0,73.0,True
@@ -1033,7 +1033,7 @@ U100524,2021-11-02,ohiggins,organico,True,1.0,26.0,True
 U103082,2024-03-05,maule,referido,True,1.0,44.0,True
 U100637,2021-10-25,valparaiso,pagado,True,1.0,41.0,True
 U102037,2026-06-03,antofagasta,email,True,1.0,31.0,True
-U101128,2025-10-13,maule,pagado,,1.0,58.0,True
+U101128,2025-10-13,maule,pagado,desconocido,1.0,58.0,True
 U101779,2022-09-29,tarapaca,organico,True,1.0,22.0,True
 U100915,2020-03-21,maule,directo,True,1.0,70.0,True
 U101386,2020-07-21,valparaiso,pagado,True,1.0,61.0,True
@@ -1117,8 +1117,8 @@ U101603,2025-09-16,biobio,sin_dato,False,1.0,26.0,True
 U102029,2021-01-23,tarapaca,pagado,True,1.0,18.0,True
 U103609,2025-04-15,ohiggins,pagado,True,1.0,74.0,True
 U101951,2025-10-13,antofagasta,pagado,True,1.0,45.0,True
-U101147,2026-01-21,los lagos,pagado,,1.0,67.0,True
-U101507,2022-08-28,los lagos,pagado,,1.0,49.0,True
+U101147,2026-01-21,los lagos,pagado,desconocido,1.0,67.0,True
+U101507,2022-08-28,los lagos,pagado,desconocido,1.0,49.0,True
 U100921,2019-04-16,coquimbo,referido,True,1.0,25.0,True
 U101812,2019-11-17,antofagasta,email,True,1.0,46.0,True
 U101141,2022-12-23,araucania,organico,True,1.0,50.0,True
@@ -1173,7 +1173,7 @@ U101327,2022-05-01,maule,organico,True,1.0,59.0,True
 U101930,2022-03-24,coquimbo,pagado,True,1.0,31.0,True
 U102342,2024-09-01,valparaiso,directo,True,1.0,27.0,True
 U100569,2024-12-04,araucania,directo,True,1.0,27.0,True
-U103018,2022-11-04,tarapaca,email,,1.0,67.0,True
+U103018,2022-11-04,tarapaca,email,desconocido,1.0,67.0,True
 U101152,2024-06-01,araucania,pagado,True,1.0,49.0,True
 U100033,2019-02-10,coquimbo,email,True,1.0,61.0,True
 U103141,2019-05-10,araucania,organico,True,1.0,27.0,True
@@ -1208,7 +1208,7 @@ U102648,2021-01-08,metropolitana,referido,True,1.0,42.0,True
 U101928,2023-03-28,los lagos,pagado,True,1.0,48.0,True
 U100411,2024-01-10,maule,organico,True,1.0,74.0,True
 U100894,2025-01-15,tarapaca,pagado,True,1.0,40.0,True
-U102436,2026-07-21,antofagasta,organico,,1.0,44.0,True
+U102436,2026-07-21,antofagasta,organico,desconocido,1.0,44.0,True
 U103198,2021-03-10,tarapaca,email,True,1.0,43.0,True
 U101338,2020-03-23,coquimbo,directo,True,1.0,44.0,True
 U100985,2026-04-14,coquimbo,directo,True,1.0,27.0,True
@@ -1232,7 +1232,7 @@ U101594,2025-02-09,biobio,organico,True,1.0,39.0,True
 U101098,2023-10-30,maule,organico,False,1.0,20.0,True
 U101262,2022-08-11,valparaiso,directo,True,1.0,19.0,True
 U103965,2019-03-29,coquimbo,directo,True,1.0,67.0,True
-U102433,2024-12-03,araucania,email,,1.0,54.0,True
+U102433,2024-12-03,araucania,email,desconocido,1.0,54.0,True
 U101728,2025-12-31,biobio,directo,True,1.0,63.0,True
 U101245,2019-02-20,metropolitana,pagado,False,1.0,34.0,True
 U102410,2022-01-17,metropolitana,organico,True,1.0,57.0,True
@@ -1251,8 +1251,8 @@ U102776,2019-11-07,los lagos,directo,True,1.0,48.0,True
 U103388,2024-10-03,coquimbo,directo,True,1.0,66.0,True
 U100504,2026-06-18,metropolitana,organico,True,1.0,72.0,True
 U100474,2025-01-10,antofagasta,directo,True,1.0,70.0,True
-U100364,2024-01-09,valparaiso,organico,,1.0,54.0,True
-U100534,2022-06-09,maule,organico,,1.0,54.0,True
+U100364,2024-01-09,valparaiso,organico,desconocido,1.0,54.0,True
+U100534,2022-06-09,maule,organico,desconocido,1.0,54.0,True
 U100943,2024-10-10,maule,referido,False,1.0,,True
 U103605,2021-10-20,araucania,directo,True,1.0,62.0,True
 U102554,2019-05-26,araucania,organico,True,1.0,,True
@@ -1265,7 +1265,7 @@ U100137,2025-02-14,maule,organico,True,1.0,62.0,True
 U102933,2024-02-23,araucania,organico,True,1.0,55.0,True
 U101371,2021-05-20,biobio,pagado,True,1.0,58.0,True
 U102662,2024-06-04,maule,directo,True,1.0,,True
-U103486,2020-07-12,metropolitana,organico,,1.0,60.0,True
+U103486,2020-07-12,metropolitana,organico,desconocido,1.0,60.0,True
 U100871,2021-03-06,ohiggins,email,True,1.0,48.0,True
 U101760,2023-05-08,metropolitana,organico,True,1.0,60.0,True
 U102034,2026-01-21,metropolitana,directo,True,1.0,69.0,True
@@ -1274,8 +1274,8 @@ U101451,2021-03-04,valparaiso,organico,True,1.0,26.0,True
 U100885,2019-03-17,antofagasta,email,True,1.0,43.0,True
 U101772,2020-09-25,tarapaca,organico,False,1.0,53.0,True
 U101790,2025-06-02,biobio,email,True,1.0,64.0,True
-U102135,2024-04-20,valparaiso,email,,1.0,18.0,True
-U100972,2021-02-26,antofagasta,pagado,,1.0,29.0,True
+U102135,2024-04-20,valparaiso,email,desconocido,1.0,18.0,True
+U100972,2021-02-26,antofagasta,pagado,desconocido,1.0,29.0,True
 U100622,2024-09-20,antofagasta,directo,True,1.0,50.0,True
 U101214,2022-10-25,araucania,pagado,True,1.0,18.0,True
 U103272,2021-02-01,coquimbo,sin_dato,True,1.0,26.0,True
@@ -1367,7 +1367,7 @@ U103758,2019-09-05,maule,directo,True,1.0,62.0,True
 U100362,2025-10-19,araucania,sin_dato,True,1.0,18.0,True
 U102897,2025-11-17,antofagasta,sin_dato,True,1.0,,True
 U103125,2024-08-14,coquimbo,organico,False,1.0,24.0,True
-U100574,2020-06-11,biobio,pagado,,1.0,33.0,True
+U100574,2020-06-11,biobio,pagado,desconocido,1.0,33.0,True
 U100884,2023-12-31,valparaiso,directo,True,1.0,33.0,True
 U103424,2025-03-14,araucania,pagado,False,1.0,40.0,True
 U103845,2019-04-23,los lagos,referido,True,1.0,,True
@@ -1406,7 +1406,7 @@ U100301,2020-01-29,valparaiso,directo,True,1.0,43.0,True
 U102961,2019-07-27,ohiggins,pagado,True,1.0,68.0,True
 U102535,2023-06-20,coquimbo,pagado,True,1.0,61.0,True
 U103084,2021-02-14,araucania,organico,True,1.0,74.0,True
-U101268,2024-03-07,antofagasta,organico,,1.0,40.0,True
+U101268,2024-03-07,antofagasta,organico,desconocido,1.0,40.0,True
 U102536,2023-10-12,coquimbo,pagado,True,1.0,30.0,True
 U100181,2020-01-14,valparaiso,organico,True,1.0,,True
 U100581,2024-01-29,maule,directo,True,1.0,32.0,True
@@ -1459,20 +1459,20 @@ U102150,,biobio,directo,True,1.0,50.0,True
 U101967,2020-04-30,valparaiso,directo,True,1.0,30.0,True
 U102026,2024-11-06,ohiggins,directo,True,1.0,29.0,True
 U103860,2021-04-29,tarapaca,pagado,True,1.0,33.0,True
-U100402,2019-01-13,los lagos,pagado,,1.0,,True
+U100402,2019-01-13,los lagos,pagado,desconocido,1.0,,True
 U103700,2022-10-19,ohiggins,directo,True,1.0,74.0,True
 U101257,2024-08-05,coquimbo,directo,True,1.0,38.0,True
 U102110,2019-09-09,coquimbo,email,True,1.0,35.0,True
 U100822,2025-10-30,valparaiso,sin_dato,True,1.0,63.0,True
 U103931,,los lagos,directo,True,1.0,28.0,True
-U103469,2024-04-29,valparaiso,pagado,,1.0,40.0,True
+U103469,2024-04-29,valparaiso,pagado,desconocido,1.0,40.0,True
 U100520,2024-05-11,antofagasta,organico,True,1.0,51.0,True
 U103921,2020-03-08,biobio,sin_dato,True,1.0,32.0,True
 U100178,2022-03-28,biobio,pagado,False,1.0,33.0,True
-U101123,2021-01-17,valparaiso,pagado,,1.0,30.0,True
+U101123,2021-01-17,valparaiso,pagado,desconocido,1.0,30.0,True
 U100196,2023-10-27,coquimbo,directo,True,1.0,25.0,True
 U101522,2025-09-20,valparaiso,email,True,1.0,65.0,True
-U101350,2024-06-08,valparaiso,pagado,,1.0,50.0,True
+U101350,2024-06-08,valparaiso,pagado,desconocido,1.0,50.0,True
 U102904,2025-09-23,tarapaca,pagado,True,1.0,58.0,True
 U103371,2026-06-10,tarapaca,organico,True,1.0,31.0,True
 U103320,2022-08-02,araucania,organico,True,1.0,,True
@@ -1481,7 +1481,7 @@ U102274,2021-08-10,ohiggins,organico,True,1.0,19.0,True
 U103436,2024-07-01,antofagasta,sin_dato,True,1.0,53.0,True
 U100770,2025-08-09,coquimbo,organico,True,1.0,23.0,True
 U101075,2023-08-05,ohiggins,organico,True,1.0,54.0,True
-U101977,2025-08-25,valparaiso,referido,,1.0,66.0,True
+U101977,2025-08-25,valparaiso,referido,desconocido,1.0,66.0,True
 U101134,2024-11-25,araucania,referido,True,1.0,66.0,True
 U101170,2023-06-30,los lagos,organico,True,1.0,37.0,True
 U103625,2020-04-05,antofagasta,directo,True,1.0,45.0,True
@@ -1492,7 +1492,7 @@ U102694,2020-02-14,maule,organico,False,1.0,55.0,True
 U102878,2019-09-28,los lagos,organico,True,1.0,67.0,True
 U103903,2026-05-13,maule,email,False,1.0,51.0,True
 U103169,2021-06-02,valparaiso,referido,True,1.0,32.0,True
-U100730,2022-08-17,ohiggins,pagado,,1.0,39.0,True
+U100730,2022-08-17,ohiggins,pagado,desconocido,1.0,39.0,True
 U102880,2023-02-28,valparaiso,organico,True,1.0,19.0,True
 U101006,2019-11-01,tarapaca,sin_dato,True,1.0,56.0,True
 U101863,2026-07-13,antofagasta,organico,True,1.0,21.0,True
@@ -1565,7 +1565,7 @@ U101246,2021-05-13,antofagasta,email,True,1.0,64.0,True
 U103283,2019-09-03,los lagos,pagado,True,1.0,,True
 U103620,2026-07-29,biobio,directo,True,1.0,39.0,True
 U100695,2025-02-07,metropolitana,directo,True,1.0,,True
-U103478,2023-03-13,metropolitana,pagado,,1.0,,True
+U103478,2023-03-13,metropolitana,pagado,desconocido,1.0,,True
 U102206,2022-07-27,maule,email,True,1.0,41.0,True
 U101391,2020-12-03,los lagos,directo,True,1.0,67.0,True
 U102310,2024-04-01,araucania,directo,True,1.0,59.0,True
@@ -1595,11 +1595,11 @@ U101763,2026-03-20,biobio,referido,True,1.0,63.0,True
 U103008,2026-04-17,antofagasta,organico,True,1.0,69.0,True
 U101048,2020-10-13,maule,pagado,True,1.0,32.0,True
 U103255,2023-10-29,coquimbo,pagado,True,1.0,64.0,True
-U103006,2026-05-15,metropolitana,email,,1.0,29.0,True
+U103006,2026-05-15,metropolitana,email,desconocido,1.0,29.0,True
 U100048,2026-07-23,metropolitana,pagado,True,1.0,36.0,True
 U102022,2021-10-29,maule,pagado,True,1.0,25.0,True
 U103394,2022-04-14,tarapaca,pagado,True,1.0,27.0,True
-U101472,2020-12-21,coquimbo,pagado,,1.0,57.0,True
+U101472,2020-12-21,coquimbo,pagado,desconocido,1.0,57.0,True
 U100182,2023-05-23,ohiggins,organico,True,1.0,45.0,True
 U103647,2020-02-21,araucania,email,True,1.0,49.0,True
 U101955,2019-05-14,ohiggins,referido,True,1.0,51.0,True
@@ -1614,7 +1614,7 @@ U100676,2019-09-05,coquimbo,organico,True,1.0,74.0,True
 U102396,2026-06-17,los lagos,directo,True,1.0,36.0,True
 U102345,2023-05-06,metropolitana,organico,True,1.0,60.0,True
 U102328,2026-07-21,antofagasta,pagado,True,1.0,32.0,True
-U101947,2021-02-03,los lagos,email,,1.0,19.0,True
+U101947,2021-02-03,los lagos,email,desconocido,1.0,19.0,True
 U100164,2021-06-02,biobio,organico,False,1.0,40.0,True
 U100317,2025-01-27,coquimbo,organico,True,1.0,69.0,True
 U102778,2022-09-27,coquimbo,email,True,1.0,19.0,True
@@ -1665,7 +1665,7 @@ U101867,2022-12-27,ohiggins,directo,True,1.0,43.0,True
 U102627,2024-03-25,coquimbo,sin_dato,True,1.0,21.0,True
 U102993,2021-07-18,tarapaca,pagado,False,1.0,33.0,True
 U101933,2022-12-12,biobio,directo,True,1.0,53.0,True
-U102503,2022-12-06,metropolitana,pagado,,1.0,22.0,True
+U102503,2022-12-06,metropolitana,pagado,desconocido,1.0,22.0,True
 U100087,2022-09-28,antofagasta,organico,True,1.0,37.0,True
 U103767,2020-11-25,araucania,organico,True,1.0,46.0,True
 U100257,2020-05-22,valparaiso,pagado,True,1.0,66.0,True
@@ -1687,10 +1687,10 @@ U103600,2022-02-19,valparaiso,organico,True,1.0,31.0,True
 U103743,2022-01-23,tarapaca,email,True,1.0,,True
 U102454,2022-10-08,coquimbo,directo,True,1.0,66.0,True
 U100966,2024-07-18,metropolitana,organico,True,1.0,20.0,True
-U102932,2019-12-11,coquimbo,directo,,1.0,24.0,True
+U102932,2019-12-11,coquimbo,directo,desconocido,1.0,24.0,True
 U102504,2022-11-20,antofagasta,sin_dato,True,1.0,19.0,True
 U101198,2019-11-17,biobio,pagado,True,1.0,52.0,True
-U102381,2019-01-20,antofagasta,sin_dato,,1.0,72.0,True
+U102381,2019-01-20,antofagasta,sin_dato,desconocido,1.0,72.0,True
 U100220,2023-09-30,tarapaca,email,False,1.0,67.0,True
 U100868,2026-07-06,maule,email,True,1.0,68.0,True
 U102618,2025-05-23,araucania,pagado,True,1.0,55.0,True
@@ -1898,12 +1898,12 @@ U103209,2021-09-27,coquimbo,pagado,True,1.0,28.0,True
 U103359,2019-05-07,metropolitana,sin_dato,True,1.0,41.0,True
 U101643,2023-09-04,los lagos,pagado,True,1.0,,True
 U100497,2026-03-30,metropolitana,sin_dato,True,1.0,,True
-U102516,2021-02-21,maule,organico,,1.0,26.0,True
+U102516,2021-02-21,maule,organico,desconocido,1.0,26.0,True
 U102301,2026-04-24,araucania,organico,True,1.0,33.0,True
 U102383,2019-10-17,ohiggins,pagado,True,1.0,35.0,True
 U103460,2025-03-30,tarapaca,directo,True,1.0,,True
 U100761,2020-08-23,tarapaca,pagado,True,1.0,22.0,True
-U100198,2026-07-25,maule,pagado,,1.0,28.0,True
+U100198,2026-07-25,maule,pagado,desconocido,1.0,28.0,True
 U103523,2025-10-04,valparaiso,organico,True,1.0,41.0,True
 U103258,2024-05-07,metropolitana,directo,True,1.0,53.0,True
 U102990,2024-03-08,coquimbo,email,True,1.0,41.0,True
@@ -1936,7 +1936,7 @@ U101626,2021-12-26,valparaiso,organico,True,1.0,39.0,True
 U102153,2024-04-02,valparaiso,directo,True,1.0,72.0,True
 U102340,2022-05-16,maule,directo,False,1.0,31.0,True
 U101366,2025-09-22,los lagos,directo,True,1.0,53.0,True
-U100496,2024-08-01,metropolitana,pagado,,1.0,48.0,True
+U100496,2024-08-01,metropolitana,pagado,desconocido,1.0,48.0,True
 U101524,2025-12-25,los lagos,pagado,True,1.0,67.0,True
 U100896,2019-04-21,biobio,pagado,True,1.0,45.0,True
 U100148,2022-06-15,antofagasta,organico,True,1.0,34.0,True
@@ -1956,9 +1956,9 @@ U103823,2024-04-10,araucania,organico,True,1.0,,True
 U103504,2026-01-26,araucania,pagado,True,1.0,21.0,True
 U102760,2020-09-14,maule,organico,True,1.0,68.0,True
 U103003,2023-07-24,valparaiso,email,True,1.0,35.0,True
-U101454,2020-06-05,los lagos,sin_dato,,1.0,34.0,True
+U101454,2020-06-05,los lagos,sin_dato,desconocido,1.0,34.0,True
 U100602,2025-06-02,araucania,organico,True,1.0,59.0,True
-U103519,2022-05-14,antofagasta,directo,,1.0,22.0,True
+U103519,2022-05-14,antofagasta,directo,desconocido,1.0,22.0,True
 U103077,2022-10-31,metropolitana,email,True,1.0,43.0,True
 U101846,2025-12-07,ohiggins,directo,True,1.0,41.0,True
 U101427,2022-12-08,valparaiso,organico,True,1.0,40.0,True
@@ -1983,7 +1983,7 @@ U101206,2025-11-25,ohiggins,organico,True,1.0,36.0,True
 U100335,2024-02-27,maule,organico,True,1.0,50.0,True
 U100976,2024-10-14,maule,organico,True,1.0,69.0,True
 U101456,2020-07-03,araucania,directo,True,1.0,31.0,True
-U103088,2021-01-20,los lagos,organico,,1.0,40.0,True
+U103088,2021-01-20,los lagos,organico,desconocido,1.0,40.0,True
 U102820,2023-06-26,maule,sin_dato,True,1.0,31.0,True
 U102238,2019-01-27,coquimbo,organico,True,1.0,48.0,True
 U100796,2019-11-04,metropolitana,directo,True,1.0,62.0,True
@@ -1993,7 +1993,7 @@ U100592,2022-09-26,tarapaca,organico,True,1.0,22.0,True
 U101941,2021-02-04,valparaiso,directo,True,1.0,67.0,True
 U103134,2024-03-20,metropolitana,referido,True,1.0,49.0,True
 U103385,2020-10-10,tarapaca,organico,True,1.0,19.0,True
-U101722,2022-07-03,ohiggins,organico,,1.0,23.0,True
+U101722,2022-07-03,ohiggins,organico,desconocido,1.0,23.0,True
 U100032,2023-08-04,metropolitana,pagado,True,1.0,34.0,True
 U103472,2019-03-22,tarapaca,organico,True,1.0,26.0,True
 U103695,2021-12-11,ohiggins,directo,True,1.0,68.0,True
@@ -2002,7 +2002,7 @@ U101297,2024-03-01,ohiggins,organico,True,1.0,72.0,True
 U101300,2024-03-24,valparaiso,organico,False,1.0,35.0,True
 U102896,2019-09-27,tarapaca,sin_dato,True,1.0,72.0,True
 U101138,2023-12-03,ohiggins,directo,True,1.0,36.0,True
-U100829,2025-10-27,araucania,organico,,1.0,57.0,True
+U100829,2025-10-27,araucania,organico,desconocido,1.0,57.0,True
 U101578,2021-12-13,ohiggins,directo,True,1.0,50.0,True
 U100760,2024-03-18,maule,pagado,True,1.0,18.0,True
 U102499,2019-08-14,valparaiso,email,True,1.0,69.0,True
@@ -2018,9 +2018,9 @@ U100881,2022-12-13,araucania,sin_dato,False,1.0,,True
 U103060,2024-11-08,araucania,sin_dato,True,1.0,72.0,True
 U101310,2020-03-31,coquimbo,organico,True,1.0,61.0,True
 U102710,2022-03-24,coquimbo,pagado,True,1.0,68.0,True
-U102900,2019-12-16,los lagos,organico,,1.0,34.0,True
+U102900,2019-12-16,los lagos,organico,desconocido,1.0,34.0,True
 U102840,2020-08-16,antofagasta,sin_dato,True,1.0,23.0,True
-U103934,2020-06-18,coquimbo,directo,,1.0,18.0,True
+U103934,2020-06-18,coquimbo,directo,desconocido,1.0,18.0,True
 U103205,2021-09-28,araucania,pagado,True,1.0,45.0,True
 U102131,2025-03-18,coquimbo,directo,True,1.0,72.0,True
 U103998,2026-01-23,los lagos,organico,True,1.0,24.0,True
@@ -2037,7 +2037,7 @@ U103878,2019-01-20,coquimbo,email,False,1.0,22.0,True
 U102763,2025-03-18,tarapaca,directo,False,1.0,38.0,True
 U103277,2021-05-06,tarapaca,organico,True,1.0,62.0,True
 U101307,2025-12-27,biobio,pagado,True,1.0,,True
-U102568,2019-06-04,maule,organico,,1.0,35.0,True
+U102568,2019-06-04,maule,organico,desconocido,1.0,35.0,True
 U100843,2024-07-23,araucania,email,True,1.0,63.0,True
 U102360,2019-04-10,maule,sin_dato,True,1.0,57.0,True
 U102099,2023-11-08,valparaiso,directo,True,1.0,,True
