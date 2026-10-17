@@ -3,6 +3,7 @@ name: CI/CD
 on:
   push:
     branches: [main, dev]
+    tags: [ep2]   # reetiqueta la imagen ya publicada con :ep2 (la usa el compose.yaml de la defensa)
   pull_request:
     branches: [main, dev]
   workflow_dispatch:
@@ -17,12 +18,14 @@ concurrency:
 
 jobs:
   # ----------------------------------------------------------------------------------
-  # CI: regenera datos y modelo con los notebooks y ejecuta las pruebas
+  # CI: regenera datos y modelo con los notebooks y ejecuta las pruebas.
+  # Se omite en el push del tag ep2: ahí solo se reetiqueta la imagen ya publicada.
   # ----------------------------------------------------------------------------------
   pruebas:
     name: Pruebas
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    if: github.ref_type != 'tag'
     outputs:
       datos_generados: ${{ steps.pipeline.outputs.generado }}
     steps:
@@ -143,3 +146,47 @@ jobs:
           tags: |
             ${{ steps.img.outputs.nombre }}:latest
             ${{ steps.img.outputs.nombre }}:${{ github.sha }}
+
+  # ----------------------------------------------------------------------------------
+  # CD: al subir el tag ep2, reutiliza la imagen de main ya publicada (:<sha>)
+  # y la reetiqueta como :ep2, que es la que usa el compose.yaml de la defensa.
+  # Es rápido (no recompila): si el sha no está publicado, falla aquí con mensaje claro.
+  # ----------------------------------------------------------------------------------
+  publicar_ep2:
+    name: Etiquetar la imagen de main como ep2
+    if: github.event_name == 'push' && github.ref == 'refs/tags/ep2'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Preparar Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Iniciar sesion en GHCR
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # ep2 debe apuntar a un commit que esté en main y cuya imagen ya fue publicada al subir a main.
+      - name: Verificar commit y publicar tag ep2
+        shell: bash
+        run: |
+          git fetch origin main:refs/remotes/origin/main
+          if ! git merge-base --is-ancestor HEAD origin/main; then
+            echo '::error::El tag ep2 debe apuntar a un commit que este en main.'
+            exit 1
+          fi
+
+          IMAGE='ghcr.io/gaborilincio/modelo-nexus'
+          SHA="$(git rev-parse HEAD)"
+          docker buildx imagetools inspect "${IMAGE}:${SHA}"
+          docker buildx imagetools create --prefer-index=false \
+            --tag "${IMAGE}:ep2" "${IMAGE}:${SHA}"
+          docker buildx imagetools inspect "${IMAGE}:ep2"
