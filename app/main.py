@@ -9,6 +9,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 from app.recomendador import Recomendador
+from app.sagemaker_cliente import PuntuadorSageMaker
 
 log = logging.getLogger("nexus.api")
 
@@ -19,7 +20,9 @@ estado: dict = {"recomendador": None, "error": None}
 @asynccontextmanager
 async def ciclo_de_vida(_: FastAPI):
     try:
-        estado["recomendador"] = Recomendador()
+        estado["recomendador"] = Recomendador(
+            puntuador=PuntuadorSageMaker.desde_entorno()
+        )
     except Exception as e:  # sin modelo la API arranca igual y /health lo informa
         estado["error"] = f"{type(e).__name__}: {e}"
         log.exception("No se pudo cargar el recomendador")

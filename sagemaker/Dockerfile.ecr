@@ -1,0 +1,5 @@
+# SageMaker ejecuta el contenedor sin privilegios e instala el handler con pip en /opt/venv.
+# La imagen oficial no permite escribir ahí y el proceso muere; esta derivada habilita /opt/venv.
+FROM 683313688378.dkr.ecr.us-east-1.amazonaws.com/sagemaker-scikit-learn:1.9-0-cpu-py3
+USER root
+RUN chmod -R a+w /opt/venv

@@ -28,6 +28,7 @@ class Recomendador:
         dir_procesados: Path = DIR_PROCESADOS,
         dir_modelos: Path = DIR_MODELOS,
         corte=None,
+        puntuador=None,
     ):
         self.modelo = joblib.load(dir_modelos / "modelo_recomendador.joblib")
         self.meta_modelo = joblib.load(dir_modelos / "modelo_metadatos.joblib")
@@ -60,6 +61,9 @@ class Recomendador:
         self.ficha = self.productos.set_index(self.productos["sku"].astype(str))[
             ["categoria", "marca", "precio_lista"]
         ]
+        self.puntuador = puntuador
+        if puntuador is not None:
+            puntuador.configurar(self.features, self.meta_modelo["cols_cat"])
 
     # ------------------------------------------------------------------ consultas
     def usuario_consentido(self, usuario_id: str) -> bool:
@@ -125,7 +129,10 @@ class Recomendador:
             self.meta["medianas_antiguedad"],
         )
 
-        puntaje = self.modelo.decision_function(X[self.features])
+        if self.puntuador is None:
+            puntaje = self.modelo.decision_function(X[self.features])
+        else:
+            puntaje = self.puntuador.puntuar(X[self.features])
         if self.meta_modelo["usa_prior_popularidad"]:
             puntaje = puntaje + self.meta_modelo["pop_alpha"] * np.log(
                 X["n_compradores"].to_numpy(float) + self.meta_modelo["eps_pop"]
@@ -146,4 +153,7 @@ class Recomendador:
             "skus_recomendables": int(self.estado["fp"]["recomendable"].sum()),
             "skus_fallback": len(self.fallback),
             "sklearn_distinta_a_entrenamiento": self.version_sklearn_distinta,
+            "origen_puntajes": "local"
+            if self.puntuador is None
+            else f"sagemaker:{self.puntuador.endpoint}",
         }

@@ -16,6 +16,10 @@ __pycache__/
 # Copias de seguridad generadas por datos/preparar.py
 datos/procesados_backup_limpieza/
 
+# Artefactos generados por la migración a SageMaker (datos exportados, estado de AWS, modelo)
+sagemaker/salida/
+sagemaker/estado/
+
 # Jupyter
 .ipynb_checkpoints/
 
