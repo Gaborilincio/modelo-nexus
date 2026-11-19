@@ -9,6 +9,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 from app.recomendador import Recomendador
+from app.sagemaker_cliente import PuntuadorSageMaker
 
 log = logging.getLogger("nexus.api")
 
@@ -19,7 +20,9 @@ estado: dict = {"recomendador": None, "error": None}
 @asynccontextmanager
 async def ciclo_de_vida(_: FastAPI):
     try:
-        estado["recomendador"] = Recomendador()
+        estado["recomendador"] = Recomendador(
+            puntuador=PuntuadorSageMaker.desde_entorno()
+        )
     except Exception as e:  # sin modelo la API arranca igual y /health lo informa
         estado["error"] = f"{type(e).__name__}: {e}"
         log.exception("No se pudo cargar el recomendador")
@@ -49,6 +52,7 @@ class Recomendacion(BaseModel):
 
 class RespuestaPrediccion(BaseModel):
     usuario_id: str
+    version_modelo: str
     origen: str  # "modelo" o "fallback"
     motivo: str | None  # por qué se usó el plan B (None si origen == "modelo")
     recomendaciones: list[Recomendacion]
@@ -85,6 +89,7 @@ def predict(p: PeticionPrediccion):
         # Sin consentimiento (o usuario desconocido) no se perfila: solo se entrega el listado general.
         return RespuestaPrediccion(
             usuario_id=uid,
+            version_modelo=r.version_modelo,
             origen="fallback",
             motivo="usuario sin consentimiento o desconocido: no se personaliza",
             recomendaciones=r.recomendar_fallback(p.k),
@@ -93,7 +98,11 @@ def predict(p: PeticionPrediccion):
         recs = r.recomendar(uid, p.k)
         if recs:
             return RespuestaPrediccion(
-                usuario_id=uid, origen="modelo", motivo=None, recomendaciones=recs
+                usuario_id=uid,
+                version_modelo=r.version_modelo,
+                origen="modelo",
+                motivo=None,
+                recomendaciones=recs,
             )
         motivo = "no quedan productos recomendables que el usuario no haya comprado"
     except KeyError:
@@ -103,6 +112,7 @@ def predict(p: PeticionPrediccion):
         motivo = "error al calcular la predicción"
     return RespuestaPrediccion(
         usuario_id=uid,
+        version_modelo=r.version_modelo,
         origen="fallback",
         motivo=motivo,
         recomendaciones=r.recomendar_fallback(

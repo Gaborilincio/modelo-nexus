@@ -1,0 +1,77 @@
+{
+  "id": 61,
+  "fecha": "2026-11-19T01:32:54.955940+00:00",
+  "version_modelo": "Boosting-corte-2026-08-01",
+  "usuario_id": "U100004",
+  "origen": "modelo",
+  "motivo": null,
+  "recomendaciones": [
+    {
+      "puesto": 1,
+      "sku": "NX-11142",
+      "categoria": "gaming",
+      "marca": "LG",
+      "precio_lista": 20191.0,
+      "puntaje": 4.9162
+    },
+    {
+      "puesto": 2,
+      "sku": "NX-11144",
+      "categoria": "cables y adaptadores",
+      "marca": "LG",
+      "precio_lista": 21691.0,
+      "puntaje": 4.5376
+    },
+    {
+      "puesto": 3,
+      "sku": "NX-11359",
+      "categoria": "perifericos",
+      "marca": "Acer",
+      "precio_lista": 20100.0,
+      "puntaje": 4.3573
+    },
+    {
+      "puesto": 4,
+      "sku": "NX-10851",
+      "categoria": "almacenamiento",
+      "marca": "Xiaomi",
+      "precio_lista": 8656.0,
+      "puntaje": 4.3356
+    },
+    {
+      "puesto": 5,
+      "sku": "NX-10650",
+      "categoria": "monitores",
+      "marca": "Acer",
+      "precio_lista": 30087.0,
+      "puntaje": 3.501
+    },
+    {
+      "puesto": 6,
+      "sku": "NX-11030",
+      "categoria": "monitores",
+      "marca": "HP",
+      "precio_lista": 33873.0,
+      "puntaje": 3.4146
+    },
+    {
+      "puesto": 7,
+      "sku": "NX-11040",
+      "categoria": "notebooks",
+      "marca": "Kingston",
+      "precio_lista": 55373.0,
+      "puntaje": 3.3208
+    },
+    {
+      "puesto": 8,
+      "sku": "NX-10191",
+      "categoria": "smartphones",
+      "marca": "Acer",
+      "precio_lista": 11271.0,
+      "puntaje": 3.1711
+    }
+  ],
+  "atendido_por": "797c3da8ba56",
+  "ia_ms": 141,
+  "total_ms": 145
+}

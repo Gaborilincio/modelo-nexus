@@ -1,0 +1,50 @@
+{
+  "features": [
+    "n_pedidos",
+    "recencia_dias",
+    "frecuencia",
+    "unidades_totales",
+    "categorias_distintas",
+    "antiguedad_registro_dias",
+    "region",
+    "canal_captacion",
+    "unidades_vendidas",
+    "n_compradores",
+    "precio_lista",
+    "categoria",
+    "marca",
+    "antiguedad_sku_dias",
+    "compradores_30d",
+    "compradores_90d",
+    "tendencia_30_90",
+    "n_vistas",
+    "n_clics",
+    "n_agregados_carrito",
+    "afinidad_categoria",
+    "afinidad_marca",
+    "recencia_cat_dias",
+    "regla_pop_categoria",
+    "senal_implicita"
+  ],
+  "cols_cat": [
+    "region",
+    "canal_captacion",
+    "categoria",
+    "marca"
+  ],
+  "hiperparametros": {
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 8,
+    "l2_regularization": 0.0
+  },
+  "max_iter": 150,
+  "semilla": 42,
+  "pop_alpha": 1.0,
+  "eps_pop": 0.001,
+  "cortes_entrenamiento": [
+    "2025-08-06 00:00:00",
+    "2025-11-04 00:00:00",
+    "2026-02-02 00:00:00"
+  ],
+  "uso": "puntaje = decision_function(X[features]) + pop_alpha*log(n_compradores + eps_pop). La API ordena, excluye comprados y filtra recomendables."
+}
