@@ -62,6 +62,11 @@ class Recomendador:
             ["categoria", "marca", "precio_lista"]
         ]
         self.puntuador = puntuador
+        self.version_modelo = (
+            puntuador.version_modelo
+            if puntuador is not None
+            else f"{self.meta_modelo['familia']}-corte-{self.corte.date()}"
+        )
         if puntuador is not None:
             puntuador.configurar(self.features, self.meta_modelo["cols_cat"])
 

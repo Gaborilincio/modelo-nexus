@@ -27,11 +27,13 @@ class PuntuadorSageMaker:
     def __init__(
         self,
         endpoint: str,
+        version_modelo: str | None = None,
         region: str | None = None,
         cliente=None,
         timeout: float | None = None,
     ):
         self.endpoint = endpoint
+        self.version_modelo = version_modelo or endpoint
         self.region = region or os.environ.get("AWS_DEFAULT_REGION", "us-east-1")
         self.timeout = timeout or float(os.environ.get("SAGEMAKER_TIMEOUT", "10"))
         self.cliente = cliente or boto3.client(
@@ -50,7 +52,12 @@ class PuntuadorSageMaker:
     @classmethod
     def desde_entorno(cls) -> "PuntuadorSageMaker | None":
         endpoint = os.environ.get("SAGEMAKER_ENDPOINT")
-        return cls(endpoint) if endpoint else None
+        if not endpoint:
+            return None
+        version = os.environ.get("SAGEMAKER_MODEL_VERSION")
+        if not version:
+            raise ValueError("Falta SAGEMAKER_MODEL_VERSION para el endpoint remoto")
+        return cls(endpoint, version_modelo=version)
 
     def configurar(self, features, cols_cat) -> None:
         self.features = list(features)

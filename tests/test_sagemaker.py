@@ -41,6 +41,7 @@ def puntuador(respuesta, features=("a", "b"), cols_cat=("b",)):
 
 class PuntuadorFalso:
     endpoint = "prueba"
+    version_modelo = "modelo-prueba"
 
     def __init__(self, error=None):
         self.error = error
@@ -95,8 +96,18 @@ def test_desde_entorno(monkeypatch):
     monkeypatch.delenv("SAGEMAKER_ENDPOINT", raising=False)
     assert PuntuadorSageMaker.desde_entorno() is None
     monkeypatch.setenv("SAGEMAKER_ENDPOINT", "nexus-reco")
+    monkeypatch.setenv("SAGEMAKER_MODEL_VERSION", "nexus-reco-20261119-012857")
     p = PuntuadorSageMaker.desde_entorno()
     assert p is not None and p.endpoint == "nexus-reco"
+    assert p.version_modelo == "nexus-reco-20261119-012857"
+
+
+def test_entorno_remoto_exige_version_del_modelo(monkeypatch):
+    monkeypatch.setenv("SAGEMAKER_ENDPOINT", "nexus-reco")
+    monkeypatch.delenv("SAGEMAKER_MODEL_VERSION", raising=False)
+
+    with pytest.raises(ValueError, match="SAGEMAKER_MODEL_VERSION"):
+        PuntuadorSageMaker.desde_entorno()
 
 
 def test_esquema_del_handler_coincide_con_el_entrenamiento():
