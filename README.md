@@ -82,7 +82,7 @@ modelo-nexus/
 
 ## 🔄 Flujo del proyecto
 
-El flujo principal del componente de IA será:
+El flujo principal del componente de IA es:
 
 ```text
 Datos crudos
@@ -263,7 +263,7 @@ Se ejecutan con `pytest`. Si faltan los archivos que generan los notebooks 02 y 
 
 ## 🐳 Docker
 
-El proyecto contará con un `Dockerfile` para permitir ejecutar el servicio de IA dentro de un contenedor.
+El `Dockerfile` construye la imagen del servicio de IA (`ghcr.io/gaborilincio/modelo-nexus`, con tag `ep3` para el despliegue en AWS). La API obtiene los puntajes de `nexus-reco` mediante `invoke_endpoint` y devuelve la versión inmutable configurada en `SAGEMAKER_MODEL_VERSION`. La imagen copia `app/`, los artefactos requeridos para metadatos y respaldo, y los CSV procesados: **no** incluye `datos/crudos` ni los conjuntos de entrenamiento. El pipeline la construye y publica.
 
 ## 🔀 Ramas
 
