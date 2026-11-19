@@ -1,7 +1,7 @@
 """Empaqueta el artefacto con el handler, crea el endpoint Nexus y lo deja InService.
 
-Serverless primero: 2048 MB y concurrencia máxima 2. El endpoint se llama nexus-reco y se
-actualiza si ya existe.
+Serverless: 3072 MB y concurrencia máxima 1 (el laboratorio deniega endpoints de tiempo real).
+El endpoint se llama nexus-reco y se actualiza si ya existe.
 """
 
 import json
@@ -23,6 +23,10 @@ IMAGEN = os.environ.get(
     "NEXUS_IMAGEN",
     "683313688378.dkr.ecr.us-east-1.amazonaws.com/sagemaker-scikit-learn:1.9-0-cpu-py3",
 )
+MEMORIA = int(os.environ.get("NEXUS_MEMORIA", "2048"))
+HANDLERS = os.environ.get("NEXUS_HANDLERS", "2")
+# Con 1 instancia caliente no aparece una segunda en frío a mitad del tráfico.
+CONCURRENCIA = int(os.environ.get("NEXUS_CONCURRENCIA", "2"))
 ENDPOINT = "nexus-reco"
 
 
@@ -80,6 +84,8 @@ def main() -> None:
                 "SAGEMAKER_PROGRAM": "inferencia.py",
                 "SAGEMAKER_SUBMIT_DIRECTORY": "/opt/ml/model/code",
                 "SAGEMAKER_REGION": region,
+                # Un handler por instancia: con 1 concurrencia no compite por memoria.
+                "SAGEMAKER_MODEL_SERVER_WORKERS": HANDLERS,
             },
         },
         ExecutionRoleArn=rol,
@@ -90,11 +96,15 @@ def main() -> None:
             {
                 "VariantName": "AllTraffic",
                 "ModelName": modelo,
-                "ServerlessConfig": {"MemorySizeInMB": 2048, "MaxConcurrency": 2},
+                "ServerlessConfig": {
+                    "MemorySizeInMB": MEMORIA,
+                    "MaxConcurrency": CONCURRENCIA,
+                },
             }
         ],
     )
-    print(f"Modelo y configuración {modelo} creados")
+    tipo_texto = f"serverless · {MEMORIA} MB · concurrencia {CONCURRENCIA} · {HANDLERS} handlers"
+    print(f"Modelo y configuración {modelo} creados · {tipo_texto}")
 
     try:
         sm.describe_endpoint(EndpointName=ENDPOINT)
@@ -114,7 +124,7 @@ def main() -> None:
                 "modelo": modelo,
                 "config": modelo,
                 "region": region,
-                "tipo": "serverless · 2048 MB · concurrencia 2",
+                "tipo": tipo_texto,
                 "imagen": IMAGEN,
                 "artefacto": f"s3://{bucket}/{clave}",
             },

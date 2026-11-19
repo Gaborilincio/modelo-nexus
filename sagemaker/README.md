@@ -25,20 +25,23 @@ Datos exportados sin `usuario_id`, `sku` ni `corte`: 2,4 MB en CSV con features 
 
 | Recurso | Nombre | Detalle |
 |---|---|---|
-| Bucket | `nexus-sagemaker-222104404118` | `nexus/datos` 2,4 MB; `nexus/modelos` 438 KB |
+| Bucket | `nexus-sagemaker-222104404118` | `nexus/datos` 2,4 MB; `nexus/modelos` ≈ 260 KB |
 | Training Job | `nexus-reco-20261119-000622` | ml.m5.large, 69 s facturados |
 | Artefacto | `.../nexus/modelos/nexus-reco-20261119-000622/output/model.tar.gz` | sklearn 1.9.0 |
 | Repositorio ECR | `nexus-reco` | tag `1.9-0-root`, ~2,5 GB |
-| Endpoint | `nexus-reco` | serverless 2048 MB, concurrencia 2, modelo `nexus-reco-20261119-005405` |
+| Endpoint | `nexus-reco` | serverless 3072 MB, concurrencia 2, modelo `nexus-reco-20261119-012857` |
+| Configuración previa | `nexus-reco-20261119-011734` | mismo artefacto, sirve de rollback inmediato |
 | IA en EC2 | `nexus-ia:ep3-sagemaker` | `SAGEMAKER_ENDPOINT=nexus-reco`, `SAGEMAKER_TIMEOUT=10` |
 
-## Evidencia (19 de noviembre de 2026)
+## Evidencia (19 de noviembre de 2026, UTC)
 
 - Paridad endpoint vs artefacto local: 2.995 filas, diferencia máxima **0.00e+00**.
 - Entradas inválidas (24 columnas, `Content-Type: text/csv`) rechazadas con `ModelError`.
-- Endpoint directo, matriz de 1.497 filas: p50 **106 ms**, p95 **287 ms** (20 llamadas, 3/s);
-  primera invocación 241 ms.
-- Ruta pública HTTPS: 150–330 ms; una llamada 1,18 s por arranque en frío.
+- Endpoint directo, matriz de 1.497 filas: p50 **114 ms**, p95 **191 ms** (20 llamadas, 3/s).
+- Ruta pública HTTPS en caliente: 6 llamadas, p50 **163 ms**, máximo **244 ms**.
+- Tras desplegar, la primera petición pública cayó al respaldo (502 del contenedor en arranque);
+  desde la segunda, todas respondieron con el modelo. También se observó un timeout de 4 s por
+  arranque en frío tras 18 minutos sin tráfico.
 - Métricas con prior sobre `ranking_validacion` (641 usuarios, K=5) y pares de validación:
 
 | Modelo | AUC pares | AP pares | nDCG@5 | MAP@5 | hit@5 |
@@ -46,10 +49,11 @@ Datos exportados sin `usuario_id`, `sku` ni `corte`: 2,4 MB en CSV con features 
 | Nuevo (SageMaker) | 0.7210 | 0.4590 | 0.2240 | 0.1816 | 0.3838 |
 | Previo EP2 | 0.7211 | 0.4590 | 0.2241 | 0.1816 | 0.3838 |
 
-- Recomendaciones públicas idénticas a las de antes del cambio para U100002, U100003 y U100004.
+- Recomendaciones públicas idénticas a las de antes del cambio para U100002, U100003 y U100004
+  (dos rondas en caliente).
 - Fallback real: contenedor con `SAGEMAKER_ENDPOINT=nexus-reco-inexistente` devolvió
   `origen: fallback`, `motivo: error al calcular la predicción` y más vendidos.
-- Archivos: `sagemaker/evidencias/{entrenamiento,despliegue,pruebas-endpoint}.txt`,
+- Archivos: `sagemaker/evidencias/{entrenamiento,despliegue-final,pruebas-endpoint,limitacion-serverless}.txt`,
   `antes-*.json` y `despues-*.json`.
 
 ## Limitaciones
@@ -61,10 +65,14 @@ Datos exportados sin `usuario_id`, `sku` ni `corte`: 2,4 MB en CSV con features 
 3. El contenedor oficial no puede instalar el handler (`pip` en `/opt/venv` sin permisos) y el
    endpoint corre sin privilegios. La imagen `Dockerfile.ecr` solo habilita escritura en
    `/opt/venv`; no agrega datos ni secretos. Sin ella el modelo no arranca.
-4. Arranque en frío del serverless puede devolver `ThrottlingException`; el cliente reintenta
-   hasta 3 veces y, si falla, el dominio entrega su respaldo. Es degradación controlada, no
-   error silencioso.
-5. La IA todavía carga `modelo_recomendador.joblib` local para metadatos y verificación de
+4. **El laboratorio deniega endpoints de tiempo real.** Con `LabRole`, `CreateEndpointConfig`
+   con `InstanceType` devuelve *explicit deny* en `VocLabPolicy3`; solo queda serverless.
+5. **Arranque en frío del serverless: 19–23 s medidos.** El dominio corta a los 4 s, así que la
+   primera petición tras desplegar o tras 10–15 min sin tráfico cae al respaldo; después responde
+   en 110–250 ms. Además, con 2048 MB los `gunicorn` workers recibieron SIGKILL (memoria); con
+   3072 MB y 2 handlers el endpoint se mantuvo estable. Con concurrencia 1 el endpoint empieza a
+   devolver `ThrottlingException` bajo ráfagas de 3/s, por eso se quedó en 2.
+6. La IA todavía carga `modelo_recomendador.joblib` local para metadatos y verificación de
    versión, pero **no puntúa localmente**: si `SAGEMAKER_ENDPOINT` está definido, todo puntaje
    viene del endpoint.
 
@@ -87,15 +95,21 @@ docker buildx build --provenance=false --sbom=false \
 
 # 4. endpoint
 NEXUS_IMAGEN=222104404118.dkr.ecr.us-east-1.amazonaws.com/nexus-reco:1.9-0-root \
+NEXUS_MEMORIA=3072 NEXUS_CONCURRENCIA=2 \
   python sagemaker/desplegar.py
 
 # 5. pruebas (requiere pandas 3 y boto3; en EC2 con red del host)
-python sagemaker/probar.py
+# El primer arranque tarda 20 s: conviene calentar antes o usar SAGEMAKER_TIMEOUT=30.
+SAGEMAKER_TIMEOUT=30 python sagemaker/probar.py
 ```
 
+Antes de una demostración, ejecutar `probar.py` o una invocación de calentamiento: tras 10–15
+minutos sin tráfico el primer request público cae al respaldo por el arranque en frío.
+
 Costos aproximados de esta corrida: Training Job 69 s de `ml.m5.large` (centavos); endpoint
-serverless facturado por uso (las pruebas suman menos de 100 invocaciones de ~0,1 s);
-ECR ~2,5 GB ≈ USD 0,25/mes; S3 < 3 MB. No se consultó la factura final.
+serverless de 3072 MB facturado por uso (las pruebas suman menos de 150 invocaciones de
+~0,1 s, más los arranques en frío); ECR ~2,5 GB ≈ USD 0,25/mes; S3 < 3 MB. No se consultó la
+factura final.
 
 ## Revertir
 

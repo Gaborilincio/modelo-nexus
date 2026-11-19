@@ -1,0 +1,11 @@
+Modelo empaquetado: s3://nexus-sagemaker-222104404118/nexus/modelos/nexus-modelo-20261119-011734.tar.gz
+Modelo y configuración nexus-reco-20261119-011734 creados
+Actualizando endpoint nexus-reco
+    0 s · Updating
+   20 s · Updating
+   40 s · Updating
+   60 s · Updating
+   81 s · Updating
+  101 s · Updating
+  121 s · InService
+Endpoint nexus-reco InService con nexus-reco-20261119-011734. Siguiente: python sagemaker/probar.py

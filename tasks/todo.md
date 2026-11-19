@@ -18,7 +18,7 @@ Completado el 19 de noviembre de 2026. Resumen, costos y límites en `sagemaker/
 
 ## 4. Endpoint y paridad
 - [x] Implementar contrato de inferencia y desplegar endpoint Nexus serverless compatible.
-- `nexus-reco` InService (2048 MB, concurrencia 2); paridad 0.00e+00 sobre 2.995 filas; entradas inválidas rechazadas; p50 106 ms y p95 287 ms.
+- `nexus-reco` InService (3072 MB, concurrencia 2; el laboratorio deniega tiempo real); paridad 0.00e+00 sobre 2.995 filas; entradas inválidas rechazadas; p50 114 ms y p95 191 ms en el endpoint, p50 163 ms por HTTPS.
 
 ## 5. Integración IA
 - [x] Sustituir cálculo local de scores por invoke_endpoint con validación, timeouts y fallback.
