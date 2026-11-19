@@ -10,6 +10,7 @@ def test_predict_usuario_con_historial(cliente, recomendador):
     assert r.status_code == 200
     cuerpo = r.json()
     assert cuerpo["origen"] == "modelo" and cuerpo["motivo"] is None
+    assert cuerpo["version_modelo"] == recomendador.version_modelo
     skus = [x["sku"] for x in cuerpo["recomendaciones"]]
     assert len(skus) == 6 and len(set(skus)) == 6
     assert [x["puesto"] for x in cuerpo["recomendaciones"]] == list(range(1, 7))
@@ -36,6 +37,7 @@ def test_usuario_desconocido_usa_fallback(cliente):
     assert r.status_code == 200
     cuerpo = r.json()
     assert cuerpo["origen"] == "fallback" and cuerpo["motivo"]
+    assert cuerpo["version_modelo"]
     assert 0 < len(cuerpo["recomendaciones"]) <= 8
     assert all(x["puntaje"] is None for x in cuerpo["recomendaciones"])
 

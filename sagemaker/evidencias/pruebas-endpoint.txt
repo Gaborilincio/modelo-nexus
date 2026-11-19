@@ -1,0 +1,15 @@
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+Paridad · 2,995 filas · diferencia máxima 0.00e+00
+Entrada inválida (24 columnas) rechazada: ModelError
+Entrada inválida (tipo no JSON) rechazada: ModelError
+Invocación 1: 133 ms · 1,497 filas
+Invocación 2: 215 ms · 1,497 filas
+Latencia 20 invocaciones (1,497 filas): p50 114 ms · p95 191 ms
+nuevo: AUC pares 0.7210 · AP pares 0.4590 · {'ndcg@5': 0.224, 'map@5': 0.1816, 'hit@5': 0.3838, 'usuarios': 641}
+previo EP2: AUC pares 0.7211 · AP pares 0.4590 · {'ndcg@5': 0.2241, 'map@5': 0.1816, 'hit@5': 0.3838, 'usuarios': 641}

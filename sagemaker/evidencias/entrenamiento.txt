@@ -1,0 +1,14 @@
+Subido s3://nexus-sagemaker-222104404118/nexus/datos/train/train.csv
+Subido s3://nexus-sagemaker-222104404118/nexus/datos/validation/validation.csv
+Subido s3://nexus-sagemaker-222104404118/nexus/codigo/sourcedir.tar.gz
+Training Job nexus-reco-20261119-000622 creado en ml.m5.large. Se revisa cada 20 s.
+    0 s · InProgress · Starting
+   20 s · InProgress · Starting
+   40 s · InProgress · Starting
+   60 s · InProgress · Downloading
+   80 s · InProgress · Downloading
+  100 s · InProgress · Training
+  120 s · InProgress · Uploading
+  140 s · Completed · Completed
+Artefacto: s3://nexus-sagemaker-222104404118/nexus/modelos/nexus-reco-20261119-000622/output/model.tar.gz
+Siguiente: python sagemaker/desplegar.py

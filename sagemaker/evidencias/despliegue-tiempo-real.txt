@@ -1,0 +1,23 @@
+Modelo empaquetado: s3://nexus-sagemaker-222104404118/nexus/modelos/nexus-modelo-20261119-012138.tar.gz
+Traceback (most recent call last):
+  File "/home/ubuntu/nexus-sagemaker/sagemaker/desplegar.py", line 150, in <module>
+    main()
+    ~~~~^^
+  File "/home/ubuntu/nexus-sagemaker/sagemaker/desplegar.py", line 94, in main
+    sm.create_endpoint_config(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EndpointConfigName=modelo,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<14 lines>...
+        ],
+        ^^
+    )
+    ^
+  File "/usr/lib/python3/dist-packages/botocore/client.py", line 602, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/botocore/client.py", line 1078, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDeniedException) when calling the CreateEndpointConfig operation: User: arn:aws:sts::222104404118:assumed-role/LabRole/i-00a5d98e5189aa111 is not authorized to perform: sagemaker:CreateEndpointConfig on resource: arn:aws:sagemaker:us-east-1:222104404118:endpoint-config/nexus-reco-20261119-012138 with an explicit deny in an identity-based policy: arn:aws:iam::222104404118:policy/c225889a5699922l16470474t1w222104404118-VocLabPolicy3-9FOVJOQ3DbCz
